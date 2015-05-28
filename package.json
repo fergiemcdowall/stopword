@@ -1,0 +1,27 @@
+{
+  "name": "stopword",
+  "version": "0.0.0",
+  "description": "A module for node.js that takes in text and returns text that is stripped of stopwords",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fergiemcdowall/stopword"
+  },
+  "keywords": [
+    "stopword",
+    "document",
+    "processing",
+    "search",
+    "norch",
+    "search-index"
+  ],
+  "author": "Fergus McDowall",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fergiemcdowall/stopword/issues"
+  },
+  "homepage": "https://github.com/fergiemcdowall/stopword"
+}
