@@ -47,6 +47,12 @@ describe('Does stopword play nice?', function(){
       var norwegianSW = sw.getStopwords('no');
       var newString = sw.removeStopwords(oldString, {stopwords: norwegianSW});
       newString.should.be.exactly('tekst nørske tegn øæåø øæåø æææ');
+    }),
+    it('getStopwords should default to "en"', function(){
+      var swDict = sw.getStopwords();
+      swDict[0].should.be.exactly('about');
+      swDict[1].should.be.exactly('after');
+      swDict[2].should.be.exactly('all');
     })
   }),
   describe('error handling', function(){
