@@ -1,8 +1,8 @@
 {
   "name": "stopword",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A module for node.js that takes in text and returns text that is stripped of stopwords",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "mocha"
   },
@@ -18,6 +18,13 @@
     "norch",
     "search-index"
   ],
+  "devDependencies": {
+    "mocha": "2.2.1",
+    "should": "5.2.0"
+  },
+  "dependencies": {
+    "lodash": "3.8.0"
+  },
   "author": "Fergus McDowall",
   "license": "MIT",
   "bugs": {
