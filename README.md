@@ -8,7 +8,7 @@ input text. It is useful for text analysis.
 ### getStopwords
 
 Usage:
-javascript```
+```javascript
 getStopwords(language)
 ```
 
@@ -20,18 +20,20 @@ Supported languages: en, es, fa, fr, it, ja, nl, no, pl, pt, ru, zh
 ### removeStopwords
 
 Usage:
-javascript```
+```javascript
 removeStopwords(text[, options])
 ```
 
 Returns a string that has had the specified stopwords removed, and the
 seperator normalised to a specified value.
 
-`options` is optional and can contain:
+`options` (optional) is an object and can contain 0 or more of the following:
 
-stopwords: an array of stopwords
-inputSeparator: a speratator in the string.split() format used to
+`stopwords`: an array of stopwords
+
+`inputSeparator`: a speratator in the string.split() format used to
 tokenise input
-outputSeparator: a speratator in the string.join() format used to
+
+`outputSeparator`: a speratator in the string.join() format used to
 tokenise output
 
