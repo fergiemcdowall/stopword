@@ -25,6 +25,9 @@
   "dependencies": {
     "lodash": "3.8.0"
   },
+  "scripts": {
+    "test": "mocha"
+  },
   "author": "Fergus McDowall",
   "license": "MIT",
   "bugs": {
