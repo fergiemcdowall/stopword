@@ -26,16 +26,13 @@ Usage:
 removeStopwords(text[, options])
 ```
 
-Returns a string that has had the specified stopwords removed, and the
-seperator normalised to a specified value.
+Returns an Array that represents the text with the specified stopwords removed.
 
 `options` (optional) is an object and can contain 0 or more of the following:
 
 * `stopwords`: an array of stopwords
 * `inputSeparator`: a speratator in the string.split() format used to
 tokenise input
-* `outputSeparator`: a speratator in the string.join() format used to
-tokenise output
 
 [license-image]: http://img.shields.io/badge/license-MIT-blue.svg?style=flat
 [license-url]: LICENSE
@@ -46,3 +43,9 @@ tokenise output
 
 [travis-url]: http://travis-ci.org/fergiemcdowall/stopword
 [travis-image]: http://img.shields.io/travis/fergiemcdowall/stopword.svg?style=flat
+
+
+## Release Notes:
+
+As of version 0.0.4, `removeStopwords` returns an Array, since this
+removes ambiguity around separators.
