@@ -25,7 +25,7 @@
   },
   "dependencies": {
     "lodash.compact": "^3.0.1",
-    "lodash.defaults": "^4.0.1",
+    "lodash.defaults": "^4.0.1"
   },
   "author": "Fergus McDowall",
   "license": "MIT",
