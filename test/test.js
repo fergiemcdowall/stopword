@@ -2,6 +2,7 @@
 /* global it */
 
 var should = require('should')
+var describe = require('describe')
 var sw = require('../lib/stopword.js')
 
 describe('general stopwordiness:', function () {
@@ -50,7 +51,7 @@ describe('general stopwordiness:', function () {
   it('should remove swedish stopwords', function () {
     var oldString = 'Trädgårdsägare är beredda att pröva vad som helst för att bli av med de hatade mördarsniglarna åäö'
     var swedishSW = sw.getStopwords('sv')
-    var newString = sw.removeStopwords(oldString, {stopwords: norwegianSW})
+    var newString = sw.removeStopwords(oldString, {stopwords: swedishSW})
     newString.should.eql([ 'Trädgårdsägare', 'beredda', 'pröva', 'helst', 'hatade', 'mördarsniglarna', 'åäö' ])
   })
 
