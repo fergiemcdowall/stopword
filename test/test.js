@@ -47,6 +47,13 @@ describe('general stopwordiness:', function () {
     newString.should.eql([ 'tekst', 'nørske', 'tegn', 'øæåø', 'øæåø', 'æææ' ])
   })
 
+  it('should remove swedish stopwords', function () {
+    var oldString = 'Trädgårdsägare är beredda att pröva vad som helst för att bli av med de hatade mördarsniglarna åäö'
+    var swedishSW = sw.getStopwords('sv')
+    var newString = sw.removeStopwords(oldString, {stopwords: norwegianSW})
+    newString.should.eql([ 'Trädgårdsägare', 'beredda', 'pröva', 'helst', 'hatade', 'mördarsniglarna', 'åäö' ])
+  })
+
   it('getStopwords should default to "en"', function () {
     var swDict = sw.getStopwords()
     swDict[0].should.be.exactly('about')
