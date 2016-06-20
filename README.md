@@ -16,7 +16,7 @@ getStopwords(language)
 
 returns and array of stopwords for the given language.
 
-Supported languages: en, es, fa, fr, it, ja, nl, no, pl, pt, ru, sv, zh
+Supported languages: da, en, es, fa, fr, it, ja, nl, no, pl, pt, ru, sv, zh
 
 
 ### removeStopwords
