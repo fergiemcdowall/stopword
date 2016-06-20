@@ -54,6 +54,13 @@ describe('general stopwordiness:', function () {
     newString.should.eql([ 'trädgårdsägare', 'beredda', 'pröva', 'helst', 'hatade', 'mördarsniglarna', 'åäö' ])
   })
 
+  it('should remove danish stopwords', function () {
+    var oldString = 'gæsterne i musikhuset i aarhus bør fremover sende en venlig tanke til den afdøde købmand herman salling når de skal til koncert eller se teater i det aarhusianske kulturhus æøå'
+    var danishSW = sw.getStopwords('da')
+    var newString = sw.removeStopwords(oldString, {stopwords: danishSW})
+    newString.should.eql([ 'gæsterne', 'musikhuset', 'aarhus', 'bør', 'fremover', 'sende', 'venlig', 'tanke', 'afdøde', 'købmand', 'herman', 'salling', 'koncert', 'teater', 'aarhusianske', 'kulturhus', 'æøå' ])
+  })
+
   it('getStopwords should default to "en"', function () {
     var swDict = sw.getStopwords()
     swDict[0].should.be.exactly('about')
