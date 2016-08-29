@@ -5,34 +5,47 @@
 `stopword` is a node module that allows you to strip stopwords from an
 input text. It is useful for text analysis.
 
+Usage:
+```javascript
+sw = require('stopword')
+const oldString = 'a really Interesting string with some words'.split(' ')
+const newString = sw.removeStopwords(oldString)
+// newString is [ 'really', 'Interesting', 'string', 'words' ]
+
+```
+
+You can also specify a language other than english:
+```javascript
+sw = require('stopword')
+const oldString = 'Trädgårdsägare är beredda att pröva vad som helst för att bli av med de hatade mördarsniglarna åäö'.split(' ')
+const newString = sw.removeStopwords(oldString, sw.sv)  // sw.sv contains swedish stopwords
+// newString is now [ 'Trädgårdsägare', 'beredda', 'pröva', 'helst', 'hatade', 'mördarsniglarna', 'åäö' ]
+
+
 ## API
 
-### getStopwords
+### <language code>
+
+Array of stopwords for the following languages are supplied: da, en, es, fa, fr, it, ja, nl, no, pl, pt, ru, sv, zh
 
 Usage:
 ```javascript
-getStopwords(language)
+sw = require('stopword')
+norwegianStopwords = sw.no // norwegianStopwords now contains an Array of norwgian stopwords
 ```
-
-returns and array of stopwords for the given language.
-
-Supported languages: da, en, es, fa, fr, it, ja, nl, no, pl, pt, ru, sv, zh
-
 
 ### removeStopwords
 
 Usage:
 ```javascript
-removeStopwords(text[, options])
+sw = require('stopword')
+sw.removeStopwords(text[, stopwords])
 ```
 
 Returns an Array that represents the text with the specified stopwords removed.
 
-`options` (optional) is an object and can contain 0 or more of the following:
-
-* `stopwords`: an array of stopwords
-* `inputSeparator`: a speratator in the string.split() format used to
-tokenise input
+`text` An array of words
+`text` An array of stopwords
 
 [license-image]: http://img.shields.io/badge/license-MIT-blue.svg?style=flat
 [license-url]: LICENSE
@@ -47,5 +60,8 @@ tokenise input
 
 ## Release Notes:
 
-As of version 0.0.4, `removeStopwords` returns an Array, since this
+version 0.0.4, `removeStopwords` returns an Array, since this
 removes ambiguity around separators.
+
+version 0.1.0 `getStopwords` removed in favour of
+constants. `removeStopwords` takes text as an Array

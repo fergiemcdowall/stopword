@@ -1,72 +1,59 @@
 /* global describe */
 /* global it */
 
-var should = require('should')
-var sw = require('../lib/stopword.js')
+const should = require('should')
+const sw = require('../lib/stopword.js')
 
 describe('general stopwordiness:', function () {
-  it('should remove stopwords', function () {
-    var oldString = 'a really interesting string with some words'
-    var newString = sw.removeStopwords(oldString)
+  it('should remove stopwords, should default to english, should preserve case', function () {
+    const oldString = 'a really Interesting string with some words'.split(' ')
+    const newString = sw.removeStopwords(oldString)
     should.exist(sw.removeStopwords(oldString))
-    newString.should.eql([ 'really', 'interesting', 'string', 'words' ])
+    newString.should.eql([ 'really', 'Interesting', 'string', 'words' ])
   })
 
   it('should remove custom stopwords', function () {
-    var oldString = 'a really interesting string with some words'
-    var newString = sw.removeStopwords(oldString, {
-      stopwords: ['interesting']
-    })
+    const oldString = 'a really interesting string with some words'.split(' ')
+    const newString = sw.removeStopwords(oldString, ['interesting'])
     newString.should.eql([ 'a', 'really', 'string', 'with', 'some', 'words' ])
   })
 
   it('should not remove any stopwords', function () {
-    var oldString = 'a really interesting string with some words'
-    var newString = sw.removeStopwords(oldString, {
-      stopwords: []
-    })
+    const oldString = 'a really interesting string with some words'.split(' ')
+    const newString = sw.removeStopwords(oldString, [])
     newString.should.eql([ 'a', 'really', 'interesting', 'string', 'with', 'some', 'words' ])
   })
 
   it('should remove stopwords that have a non standard separator', function () {
-    var oldString = 'a.really,interesting string.with,some.words'
-    var newString = sw.removeStopwords(oldString)
+    const oldString = 'a.really,interesting string.with,some.words'.split(/[\\., ]+/)
+    const newString = sw.removeStopwords(oldString)
     newString.should.eql([ 'really', 'interesting', 'string', 'words' ])
   })
 
   it('should specify a custom input separator', function () {
-    var oldString = 'a-really-interesting-string-with-some words'
-    var newString = sw.removeStopwords(oldString, {inputSeparator: '-'})
+    const oldString = 'a-really-interesting-string-with-some words'.split('-')
+    const newString = sw.removeStopwords(oldString)
     newString.should.eql([ 'really', 'interesting', 'string', 'some words' ])
   })
 
   it('should remove norwegian stopwords', function () {
-    var oldString = 'dette er en tekst som har nørske tegn øæåø øæåø æææ'
-    var norwegianSW = sw.getStopwords('no')
-    var newString = sw.removeStopwords(oldString, {stopwords: norwegianSW})
+    const oldString = 'dette er en tekst som har nørske tegn øæåø øæåø æææ'.split(' ')
+    const newString = sw.removeStopwords(oldString, sw.no)
     newString.should.eql([ 'tekst', 'nørske', 'tegn', 'øæåø', 'øæåø', 'æææ' ])
   })
 
-  it('should remove swedish stopwords', function () {
-    var oldString = 'Trädgårdsägare är beredda att pröva vad som helst för att bli av med de hatade mördarsniglarna åäö'
-    var swedishSW = sw.getStopwords('sv')
-    var newString = sw.removeStopwords(oldString, {stopwords: swedishSW})
-    newString.should.eql([ 'trädgårdsägare', 'beredda', 'pröva', 'helst', 'hatade', 'mördarsniglarna', 'åäö' ])
+  it('should remove swedish stopwords and preserve case', function () {
+    const oldString = 'Trädgårdsägare är beredda att pröva vad som helst för att bli av med de hatade mördarsniglarna åäö'.split(' ')
+    const newString = sw.removeStopwords(oldString, sw.sv)
+    newString.should.eql([ 'Trädgårdsägare', 'beredda', 'pröva', 'helst', 'hatade', 'mördarsniglarna', 'åäö' ])
   })
 
   it('should remove danish stopwords', function () {
-    var oldString = 'gæsterne i musikhuset i aarhus bør fremover sende en venlig tanke til den afdøde købmand herman salling når de skal til koncert eller se teater i det aarhusianske kulturhus æøå'
-    var danishSW = sw.getStopwords('da')
-    var newString = sw.removeStopwords(oldString, {stopwords: danishSW})
+    const oldString = 'gæsterne i musikhuset i aarhus bør fremover sende en venlig tanke til den afdøde købmand herman salling når de skal til koncert eller se teater i det aarhusianske kulturhus æøå'.split(' ')
+    const newString = sw.removeStopwords(oldString, sw.da)
     newString.should.eql([ 'gæsterne', 'musikhuset', 'aarhus', 'bør', 'fremover', 'sende', 'venlig', 'tanke', 'afdøde', 'købmand', 'herman', 'salling', 'koncert', 'teater', 'aarhusianske', 'kulturhus', 'æøå' ])
   })
 
-  it('getStopwords should default to "en"', function () {
-    var swDict = sw.getStopwords()
-    swDict[0].should.be.exactly('about')
-    swDict[1].should.be.exactly('after')
-    swDict[2].should.be.exactly('all')
-  })
 })
 
 describe('error handling', function () {

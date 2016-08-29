@@ -1,6 +1,6 @@
 {
   "name": "stopword",
-  "version": "0.0.7",
+  "version": "0.1.0",
   "description": "A module for node.js that takes in text and returns text that is stripped of stopwords",
   "main": "lib/stopword.js",
   "scripts": {
@@ -22,10 +22,6 @@
     "mocha": "2.2.1",
     "should": "5.2.0",
     "standard": "^6.0.8"
-  },
-  "dependencies": {
-    "lodash.compact": "^3.0.1",
-    "lodash.defaults": "^4.0.1"
   },
   "author": "Fergus McDowall",
   "license": "MIT",
