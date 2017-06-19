@@ -53,6 +53,12 @@ describe('general stopwordiness:', function () {
     const newString = sw.removeStopwords(oldString, sw.da)
     newString.should.eql([ 'gæsterne', 'musikhuset', 'aarhus', 'bør', 'fremover', 'sende', 'venlig', 'tanke', 'afdøde', 'købmand', 'herman', 'salling', 'koncert', 'teater', 'aarhusianske', 'kulturhus', 'æøå' ])
   })
+  
+  it('should remove hindu stopwords', function () {
+    const oldString = 'केंद्र सरकार पर्यावरण के माकूल घरों 'ग्रीन होम्स' को बढ़ावा देने की दिशा में गंभीरता से सोच रही है। ग्रीन हाउसिंग सोसायटी डिवेलप करने के लिए सरकार सस्ते लोन और कम रजिस्ट्रेशन फीस जैसी सुविधाएं देगी। क्लाइमेट चेंज से लड़ने की दिशा में केंद्र इस तरह की रिहायशी कॉलोनियां विकसित करने की दिशा में सोच रही है। बता दें कि ग्रीन होम्स वे घर हैं, जो पर्यावरण को ध्यान में रखकर विकसित किए जाते हैं। इनमें पर्यावरण के नजरिए से एनर्जी, जल संसाधन और बिल्डिंग मटीरियल्स का प्रभावशाली इस्तेमाल किया जाता है।'.split(' ')
+    const newString = sw.removeStopwords(oldString, sw.hi)
+    newString.should.eql([ 'gæsterne', 'musikhuset', 'aarhus', 'bør', 'fremover', 'sende', 'venlig', 'tanke', 'afdøde', 'købmand', 'herman', 'salling', 'koncert', 'teater', 'aarhusianske', 'kulturhus', 'æøå' ])
+  })
 
 })
 
