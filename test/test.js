@@ -66,6 +66,7 @@ describe('general stopwordiness:', function () {
     newString.should.eql([ 'investigadores', 'han', 'analizado', 'adn', 'restos', 'unos', '200', 'gatos', 'tomados', 'momias', 'egipcias', 'yacimientos', 'vikingos', 'cuevas', 'edad', 'piedra', 'entre', 'otros', 'lugares', 'variopintos' ])
   })
 
+  // Text is first tokenized/split into words with: http://chasen.org/%7Etaku/software/TinySegmenter/
   it('should remove japanese stopwords after being tokenised', function () {
     const oldString = '今 回作っ た リスト で は 校正 待ち と なっ て いる 作品 を 抽出 し 作者 や 作品 名 で の 検索 の ほか 作品 の 長さ さまざまな 理由 で 機械 的 に 処理 でき なかっ た もの は に なっ て しまっ て い ます が やいつ から 校正 待ち に なっ て いる か で 並べ替え が できる よう に し まし た'.split(' ')
     const newString = sw.removeStopwords(oldString, sw.ja)
@@ -108,6 +109,7 @@ describe('general stopwordiness:', function () {
     newString.should.eql([ 'вопрос', 'троллейбуса', 'не', 'отношения', 'ни', 'политике', 'ни', 'чьим-то', 'вкусам', 'уверен', 'директор', 'института', 'экономики', 'транспорта', 'транспортной', 'политики', 'михаил', 'блинкин', 'есть', 'две', 'большие', 'линии', 'по', 'которым', 'развивается', 'общественный', 'наземный', 'транспорт', 'городов', 'мира', 'рельсы', 'колеса', 'по', 'первой', 'линии', 'преуспели', 'идет', 'мощное', 'развитие', 'достаточно', 'вспомнить', 'трамвай', 'говорить', 'второй', 'группе', 'то', 'нас', 'молодой', 'парк', 'автобусов', 'европе', 'троллейбусы', 'уходящий', 'вид' ])
   })
 
+  // Text is first tokenized/split into words with: https://github.com/yishn/chinese-tokenizer
   it('should remove chinese simplified stopwords', function () {
     const oldString = '起火 森林 位于 葡萄牙 中部 大 佩 德 罗 冈 市 火灾 发生 在 当地时间 日 时 左右 火势 迅速 向 四周 蔓延 酿成 重大 火灾 夜 之间 在 全国 范围 内 发生 了 大约 起 森林 大火 据 葡萄牙 新闻 报 报道 火灾 已 蔓延 至 莱 里 亚 大 区 的 多个 城镇 围绕 火 源 四 个 方向 的 火势 均 未 得到 控制 其中 有 两面 的 火 情 十分 严峻 伤亡 人数 很 可能 继续 增加'.split(' ')
     const newString = sw.removeStopwords(oldString, sw.zh)
