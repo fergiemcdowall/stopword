@@ -78,6 +78,30 @@ describe('general stopwordiness:', function () {
     newString.should.eql([ 'personne', 'commencer', 'theresa', 'may', 'n’aurait', 'jamais', 'imaginé', 'atmosphère', 'aussi', 'plombée', 'accablement', 'collectif', 'aussi', 'manifeste', 'devait', 'jour', 'gloire' ])
   })
 
+  it('should remove italian stopwords', function () {
+    const oldString = 'la distruzione del califfato è ancora in corso ma già si è aperta la nuova fase nel duello fra stati uniti e russia in medio oriente'.split(' ')
+    const newString = sw.removeStopwords(oldString, sw.it)
+    newString.should.eql([ 'distruzione', 'califfato', 'ancora', 'corso', 'già', 'aperta', 'nuova', 'fase', 'duello', 'fra', 'stati', 'uniti', 'russia', 'medio', 'oriente' ])
+  })
+
+  it('should remove dutch stopwords', function () {
+    const oldString = 'ludovici denkt dat het best kan werken als de gemeente werkloze jongeren aan hen koppelt natuurlijk kunnen ze ook rechtstreeks bij ons aankloppen aldus ludovici'.split(' ')
+    const newString = sw.removeStopwords(oldString, sw.nl)
+    newString.should.eql([ 'ludovici', 'denkt', 'best', 'werken', 'gemeente', 'werkloze', 'jongeren', 'hen', 'koppelt', 'natuurlijk', 'rechtstreeks', 'aankloppen', 'aldus', 'ludovici' ])
+  })
+
+  it('should remove polish stopwords', function () {
+    const oldString = 'obecnie zatrzymali już sprzedawcę dopalaczy niespełna letniego chłopaka który usłyszy zarzuty sprzedaży nielegalnych substancji a tym samym narażania życia i zdrowia pokrzywdzonych w tej sprawie jest osób'.split(' ')
+    const newString = sw.removeStopwords(oldString, sw.pl)
+    newString.should.eql([ 'obecnie', 'zatrzymali', 'sprzedawcę', 'dopalaczy', 'niespełna', 'letniego', 'chłopaka', 'usłyszy', 'zarzuty', 'sprzedaży', 'nielegalnych', 'substancji', 'samym', 'narażania', 'życia', 'zdrowia', 'pokrzywdzonych', 'sprawie', 'osób' ])
+  })
+
+  it('should remove portuguese stopwords', function () {
+    const oldString = 'já são conhecidas as identidades de algumas das vítimas do incêndio de pedrógão grande em leiria que matou pessoas esta segunda-feira a embaixada de frança divulgou um comunicado onde confirma que um cidadão francês morreu no fogo de pedrógão'.split(' ')
+    const newString = sw.removeStopwords(oldString, sw.pt)
+    newString.should.eql([ 'são', 'conhecidas', 'identidades', 'algumas', 'vítimas', 'incêndio', 'pedrógão', 'grande', 'leiria', 'matou', 'pessoas', 'segunda-feira', 'embaixada', 'frança', 'divulgou', 'comunicado', 'onde', 'confirma', 'cidadão', 'francês', 'morreu', 'fogo', 'pedrógão' ])
+  })
+
   // Right to Left languages. 
   it('should remove farsi stopwords and preserve case', function () {
     const oldString = 'در این بیانیه آمده است که اتو قادر به صحبت کردن، قادر به دیدن و قادر به عکس العمل نشان دادن به درخواست های شفاهی نبود'.split(' ')
