@@ -96,6 +96,12 @@ describe('general stopwordiness:', function () {
     newString.should.eql([ 'obecnie', 'zatrzymali', 'sprzedawcę', 'dopalaczy', 'niespełna', 'letniego', 'chłopaka', 'usłyszy', 'zarzuty', 'sprzedaży', 'nielegalnych', 'substancji', 'samym', 'narażania', 'życia', 'zdrowia', 'pokrzywdzonych', 'sprawie', 'osób' ])
   })
 
+  it('should remove portugese stopwords', function () {
+    const oldString = 'já são conhecidas as identidades de algumas das vítimas do incêndio de pedrógão grande em leiria que matou pessoas esta segunda-feira a embaixada de frança divulgou um comunicado onde confirma que um cidadão francês morreu no fogo de pedrógão'.split(' ')
+    const newString = sw.removeStopwords(oldString, sw.pt)
+    newString.should.eql([ 'são', 'conhecidas', 'identidades', 'algumas', 'vítimas', 'incêndio', 'pedrógão', 'grande', 'leiria', 'matou', 'pessoas', 'segunda-feira', 'embaixada', 'frança', 'divulgou', 'comunicado', 'onde', 'confirma', 'cidadão', 'francês', 'morreu', 'fogo', 'pedrógão' ])
+  })
+
   // Right to Left languages. 
   it('should remove farsi stopwords and preserve case', function () {
     const oldString = 'در این بیانیه آمده است که اتو قادر به صحبت کردن، قادر به دیدن و قادر به عکس العمل نشان دادن به درخواست های شفاهی نبود'.split(' ')
