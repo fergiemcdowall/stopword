@@ -78,6 +78,12 @@ describe('general stopwordiness:', function () {
     newString.should.eql([ 'personne', 'commencer', 'theresa', 'may', 'n’aurait', 'jamais', 'imaginé', 'atmosphère', 'aussi', 'plombée', 'accablement', 'collectif', 'aussi', 'manifeste', 'devait', 'jour', 'gloire' ])
   })
 
+  it('should remove italian stopwords', function () {
+    const oldString = 'la distruzione del califfato è ancora in corso ma già si è aperta la nuova fase nel duello fra stati uniti e russia in medio oriente'.split(' ')
+    const newString = sw.removeStopwords(oldString, sw.it)
+    newString.should.eql([ 'distruzione', 'califfato', 'ancora', 'corso', 'già', 'aperta', 'nuova', 'fase', 'duello', 'fra', 'stati', 'uniti', 'russia', 'medio', 'oriente' ])
+  })
+
   // Right to Left languages. 
   it('should remove farsi stopwords and preserve case', function () {
     const oldString = 'در این بیانیه آمده است که اتو قادر به صحبت کردن، قادر به دیدن و قادر به عکس العمل نشان دادن به درخواست های شفاهی نبود'.split(' ')
