@@ -78,6 +78,11 @@ describe('general stopwordiness:', function () {
     newString.should.eql([ 'در' ,'این' ,'بیانیه' ,'آمده' ,'است' ,'که' ,'اتو' ,'قادر' ,'به' ,'صحبت' ,'کردن،' ,'قادر' ,'به' ,'دیدن' ,'قادر' ,'به', 'عکس' ,'العمل' ,'نشان' ,'دادن' ,'به' ,'درخواست' ,'های' ,'شفاهی' ,'نبود' ])
   })
 
+  it('should remove french stopwords', function () {
+    const oldString = 'personne à commencer par theresa may n’aurait jamais imaginé une atmosphère aussi plombée un accablement collectif aussi manifeste pour ce qui devait être un jour de gloire'.split(' ')
+    const newString = sw.removeStopwords(oldString, sw.fr)
+    newString.should.eql([ 'personne', 'commencer', 'accablement', 'collectif', 'aussi', 'manifeste', 'devait', 'jour', 'gloire', 'theresa', 'may', 'n’aurait', 'jamais', 'imaginé', 'atmosphère', 'aussi', 'plombée' ])
+  })
 
 })
 
