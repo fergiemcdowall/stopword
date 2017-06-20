@@ -84,6 +84,12 @@ describe('general stopwordiness:', function () {
     newString.should.eql([ 'distruzione', 'califfato', 'ancora', 'corso', 'già', 'aperta', 'nuova', 'fase', 'duello', 'fra', 'stati', 'uniti', 'russia', 'medio', 'oriente' ])
   })
 
+  it('should remove dutch stopwords', function () {
+    const oldString = 'ludovici denkt dat het best kan werken als de gemeente werkloze jongeren aan hen koppelt natuurlijk kunnen ze ook rechtstreeks bij ons aankloppen aldus ludovici'.split(' ')
+    const newString = sw.removeStopwords(oldString, sw.nl)
+    newString.should.eql([ 'ludovici', 'denkt', 'best', 'werken', 'gemeente', 'werkloze', 'jongeren', 'hen', 'koppelt', 'natuurlijk', 'rechtstreeks', 'aankloppen', 'aldus', 'ludovici' ])
+  })
+
   // Right to Left languages. 
   it('should remove farsi stopwords and preserve case', function () {
     const oldString = 'در این بیانیه آمده است که اتو قادر به صحبت کردن، قادر به دیدن و قادر به عکس العمل نشان دادن به درخواست های شفاهی نبود'.split(' ')
