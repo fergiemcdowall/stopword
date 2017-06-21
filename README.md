@@ -37,7 +37,7 @@ const newString = sw.removeStopwords(oldString, sw.sv)
 
 ### &lt;language code&gt;
 
-Arrays of stopwords for the following languages are supplied: da, en, es, fa, fr, it, ja, nl, no, pl, pt, ru, sv, zh
+Arrays of stopwords for the following languages are supplied: ar, da, en, es, fa, fr, it, ja, nl, no, pl, pt, ru, sv, zh
 
 ```javascript
 sw = require('stopword')
