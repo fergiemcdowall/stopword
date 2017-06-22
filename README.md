@@ -64,6 +64,8 @@ norwegianStopwords = sw.no
 // norwegianStopwords now contains an Array of norwgian stopwords
 ```
 
+#### Languages with no space between words
+`ja` Japanese and `zh` Chinese Simplified have no space between words. For these languages you need to split the text into words before feeding it to the `stopword` module. You can check out [TinySegmenter](http://chasen.org/%7Etaku/software/TinySegmenter/) for Japanese and [chinese-tokenizer](https://github.com/yishn/chinese-tokenizer) for Chinese.
 
 ### removeStopwords
 
