@@ -39,24 +39,24 @@ const newString = sw.removeStopwords(oldString, sw.sv)
 
 Arrays of stopwords for the following languages are supplied: 
 
-* ar - Modern Standard Arabic
-* bn - Bengali
-* da - Danish
-* de - German
-* en - English
-* es - Spanish
-* fa - Farsi
-* fr - French
-* hi - Hindi
-* it - Italian
-* ja - Japanese
-* nl - Dutch
-* no - Norwegian
-* pl - Polish
-* pt - Portuguese
-* ru - Russioan
-* sv - Sweedish
-* zh - Chinese Simplified
+* `ar` - Modern Standard Arabic
+* `bn` - Bengali
+* `da` - Danish
+* `de` - German
+* `en` - English
+* `es` - Spanish
+* `fa` - Farsi
+* `fr` - French
+* `hi` - Hindi
+* `it` - Italian
+* `ja` - Japanese
+* `nl` - Dutch
+* `no` - Norwegian
+* `pl` - Polish
+* `pt` - Portuguese
+* `ru` - Russioan
+* `sv` - Sweedish
+* `zh` - Chinese Simplified
 
 ```javascript
 sw = require('stopword')
