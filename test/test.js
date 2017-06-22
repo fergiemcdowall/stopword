@@ -109,12 +109,6 @@ describe('general stopwordiness:', function () {
     newString.should.eql([ 'вопрос', 'троллейбуса', 'не', 'отношения', 'ни', 'политике', 'ни', 'чьим-то', 'вкусам', 'уверен', 'директор', 'института', 'экономики', 'транспорта', 'транспортной', 'политики', 'михаил', 'блинкин', 'есть', 'две', 'большие', 'линии', 'по', 'которым', 'развивается', 'общественный', 'наземный', 'транспорт', 'городов', 'мира', 'рельсы', 'колеса', 'по', 'первой', 'линии', 'преуспели', 'идет', 'мощное', 'развитие', 'достаточно', 'вспомнить', 'трамвай', 'говорить', 'второй', 'группе', 'то', 'нас', 'молодой', 'парк', 'автобусов', 'европе', 'троллейбусы', 'уходящий', 'вид' ])
   })
 
-  it('should remove german stopwords', function () {
-    const oldString = 'In diesem Sommer wird die asymmetrische Demobilisierung nicht mehr gelingen prophezeit Heil Die Menschen wollten Orientierung Angela Merkel hat ihre Partei zu einer One-Woman-Show gemacht die ist unter ihr konzept- und ideenlos geworden Das gelte für die großen Fragen Europas ebenso wie für die Rentenpolitik Zu keiner der großen Fragen hat Angela Merkel eine Antwort nicht zur Flüchtlingskrise nicht zur Bedrohung die Donald Trump darstellt klagte der SPD-Politiker'.split(' ')
-    const newString = sw.removeStopwords(oldString, sw.de)
-    newString.should.eql([ 'Sommer', 'asymmetrische', 'Demobilisierung', 'gelingen', 'prophezeit', 'Heil', 'Orientierung', 'Angela', 'Merkel', 'Partei', 'One-Woman-Show', 'konzept-', 'ideenlos', 'gelte', 'Fragen', 'Europas', 'Rentenpolitik', 'Fragen', 'Angela', 'Merkel', 'Antwort', 'Flüchtlingskrise', 'Bedrohung', 'Donald', 'Trump', 'darstellt', 'klagte', 'SPD-Politiker' ])
-  })
-
   // Text is first tokenized/split into words with: https://github.com/yishn/chinese-tokenizer
   it('should remove chinese simplified stopwords', function () {
     const oldString = '起火 森林 位于 葡萄牙 中部 大 佩 德 罗 冈 市 火灾 发生 在 当地时间 日 时 左右 火势 迅速 向 四周 蔓延 酿成 重大 火灾 夜 之间 在 全国 范围 内 发生 了 大约 起 森林 大火 据 葡萄牙 新闻 报 报道 火灾 已 蔓延 至 莱 里 亚 大 区 的 多个 城镇 围绕 火 源 四 个 方向 的 火势 均 未 得到 控制 其中 有 两面 的 火 情 十分 严峻 伤亡 人数 很 可能 继续 增加'.split(' ')
@@ -126,6 +120,12 @@ describe('general stopwordiness:', function () {
     const oldString = 'দক্ষিণ এশিয়ার দেশগুলোতে বিদ্যুৎ সরবরাহ বাড়াতে একযোগে কাজ করবে বাংলাদেশ ভারত ও ভুটান জনগণের বিদ্যুৎ চাহিদা মেটাতে ত্রিদেশীয় উদ্যোগের অংশ হিসেবেই এ পদক্ষেপ নেওয়া হচ্ছে এর ফলে বিদ্যুৎ খাতে দক্ষিণ এশিয়ার দেশগুলোতে বিদ্যমান সহযোগিতা একটি নতুন স্তরে উন্নীত হবে এক্ষেত্রে চতুর্থ দেশ হিসেবে এ অঞ্চলের আরেক দেশ নেপালকেও প্রকল্পের অংশীদার করার চেষ্টা চালিয়ে যাবে ঢাকা ও দিল্লি'.split(' ')
     const newString = sw.removeStopwords(oldString, sw.bn)
     newString.should.eql([ 'দক্ষিণ', 'এশিয়ার', 'দেশগুলোতে', 'বিদ্যুৎ', 'সরবরাহ', 'বাড়াতে', 'একযোগে', 'বাংলাদেশ', 'ভারত', 'ভুটান', 'জনগণের', 'বিদ্যুৎ', 'চাহিদা', 'মেটাতে', 'ত্রিদেশীয়', 'উদ্যোগের', 'অংশ', 'হিসেবেই', 'পদক্ষেপ', 'বিদ্যুৎ', 'খাতে', 'দক্ষিণ', 'এশিয়ার', 'দেশগুলোতে', 'বিদ্যমান', 'সহযোগিতা', 'স্তরে', 'উন্নীত', 'এক্ষেত্রে', 'চতুর্থ', 'দেশ', 'হিসেবে', 'অঞ্চলের', 'আরেক', 'দেশ', 'নেপালকেও', 'প্রকল্পের', 'অংশীদার', 'চালিয়ে', 'ঢাকা', 'দিল্লি' ])
+  })
+
+  it('should remove german stopwords', function () {
+    const oldString = 'In diesem Sommer wird die asymmetrische Demobilisierung nicht mehr gelingen prophezeit Heil Die Menschen wollten Orientierung Angela Merkel hat ihre Partei zu einer One-Woman-Show gemacht die ist unter ihr konzept- und ideenlos geworden Das gelte für die großen Fragen Europas ebenso wie für die Rentenpolitik Zu keiner der großen Fragen hat Angela Merkel eine Antwort nicht zur Flüchtlingskrise nicht zur Bedrohung die Donald Trump darstellt klagte der SPD-Politiker'.split(' ')
+    const newString = sw.removeStopwords(oldString, sw.de)
+    newString.should.eql([ 'Sommer', 'asymmetrische', 'Demobilisierung', 'gelingen', 'prophezeit', 'Heil', 'Orientierung', 'Angela', 'Merkel', 'Partei', 'One-Woman-Show', 'konzept-', 'ideenlos', 'gelte', 'Fragen', 'Europas', 'Rentenpolitik', 'Fragen', 'Angela', 'Merkel', 'Antwort', 'Flüchtlingskrise', 'Bedrohung', 'Donald', 'Trump', 'darstellt', 'klagte', 'SPD-Politiker' ])
   })
 
   // Right to Left languages
