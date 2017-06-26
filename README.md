@@ -87,6 +87,7 @@ version 0.0.4, `removeStopwords` returns an Array, since this
 removes ambiguity around separators.
 
 version 0.1.0 `getStopwords` removed in favour of constants. `removeStopwords` takes text as an Array
+version 0.1.2 Updated to ES6 simplified syntax
 
 [license-image]: http://img.shields.io/badge/license-MIT-blue.svg?style=flat
 [license-url]: LICENSE
