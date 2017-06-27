@@ -1,6 +1,6 @@
 {
   "name": "stopword",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "A module for node.js that takes in text and returns text that is stripped of stopwords",
   "main": "lib/stopword.js",
   "scripts": {
