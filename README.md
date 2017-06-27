@@ -90,6 +90,8 @@ version 0.1.0 `getStopwords` removed in favour of constants. `removeStopwords` t
 
 version 0.1.2 Updated to ES6 simplified syntax
 
+version 0.1.5 Making syntax ES5 compatible again
+
 [license-image]: http://img.shields.io/badge/license-MIT-blue.svg?style=flat
 [license-url]: LICENSE
 [npm-url]: https://npmjs.org/package/stopword
