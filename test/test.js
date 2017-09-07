@@ -141,6 +141,12 @@ describe('general stopwordiness:', function () {
     newString.should.eql([ 'در' ,'این' ,'بیانیه' ,'آمده' ,'است' ,'که' ,'اتو' ,'قادر' ,'به' ,'صحبت' ,'کردن،' ,'قادر' ,'به' ,'دیدن' ,'قادر' ,'به', 'عکس' ,'العمل' ,'نشان' ,'دادن' ,'به' ,'درخواست' ,'های' ,'شفاهی' ,'نبود' ])
   })
 
+  it('should remove brazilian portuguese stopwords', function () {
+    const oldString = 'agora já são conhecidas as identidades de algumas das vítimas do incêndio de pedrógão grande em leiria que matou pessoas esta segunda-feira a embaixada de frança divulgou um comunicado onde confirma que um cidadão francês morreu no fogo de pedrógão'.split(' ')
+    const newString = sw.removeStopwords(oldString, sw.br)
+    newString.should.eql(['conhecidas','identidades','vítimas','incêndio','pedrógão','leiria','matou','pessoas','segunda-feira','embaixada','frança','divulgou','comunicado','onde','confirma','cidadão','francês','morreu','fogo','pedrógão'])
+  })
+
 })
 
 describe('error handling', function () {
