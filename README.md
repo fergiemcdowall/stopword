@@ -55,8 +55,8 @@ Arrays of stopwords for the following languages are supplied:
 * `no` - Norwegian
 * `pl` - Polish
 * `pt` - Portuguese
-* `ru` - Russioan
-* `sv` - Sweedish
+* `ru` - Russian
+* `sv` - Swedish
 * `zh` - Chinese Simplified
 
 ```javascript
