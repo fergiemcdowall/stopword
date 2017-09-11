@@ -107,6 +107,8 @@ version 0.1.5 Making syntax ES5 compatible again
 
 version 0.1.7 Brazilian Portuguese added
 
+version 0.1.8 Documenting how to use custom stopword lists
+
 [license-image]: http://img.shields.io/badge/license-MIT-blue.svg?style=flat
 [license-url]: LICENSE
 [npm-url]: https://npmjs.org/package/stopword
