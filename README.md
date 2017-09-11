@@ -14,6 +14,7 @@ meaning.](https://en.wikipedia.org/wiki/Stop_words)
 
 ## Usage
 
+### Default (English)
 By default, `stopword` will strip an array of "meaningless" English words
 
 ```javascript
@@ -24,13 +25,24 @@ const newString = sw.removeStopwords(oldString)
 
 ```
 
-You can also specify a language other than english:
+### Other languages
+You can also specify a language other than English:
 ```javascript
 sw = require('stopword')
 const oldString = 'Trädgårdsägare är beredda att pröva vad som helst för att bli av med de hatade mördarsniglarna åäö'.split(' ')
 // sw.sv contains swedish stopwords
 const newString = sw.removeStopwords(oldString, sw.sv)
 // newString is now [ 'Trädgårdsägare', 'beredda', 'pröva', 'helst', 'hatade', 'mördarsniglarna', 'åäö' ]
+```
+
+### Custom list of stopwords
+And last, but not least, it is possible to use your own, custom list of stopwords:
+```javascript
+sw = require('stopword')
+const oldString = 'you can even roll your own custom stopword list'.split(' ')
+// Just add your own list/array of stopwords
+const newString = sw.removeStopwords(oldString, [ 'even', 'a', 'custom', 'stopword', 'list', 'is', 'possible']
+// newString is now [ 'you', 'can', 'roll', 'your', 'own']
 ```
 
 ## API

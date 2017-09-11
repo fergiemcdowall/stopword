@@ -128,6 +128,12 @@ describe('general stopwordiness:', function () {
     newString.should.eql([ 'Sommer', 'asymmetrische', 'Demobilisierung', 'gelingen', 'prophezeit', 'Heil', 'Orientierung', 'Angela', 'Merkel', 'Partei', 'One-Woman-Show', 'konzept-', 'ideenlos', 'gelte', 'Fragen', 'Europas', 'Rentenpolitik', 'Fragen', 'Angela', 'Merkel', 'Antwort', 'Flüchtlingskrise', 'Bedrohung', 'Donald', 'Trump', 'darstellt', 'klagte', 'SPD-Politiker' ])
   })
 
+  it('should remove brazilian portuguese stopwords', function () {
+    const oldString = 'agora já são conhecidas as identidades de algumas das vítimas do incêndio de pedrógão grande em leiria que matou pessoas esta segunda-feira a embaixada de frança divulgou um comunicado onde confirma que um cidadão francês morreu no fogo de pedrógão'.split(' ')
+    const newString = sw.removeStopwords(oldString, sw.br)
+    newString.should.eql(['conhecidas','identidades','vítimas','incêndio','pedrógão','leiria','matou','pessoas','segunda-feira','embaixada','frança','divulgou','comunicado','onde','confirma','cidadão','francês','morreu','fogo','pedrógão'])
+  })
+
   // Right to Left languages
   it('should remove arabic stopwords', function () {
     const oldString = 'ورغم أن الحملة توقفت بقينا نتسلق سلّم الأمل نظن أن الحكومة تسبقنا نحو القمة لكننا صعقنا بتوقف الحملة عند أسماء بعينها وكأن الفساد اقتصر على شفيق جراية ومن معه من مهربين؛ لكن الأفظع هو أن ملف شفيق جراية ليس ملف فساد بل ملف تآمر وهو ما يعني أنّ الحكومة غالطت الجميع وجندت التونسيين لحرب واهية تجاهلت فيها الفساد الحقيقي الذي ظهر على شخصيات كثيرة في مقدمتها الأمين العام لحركة مشروع تونس محسن مرزوق'.split(' ')
@@ -139,12 +145,6 @@ describe('general stopwordiness:', function () {
     const oldString = 'در این بیانیه آمده است که اتو قادر به صحبت کردن، قادر به دیدن و قادر به عکس العمل نشان دادن به درخواست های شفاهی نبود'.split(' ')
     const newString = sw.removeStopwords(oldString, sw.fa)
     newString.should.eql([ 'در' ,'این' ,'بیانیه' ,'آمده' ,'است' ,'که' ,'اتو' ,'قادر' ,'به' ,'صحبت' ,'کردن،' ,'قادر' ,'به' ,'دیدن' ,'قادر' ,'به', 'عکس' ,'العمل' ,'نشان' ,'دادن' ,'به' ,'درخواست' ,'های' ,'شفاهی' ,'نبود' ])
-  })
-
-  it('should remove brazilian portuguese stopwords', function () {
-    const oldString = 'agora já são conhecidas as identidades de algumas das vítimas do incêndio de pedrógão grande em leiria que matou pessoas esta segunda-feira a embaixada de frança divulgou um comunicado onde confirma que um cidadão francês morreu no fogo de pedrógão'.split(' ')
-    const newString = sw.removeStopwords(oldString, sw.br)
-    newString.should.eql(['conhecidas','identidades','vítimas','incêndio','pedrógão','leiria','matou','pessoas','segunda-feira','embaixada','frança','divulgou','comunicado','onde','confirma','cidadão','francês','morreu','fogo','pedrógão'])
   })
 
 })
