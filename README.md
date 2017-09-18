@@ -80,6 +80,9 @@ norwegianStopwords = sw.no
 #### Languages with no space between words
 `ja` Japanese and `zh` Chinese Simplified have no space between words. For these languages you need to split the text into words before feeding it to the `stopword` module. You can check out [TinySegmenter](http://chasen.org/%7Etaku/software/TinySegmenter/) for Japanese and [chinese-tokenizer](https://github.com/yishn/chinese-tokenizer) for Chinese.
 
+#### Your language missing?
+If you can't find a stopword file for your language, you can try creating one with [`stopword-trainer`](https://github.com/eklem/stopword-trainer).
+
 ### removeStopwords
 
 Returns an Array that represents the text with the specified stopwords removed.
