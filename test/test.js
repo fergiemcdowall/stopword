@@ -131,7 +131,7 @@ describe('general stopwordiness:', function () {
   it('should remove brazilian portuguese stopwords', function () {
     const oldString = 'agora já são conhecidas as identidades de algumas das vítimas do incêndio de pedrógão grande em leiria que matou pessoas esta segunda-feira a embaixada de frança divulgou um comunicado onde confirma que um cidadão francês morreu no fogo de pedrógão'.split(' ')
     const newString = sw.removeStopwords(oldString, sw.br)
-    newString.should.eql(['conhecidas','identidades','vítimas','incêndio','pedrógão','leiria','matou','pessoas','segunda-feira','embaixada','frança','divulgou','comunicado','onde','confirma','cidadão','francês','morreu','fogo','pedrógão'])
+    newString.should.eql(['conhecidas','identidades','vítimas','incêndio','pedrógão','leiria','matou','pessoas','segunda-feira','embaixada','frança','divulgou','comunicado','confirma','cidadão','francês','morreu','fogo','pedrógão'])
   })
 
   // Right to Left languages
