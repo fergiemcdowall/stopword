@@ -112,7 +112,7 @@ version 0.1.7 Brazilian Portuguese added
 
 version 0.1.8 Documenting how to use custom stopword lists
 
-version 0.1.9 Longer Brazilian Portugese stopword list w/ duplicates removed
+version 0.1.9 Longer Brazilian Portuguese stopword list w/ duplicates removed
 
 [license-image]: http://img.shields.io/badge/license-MIT-blue.svg?style=flat
 [license-url]: LICENSE
