@@ -114,6 +114,8 @@ version 0.1.8 Documenting how to use custom stopword lists
 
 version 0.1.9 Longer Brazilian Portuguese stopword list w/ duplicates removed
 
+version 0.1.10 Updating from testing on version 4,5 and 6 to version 4,6,8 and 9 of Node.js
+
 [license-image]: http://img.shields.io/badge/license-MIT-blue.svg?style=flat
 [license-url]: LICENSE
 [npm-url]: https://npmjs.org/package/stopword
