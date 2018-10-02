@@ -133,7 +133,14 @@ describe('general stopwordiness:', function () {
     const newString = sw.removeStopwords(oldString, sw.br)
     newString.should.eql(['conhecidas','identidades','vítimas','incêndio','pedrógão','leiria','matou','pessoas','segunda-feira','embaixada','frança','divulgou','comunicado','confirma','cidadão','francês','morreu','fogo','pedrógão'])
   })
-
+  
+  it('should remove punjabi gurmukhi stopwords', function () {
+    const oldString = 'ਅਫਗਾਨੀਸਤਾਨ ਦੇ ਲਈ ਇੰਟਰਨੈੱਟ ਦਾ ਟਾੱਪ-ਲੈੱਵਲ ਡੋਮੇਨ ਦੇਸ਼ ਕੋਡ ਹੈ ਇਹ ਡੋਮੇਨ ਏ ਐਫ ਜੀ ਐਨ ਆਈ ਸੀ ਦੇ ਦੁਆਰਾ ਚਲਾਇਆ ਜਾਂਦਾ ਹੈ, ਜੋ ਅਫਗਾਨੀ ਸਰਕਾਰ ਅਤੇ ਯੂਨਾਈਟਡ ਨੇਸ਼ਨਜ਼ ਦੇ ਥੱਲੇ ਆਂਦਾ ਹੈ'.split(' ')
+    const newString = sw.removeStopwords(oldString, sw.br)
+    newString.should.eql(['ਅਫਗਾਨੀਸਤਾਨ', 'ਦੇ', 'ਲਈ', 'ਇੰਟਰਨੈੱਟ', 'ਦਾ', 'ਟਾੱਪ-ਲੈੱਵਲ', 'ਡੋਮੇਨ', 'ਦੇਸ਼', 'ਕੋਡ', 'ਹੈ', 'ਇਹ', 'ਡੋਮੇਨ', 'ਏ', 'ਐਫ', 'ਜੀ', 'ਐਨ', 'ਆਈ', 'ਸੀ', 'ਦੇ', 'ਦੁਆਰਾ', 'ਚਲਾਇਆ', 'ਜਾਂਦਾ', 'ਹੈ,', 'ਜੋ', 'ਅਫਗਾਨੀ', 'ਸਰਕਾਰ', 'ਅਤੇ', 'ਯੂਨਾਈਟਡ', 'ਨੇਸ਼ਨਜ਼', 'ਦੇ', 'ਥੱਲੇ', 'ਆਂਦਾ', 'ਹੈ'])
+  })
+  
+  
   // Right to Left languages
   it('should remove arabic stopwords', function () {
     const oldString = 'ورغم أن الحملة توقفت بقينا نتسلق سلّم الأمل نظن أن الحكومة تسبقنا نحو القمة لكننا صعقنا بتوقف الحملة عند أسماء بعينها وكأن الفساد اقتصر على شفيق جراية ومن معه من مهربين؛ لكن الأفظع هو أن ملف شفيق جراية ليس ملف فساد بل ملف تآمر وهو ما يعني أنّ الحكومة غالطت الجميع وجندت التونسيين لحرب واهية تجاهلت فيها الفساد الحقيقي الذي ظهر على شخصيات كثيرة في مقدمتها الأمين العام لحركة مشروع تونس محسن مرزوق'.split(' ')

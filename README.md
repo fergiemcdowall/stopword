@@ -67,9 +67,12 @@ Arrays of stopwords for the following languages are supplied:
 * `no` - Norwegian
 * `pl` - Polish
 * `pt` - Portuguese
+* `pa-in` - Punjab Gurmukhi*
 * `ru` - Russian
 * `sv` - Swedish
 * `zh` - Chinese Simplified
+
+*Frequency sorted list 
 
 ```javascript
 sw = require('stopword')
