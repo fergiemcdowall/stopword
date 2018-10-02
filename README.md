@@ -67,7 +67,7 @@ Arrays of stopwords for the following languages are supplied:
 * `no` - Norwegian
 * `pl` - Polish
 * `pt` - Portuguese
-* `pa-in` - Punjab Gurmukhi
+* `pa_in` - Punjab Gurmukhi
 * `ru` - Russian
 * `sv` - Swedish
 * `zh` - Chinese Simplified
