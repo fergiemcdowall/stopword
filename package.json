@@ -1,7 +1,7 @@
 {
   "name": "stopword",
   "version": "0.1.13",
-  "description": "A module for node.js that takes in text and returns text that is stripped of stopwords. Has pre-defined stopword lists for 19 languages and also takes lists with custom stopwords as input.",
+  "description": "A module for node.js that takes in text and returns text that is stripped of stopwords. Has pre-defined stopword lists for 20 languages and also takes lists with custom stopwords as input.",
   "main": "lib/stopword.js",
   "scripts": {
     "test": "mocha"
