@@ -37,9 +37,9 @@ describe('general stopwordiness:', function () {
   })
 
   it('should remove norwegian stopwords', function () {
-    const oldString = 'dette er en tekst som har nørske tegn øæåø øæåø æææ'.split(' ')
+    const oldString = 'dette er en tekst som har norske tegn øæåø øæåø æææ'.split(' ')
     const newString = sw.removeStopwords(oldString, sw.no)
-    newString.should.eql([ 'tekst', 'nørske', 'tegn', 'øæåø', 'øæåø', 'æææ' ])
+    newString.should.eql([ 'tekst', 'norske', 'tegn', 'øæåø', 'øæåø', 'æææ' ])
   })
 
   it('should remove swedish stopwords and preserve case', function () {
@@ -138,6 +138,12 @@ describe('general stopwordiness:', function () {
     const oldString = 'ਅਫਗਾਨੀਸਤਾਨ ਦੇ ਲਈ ਇੰਟਰਨੈੱਟ ਦਾ ਟਾੱਪ-ਲੈੱਵਲ ਡੋਮੇਨ ਦੇਸ਼ ਕੋਡ ਹੈ ਇਹ ਡੋਮੇਨ ਏ ਐਫ ਜੀ ਐਨ ਆਈ ਸੀ ਦੇ ਦੁਆਰਾ ਚਲਾਇਆ ਜਾਂਦਾ ਹੈ, ਜੋ ਅਫਗਾਨੀ ਸਰਕਾਰ ਅਤੇ ਯੂਨਾਈਟਡ ਨੇਸ਼ਨਜ਼ ਦੇ ਥੱਲੇ ਆਂਦਾ ਹੈ'.split(' ')
     const newString = sw.removeStopwords(oldString, sw.pa_in)
     newString.should.eql(['ਅਫਗਾਨੀਸਤਾਨ', 'ਇੰਟਰਨੈੱਟ', 'ਟਾੱਪ-ਲੈੱਵਲ', 'ਡੋਮੇਨ', 'ਕੋਡ', 'ਡੋਮੇਨ', 'ਐਫ', 'ਐਨ', 'ਚਲਾਇਆ', 'ਹੈ,', 'ਅਫਗਾਨੀ', 'ਯੂਨਾਈਟਡ', 'ਨੇਸ਼ਨਜ਼', 'ਥੱਲੇ', 'ਆਂਦਾ'])
+  })
+
+  it('should remove myanmar stopwords', function () {
+    const oldString = ''.split(' ')
+    const newString = sw.removeStopwords(oldString, sw.my)
+    newString.should.eql([''])
   })
   
   
