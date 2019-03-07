@@ -60,7 +60,7 @@ Arrays of stopwords for the following languages are supplied:
 * `es` - Spanish
 * `fa` - Farsi
 * `fr` - French
-* 'he' - Hebrew
+* `he` - Hebrew
 * `hi` - Hindi
 * `it` - Italian
 * `ja` - Japanese
