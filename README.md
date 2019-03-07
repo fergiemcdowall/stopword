@@ -60,6 +60,7 @@ Arrays of stopwords for the following languages are supplied:
 * `es` - Spanish
 * `fa` - Farsi
 * `fr` - French
+* 'he' - Hebrew
 * `hi` - Hindi
 * `it` - Italian
 * `ja` - Japanese
@@ -96,26 +97,6 @@ sw = require('stopword')
 var text = sw.removeStopwords(text[, stopwords])
 // text is now an array of given words minus specified stopwords
 ```
-
-
-## Release Notes:
-
-version 0.0.4, `removeStopwords` returns an Array, since this
-removes ambiguity around separators.
-
-version 0.1.0 `getStopwords` removed in favour of constants. `removeStopwords` takes text as an Array
-
-version 0.1.2 Updated to ES6 simplified syntax
-
-version 0.1.5 Making syntax ES5 compatible again
-
-version 0.1.7 Brazilian Portuguese added
-
-version 0.1.8 Documenting how to use custom stopword lists
-
-version 0.1.9 Longer Brazilian Portuguese stopword list w/ duplicates removed
-
-version 0.1.10 Updating from testing on version 4,5 and 6 to version 4,6,8 and 9 of Node.js
 
 [license-image]: http://img.shields.io/badge/license-MIT-blue.svg?style=flat
 [license-url]: LICENSE
