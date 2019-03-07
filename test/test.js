@@ -145,6 +145,13 @@ describe('general stopwordiness:', function () {
     const newString = sw.removeStopwords(oldString, sw.my)
     newString.should.eql([''])
   })
+
+  it('should remove swahili stopwords', function () {
+    const oldString = 'kila mtu anaweza kuhariri makala yoyote kutoa makosa ya lugha kutohoa maneno na kuendeleza na kukuza makala kwa kuandika kwa ufupi au kwa urefu'.split(' ')
+    const newString = sw.removeStopwords(oldString, sw.sw)
+    newString.should.eql(['mtu','anaweza','kuhariri','makala','yoyote','makosa','lugha','kutohoa','maneno','kuendeleza','kukuza','makala','kuandika','ufupi','urefu'])
+  })
+
   
   
   // Right to Left languages

@@ -71,6 +71,7 @@ Arrays of stopwords for the following languages are supplied:
 * `pa_in` - Punjabi Gurmukhi
 * `ru` - Russian
 * `sv` - Swedish
+* `sw` - Swahili
 * `zh` - Chinese Simplified
 
 ```javascript
