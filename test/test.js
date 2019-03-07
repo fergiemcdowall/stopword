@@ -160,6 +160,12 @@ describe('general stopwordiness:', function () {
     newString.should.eql([ 'در' ,'این' ,'بیانیه' ,'آمده' ,'است' ,'که' ,'اتو' ,'قادر' ,'به' ,'صحبت' ,'کردن،' ,'قادر' ,'به' ,'دیدن' ,'قادر' ,'به', 'عکس' ,'العمل' ,'نشان' ,'دادن' ,'به' ,'درخواست' ,'های' ,'شفاهی' ,'نبود' ])
   })
 
+  it('should remove farsi stopwords and preserve case', function () {
+    const oldString = 'אז מה קורה חברים אני מחר הולך לטייל בבוקר'.split(' ')
+    const newString = sw.removeStopwords(oldString, sw.he)
+    newString.should.eql([ 'קורה', 'חברים', 'מחר', 'הולך', 'לטייל', 'בבוקר' ])
+  })
+
 })
 
 describe('error handling', function () {
