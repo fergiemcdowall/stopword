@@ -59,8 +59,8 @@ Arrays of stopwords for the following  23 languages are supplied:
 * `en` - English
 * `es` - Spanish
 * `fa` - Farsi
-* `fr` - French
 * `fi` - Finnish
+* `fr` - French
 * `he` - Hebrew
 * `hi` - Hindi
 * `it` - Italian
