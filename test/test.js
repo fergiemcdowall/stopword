@@ -152,6 +152,12 @@ describe('general stopwordiness:', function () {
     newString.should.eql(['mtu','anaweza','kuhariri','makala','yoyote','makosa','lugha','kutohoa','maneno','kuendeleza','kukuza','makala','kuandika','ufupi','urefu'])
   })
 
+  it('should remove finnish stopwords', function () {
+    const oldString = 'vuonna 1502 kristoffer kolumbus saapui hondurasin rannikolle ja antoi sille sen nykyisen nimen'.split(' ')
+    const newString = sw.removeStopwords(oldString, sw.fi)
+    newString.should.eql(['1502','kristoffer','kolumbus','saapui','hondurasin','rannikolle','antoi','sille','nykyisen','nimen'])
+  })
+
   
   
   // Right to Left languages
