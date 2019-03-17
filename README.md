@@ -49,7 +49,7 @@ const newString = sw.removeStopwords(oldString, [ 'even', 'a', 'custom', 'stopwo
 
 ### &lt;language code&gt;
 
-Arrays of stopwords for the following languages are supplied: 
+Arrays of stopwords for the following  23 languages are supplied: 
 
 * `ar` - Modern Standard Arabic
 * `bn` - Bengali
