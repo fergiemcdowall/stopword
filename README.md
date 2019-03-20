@@ -73,6 +73,7 @@ Arrays of stopwords for the following  23 languages are supplied:
 * `ru` - Russian
 * `sv` - Swedish
 * `sw` - Swahili
+* `yo` - Yorùbá
 * `zh` - Chinese Simplified
 
 ```javascript

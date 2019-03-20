@@ -158,6 +158,12 @@ describe('general stopwordiness:', function () {
     newString.should.eql(['1502','kristoffer','kolumbus','saapui','hondurasin','rannikolle','antoi','sille','nykyisen','nimen'])
   })
 
+  it('should remove Yorùbá stopwords', function () {
+    const oldString = 'jẹ́ ẹ̀gbà ọrùn tí wọ́n gbẹ́ lére tí ó sì jẹ́ àwòrán akọni obìrin tí a mọ̀ si ìyá wa olorì idia ti ọ̀rundún mẹ́rìndínlógún ṣẹ́yìn'.split(' ')
+    const newString = sw.removeStopwords(oldString, sw.yo)
+    newString.should.eql(['ẹ̀gbà', 'ọrùn', 'gbẹ́', 'lére', 'àwòrán', 'akọni', 'obìrin', 'mọ̀', 'si', 'ìyá', 'wa', 'olorì', 'idia', 'ọ̀rundún', 'mẹ́rìndínlógún', 'ṣẹ́yìn'])
+  })
+
   
   
   // Right to Left languages
