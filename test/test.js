@@ -164,6 +164,24 @@ describe('general stopwordiness:', function () {
     newString.should.eql(['ẹ̀gbà', 'ọrùn', 'gbẹ́', 'lére', 'àwòrán', 'akọni', 'obìrin', 'mọ̀', 'si', 'ìyá', 'wa', 'olorì', 'idia', 'ọ̀rundún', 'mẹ́rìndínlógún', 'ṣẹ́yìn'])
   })
 
+  it('should remove zulu stopwords', function () {
+    const oldString = 'ukhisimusi isikhathi esiletha injabulo kubantu abaningi emhlabeni jikelele lesi sikhathi senza ukuba kube khona ukuhlangana nemindeni okudala yagcinana kuhlalwe kuphunyulwe futhi kuncokolwe'.split(' ')
+    const newString = sw.removeStopwords(oldString, sw.zu)
+    newString.should.eql(['ukhisimusi', 'isikhathi', 'esiletha', 'injabulo', 'kubantu', 'abaningi', 'emhlabeni', 'jikelele', 'lesi', 'sikhathi', 'senza', 'kube', 'ukuhlangana', 'nemindeni', 'okudala', 'yagcinana', 'kuhlalwe', 'kuphunyulwe', 'kuncokolwe'])
+  })
+
+  it('should remove sotho stopwords', function () {
+    const oldString = 'ke boloetse ba batho bo bokwang ke kokwanahloko ya ebola matshwao hantlentle a qala matsatsi a mabedi ho isa ho a mararo ka mora ho tshwaetswa ke kokwanahloko'.split(' ')
+    const newString = sw.removeStopwords(oldString, sw.st)
+    newString.should.eql(['boloetse', 'batho', 'bo', 'bokwang', 'kokwanahloko', 'ya', 'ebola', 'matshwao', 'hantlentle', 'qala', 'matsatsi', 'mabedi', 'isa', 'mararo', 'mora', 'tshwaetswa', 'kokwanahloko'])
+  })
+
+  it('should remove somali stopwords', function () {
+    const oldString = 'isku celcelis qaarada antarktika waa tan ugu qaboow qalalsan ee ugu dabaysha badan qaaradaha caalamka oo dhan'.split(' ')
+    const newString = sw.removeStopwords(oldString, sw.so)
+    newString.should.eql(['celcelis', 'qaarada', 'antarktika', 'tan', 'qaboow', 'qalalsan', 'ee', 'dabaysha', 'badan', 'qaaradaha', 'caalamka'])
+  })
+
   
   
   // Right to Left languages
