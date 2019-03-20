@@ -69,11 +69,11 @@ Arrays of stopwords for the following 24 languages are supplied:
 * `no` - Norwegian
 * `pl` - Polish
 * `pt` - Portuguese
-* `pa_in` - Punjabi Gurmukhi
+* `pa` - Punjabi Gurmukhi
 * `ru` - Russian
 * `sv` - Swedish
 * `sw` - Swahili
-* `yo` - Yorùbá
+* `yo` - Yoruba
 * `zh` - Chinese Simplified
 
 ```javascript

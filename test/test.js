@@ -136,7 +136,7 @@ describe('general stopwordiness:', function () {
   
   it('should remove punjabi gurmukhi stopwords', function () {
     const oldString = 'ਅਫਗਾਨੀਸਤਾਨ ਦੇ ਲਈ ਇੰਟਰਨੈੱਟ ਦਾ ਟਾੱਪ-ਲੈੱਵਲ ਡੋਮੇਨ ਦੇਸ਼ ਕੋਡ ਹੈ ਇਹ ਡੋਮੇਨ ਏ ਐਫ ਜੀ ਐਨ ਆਈ ਸੀ ਦੇ ਦੁਆਰਾ ਚਲਾਇਆ ਜਾਂਦਾ ਹੈ, ਜੋ ਅਫਗਾਨੀ ਸਰਕਾਰ ਅਤੇ ਯੂਨਾਈਟਡ ਨੇਸ਼ਨਜ਼ ਦੇ ਥੱਲੇ ਆਂਦਾ ਹੈ'.split(' ')
-    const newString = sw.removeStopwords(oldString, sw.pa_in)
+    const newString = sw.removeStopwords(oldString, sw.pa)
     newString.should.eql(['ਅਫਗਾਨੀਸਤਾਨ', 'ਇੰਟਰਨੈੱਟ', 'ਟਾੱਪ-ਲੈੱਵਲ', 'ਡੋਮੇਨ', 'ਕੋਡ', 'ਡੋਮੇਨ', 'ਐਫ', 'ਐਨ', 'ਚਲਾਇਆ', 'ਹੈ,', 'ਅਫਗਾਨੀ', 'ਯੂਨਾਈਟਡ', 'ਨੇਸ਼ਨਜ਼', 'ਥੱਲੇ', 'ਆਂਦਾ'])
   })
 
@@ -158,7 +158,7 @@ describe('general stopwordiness:', function () {
     newString.should.eql(['1502','kristoffer','kolumbus','saapui','hondurasin','rannikolle','antoi','sille','nykyisen','nimen'])
   })
 
-  it('should remove Yorùbá stopwords', function () {
+  it('should remove yoruba stopwords', function () {
     const oldString = 'jẹ́ ẹ̀gbà ọrùn tí wọ́n gbẹ́ lére tí ó sì jẹ́ àwòrán akọni obìrin tí a mọ̀ si ìyá wa olorì idia ti ọ̀rundún mẹ́rìndínlógún ṣẹ́yìn'.split(' ')
     const newString = sw.removeStopwords(oldString, sw.yo)
     newString.should.eql(['ẹ̀gbà', 'ọrùn', 'gbẹ́', 'lére', 'àwòrán', 'akọni', 'obìrin', 'mọ̀', 'si', 'ìyá', 'wa', 'olorì', 'idia', 'ọ̀rundún', 'mẹ́rìndínlógún', 'ṣẹ́yìn'])
