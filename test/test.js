@@ -187,8 +187,31 @@ describe('general stopwordiness:', function () {
     const newString = sw.removeStopwords(oldString, sw.vi)
     newString.should.eql(['Đà', 'Lạt', 'luôn', 'hiện', 'một', 'thành', 'phố', 'nghỉ', 'dưỡng', 'miền', 'núi', 'kiểu', 'mẫu', 'cảnh', 'quan', 'thiên', 'nhiên', 'tươi', 'đẹp'])
   })
-  
-  
+
+  it('should remove lugbara (without diacritics) stopwords', function () {
+    const oldString = 'ri kome izu ni ma dria ri enya nya kabele izu ni si ku I vile akuri ra mu a\'a oce ambu ni ma talaa a\'a di idri ru eli izu'.split(' ')
+    const newString = sw.removeStopwords(oldString, sw.lgg)
+    newString.should.eql(['kome', 'izu', 'enya', 'nya', 'kabele', 'izu', 'akuri', 'a\'a', 'oce', 'ambu', 'talaa', 'a\'a', 'idri', 'eli', 'izu'])
+  })
+
+  it('should remove lugbara official (with diacritics) stopwords', function () {
+    const oldString = 'rɨ kómé èzʉ́ ni mà drìá, rɨ nyaká nyá kà\'bèlé èzʉ́ nɨ sɨ ̀ Kʉ \'ɨ ́ vɨ ́lé àkú rɨ ̀ rá mu a\'á òce àzɨ ́ àmbú nɨ mà táláá a\'á élɨ ́ èzʉ́'.split(' ')
+    const newString = sw.removeStopwords(oldString, sw.lggo)
+    newString.should.eql(['kómé', 'èzʉ́', 'ni', 'drìá,', 'nyaká', 'nyá', 'kà\'bèlé', 'èzʉ́', '\'ɨ', '́lé', 'àkú', 'mu', 'a\'á', 'òce', 'àmbú', 'táláá', 'a\'á', 'élɨ', 'èzʉ́'])
+  })
+
+  it('should remove hausa stopwords', function () {
+    const oldString = 'zaku iya rubutawa da ingantawa ko kuma ƙirƙiran sabbin muƙaloli kamar yadda kuke gani dan taimako wurin rubuta kundin Ilimi na Insakulofidiya wadda ke taskance ilimi dan masu karatu da yin bincike a harshen Hausa'.split(' ')
+    const newString = sw.removeStopwords(oldString, sw.ha)
+    newString.should.eql(['zaku', 'iya', 'rubutawa', 'ingantawa', 'ƙirƙiran', 'sabbin', 'muƙaloli', 'kamar', 'yadda', 'kuke', 'gani', 'dan', 'taimako', 'wurin', 'rubuta', 'kundin', 'Ilimi', 'Insakulofidiya', 'wadda', 'ke', 'taskance', 'ilimi', 'dan', 'masu', 'karatu', 'yin', 'bincike', 'harshen', 'Hausa'])
+  })
+
+  it('should remove afrikaans stopwords', function () {
+    const oldString = 'alhoewel die oop see sowat een uur per motor van Bremen af lê is die getye op die Weserrivier twee keer per dag duidelik waarneembaar'.split(' ')
+    const newString = sw.removeStopwords(oldString, sw.af)
+    newString.should.eql(['alhoewel', 'oop', 'see', 'sowat', 'uur', 'per', 'motor', 'Bremen', 'af', 'lê', 'getye', 'Weserrivier', 'twee', 'keer', 'per', 'dag', 'duidelik', 'waarneembaar'])
+  })
+
   
   // Right to Left languages
   it('should remove arabic stopwords', function () {
