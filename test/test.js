@@ -182,6 +182,12 @@ describe('general stopwordiness:', function () {
     newString.should.eql(['celcelis', 'qaarada', 'antarktika', 'tan', 'qaboow', 'qalalsan', 'ee', 'dabaysha', 'badan', 'qaaradaha', 'caalamka'])
   })
 
+  it('should remove vietnamese stopwords', function () {
+    const oldString = 'Đà Lạt luôn hiện lên như một thành phố nghỉ dưỡng miền núi kiểu mẫu với cảnh quan thiên nhiên tươi đẹp'.split(' ')
+    const newString = sw.removeStopwords(oldString, sw.vi)
+    newString.should.eql(['Đà', 'Lạt', 'luôn', 'hiện', 'một', 'thành', 'phố', 'nghỉ', 'dưỡng', 'miền', 'núi', 'kiểu', 'mẫu', 'cảnh', 'quan', 'thiên', 'nhiên', 'tươi', 'đẹp'])
+  })
+  
   
   
   // Right to Left languages
