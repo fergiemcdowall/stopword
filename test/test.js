@@ -212,6 +212,12 @@ describe('general stopwordiness:', function () {
     newString.should.eql(['alhoewel', 'oop', 'see', 'sowat', 'uur', 'per', 'motor', 'Bremen', 'af', 'lê', 'getye', 'Weserrivier', 'twee', 'keer', 'per', 'dag', 'duidelik', 'waarneembaar'])
   })
 
+  it('should remove indonesian stopwords', function () {
+    const oldString = 'seorang anak perempuan di Bantul Yogyakarta sedang memasak nasi dengan bantuan tungku'.split(' ')
+    const newString = sw.removeStopwords(oldString, sw.id)
+    newString.should.eql(['anak', 'perempuan', 'Bantul', 'Yogyakarta', 'memasak', 'nasi', 'bantuan', 'tungku'])
+  })
+
   
   // Right to Left languages
   it('should remove arabic stopwords', function () {
