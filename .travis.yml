@@ -3,5 +3,6 @@ node_js:
 - '6'
 - '8'
 - '10'
+- '12'
 notifications:
   slack: norch:wLsHiXjnAH5BdtTq3qtAqGp7
