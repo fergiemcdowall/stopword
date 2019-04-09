@@ -21,9 +21,9 @@
     "nlp"
   ],
   "devDependencies": {
-    "mocha": "2.2.1",
-    "should": "5.2.0",
-    "standard": "^6.0.8"
+    "mocha": "^6.1.2",
+    "should": "^13.2.3",
+    "standard": "^12.0.1"
   },
   "author": "Fergus McDowall",
   "license": "MIT",
