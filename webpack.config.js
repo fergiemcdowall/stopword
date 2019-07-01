@@ -20,7 +20,7 @@ const glob = require('glob')
   
 module.exports = {
     mode: 'production',
-    entry: glob.sync('./test/test.js'),
+    entry: glob.sync('./test/test-tape.js'),
     output: {
       path: path.resolve(__dirname, './test/sandbox'),
       filename: 'bundle.js'
