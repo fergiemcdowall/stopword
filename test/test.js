@@ -4,7 +4,7 @@
 const should = require('should')
 const sw = require('../lib/stopword.js')
 
-describe('Node tests - General stopwordiness:', function () {
+describe('Testing general stopwordiness:', function () {
   it('should remove stopwords, should default to english, should preserve case', function () {
     const oldString = 'a really Interesting string with some words'.split(' ')
     const newString = sw.removeStopwords(oldString)

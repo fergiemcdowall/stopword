@@ -5,7 +5,8 @@
   "main": "lib/stopword.js",
   "scripts": {
     "compile-for-browser": "webpack",
-    "test": "npm run compile-for-browser && mocha"
+    "empty-sandbox": "rm -rf test/sandbox && mkdir test/sandbox",
+    "test": "npm run empty-sandbox && npm run compile-for-browser && mocha ./test/test.js"
   },
   "repository": {
     "type": "git",
@@ -22,7 +23,7 @@
     "nlp"
   ],
   "devDependencies": {
-    "mocha": "^6.1.2",
+    "mocha": "^6.1.4",
     "should": "^13.2.3",
     "standard": "^12.0.1",
     "webpack": "^4.35.0",
