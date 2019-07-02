@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./mini-default.min.css">
+    <link rel="stylesheet" href="./mini-additions.css">
+    <script src="../dist/stopword.0.3.0.js"></script>
+    <title>Stopword browser example</title>
+  </head>
+
+  <body>
+    <div id="header">
+      <h1>Stopword browser example</h1>
+    </div>
+
+    <div id="addContainer">
+      <h2>Add text with stopwords</h2>
+      <label for="text">Text: </label>
+      <input type="text" id="text" placeholder="Add some text" /><br />
+    </div>
+
+    <!-- <div id="languageCode">
+      <label for="language"><a href="https://github.com/fergiemcdowall/stopword#language-code">Language code</a>: </label>
+      <input type="text" id="language" placeholder="" /> Defaults to english
+    </div> -->
+
+    <div id="newString">
+      <h2>Text with stopwords removed</h2>
+      <div id="stopwordsRemoved"> </div>
+    </div>
+
+    <script src="./stopword-app.js"></script>
+  </body>
+</html> 
