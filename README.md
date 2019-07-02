@@ -1,5 +1,5 @@
 # stopword
-`stopword` is a node module that allows you to strip stopwords from an
+`stopword` is a module for node and the browser that allows you to strip stopwords from an
 input text. [In natural language processing, "Stopwords" are words
 that are so frequent that they can safely be removed from a text
 without altering its
