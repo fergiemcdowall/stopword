@@ -12,7 +12,27 @@ meaning.](https://en.wikipedia.org/wiki/Stop_words)
 [![Build Status][travis-image]][travis-url]
 
 
+## Demo
+
+Live [stopword browser demo](http://fergiemcdowall.github.io/stopword/demo/).
+
 ## Usage
+
+### Node.js
+```javascript
+sw = require('stopword')
+// sw.removeStopwords and sw.[language code] now available
+```
+
+### Script tag method
+```html
+<script src="stopword.js"></script>
+
+<script>
+// sw.removeStopwords and sw.[language code] now available
+</script>
+```
+
 
 ### Default (English)
 By default, `stopword` will strip an array of "meaningless" English words
@@ -46,6 +66,19 @@ const newString = sw.removeStopwords(oldString, [ 'even', 'a', 'custom', 'stopwo
 ```
 
 ## API
+
+### removeStopwords
+
+Returns an Array that represents the text with the specified stopwords removed.
+
+* `text` An array of words
+* `stopwords` An array of stopwords
+
+```javascript
+sw = require('stopword')
+var text = sw.removeStopwords(text[, stopwords])
+// text is now an array of given words minus specified stopwords
+```
 
 ### &lt;language code&gt;
 
@@ -97,18 +130,6 @@ norwegianStopwords = sw.no
 #### Your language missing?
 If you can't find a stopword file for your language, you can try creating one with [`stopword-trainer`](https://github.com/eklem/stopword-trainer). We're happy to help you in the process.
 
-### removeStopwords
-
-Returns an Array that represents the text with the specified stopwords removed.
-
-* `text` An array of words
-* `stopwords` An array of stopwords
-
-```javascript
-sw = require('stopword')
-var text = sw.removeStopwords(text[, stopwords])
-// text is now an array of given words minus specified stopwords
-```
 
 [license-image]: http://img.shields.io/badge/license-MIT-blue.svg?style=flat
 [license-url]: LICENSE
