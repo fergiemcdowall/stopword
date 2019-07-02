@@ -9,6 +9,13 @@ test('remove stopwords, default to english and preserve case', function (t) {
   t.looseEqual(newString, [ 'really', 'Interesting', 'string', 'words' ]);
 })
 
+test('throw an error if specified language is not supported', function (t) {
+  t.throws(function () {
+    t.plan(1)
+    sw.getStopwords('xx')
+  })
+})
+
 test('remove custom stopwords', function (t) {
   t.plan(1);
   const oldString = 'a really interesting string with some words'.split(' ')
@@ -271,17 +278,3 @@ test('remove hebrew stopwords and preserve case', function (t) {
   const newString = sw.removeStopwords(oldString, sw.he)
   t.looseEqual(newString, [ 'קורה', 'חברים', 'מחר', 'הולך', 'לטייל', 'בבוקר' ])
 })
-
-// Error handling
-// test('return throw an error if specified language is not supported', function (t) {
-//   t.plan(1)
-//   t.looseEqual(newString, );
-// })
-
-// describe('error handling', function () {
-//   it('should return throw an error if specified language is not supported', function () {
-//     (function () {
-//       sw.getStopwords('xx')
-//     }).should.throw()
-//   })
-// })
