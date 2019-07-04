@@ -5,16 +5,12 @@ that are so frequent that they can safely be removed from a text
 without altering its
 meaning.](https://en.wikipedia.org/wiki/Stop_words)
 
-![wonderful day stopword module](./demo/stopword-demo.gif)
-
 [![NPM version][npm-version-image]][npm-url]
 [![NPM downloads][npm-downloads-image]][npm-url]
 [![MIT License][license-image]][license-url]
 [![Build Status][travis-image]][travis-url]
 
-
-## Demo
-
+![wonderful day stopword module](./demo/stopword-demo.gif)
 Live [stopword browser demo](http://fergiemcdowall.github.io/stopword/demo/).
 
 ## Usage
