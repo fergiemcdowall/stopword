@@ -11,6 +11,7 @@ meaning.](https://en.wikipedia.org/wiki/Stop_words)
 [![Build Status][travis-image]][travis-url]
 
 ![wonderful day stopword module](./demo/stopword-demo.gif)
+
 Live [stopword browser demo](http://fergiemcdowall.github.io/stopword/demo/).
 
 ## Usage
