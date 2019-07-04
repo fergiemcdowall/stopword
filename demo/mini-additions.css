@@ -2,21 +2,31 @@ h1, h2, h3, h4, h5, h6 {
   margin-left:0px;
 }
 
+h2 {
+  line-height:1em;
+  margin-top:5px;
+  margin-bottom:5px;
+}
+
 #header {
-  padding-left:20px;
+  padding-left:10px;
 }
 
 #addContainer {
   background:#cccccc;
-  padding:20px;
+  padding:10px;
 }
 
-
 #newString {
-  padding: 20px;
+  padding: 10px;
   background: #eeeeee;
+}
+#stopwordsRemoved span {
+  font-size:1.2rem;
 }
 
 input#text {
-  width:90%;
+  width:100%;
+  font-size:1.2rem;
+  margin-left:0;
 }

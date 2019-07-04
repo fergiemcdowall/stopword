@@ -3,7 +3,7 @@ const populateStopwordsRemoved = function(result) {
   console.log('Boom')
   console.log(result)
   const node = document.createElement('span')
-  node.innerHTML = '<div>' + result + '</div>'
+  node.innerHTML = result
   emptyElement('stopwordsRemoved')
   document.getElementById('stopwordsRemoved').appendChild(node)
 }
