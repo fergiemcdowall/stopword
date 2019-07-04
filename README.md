@@ -5,6 +5,7 @@ that are so frequent that they can safely be removed from a text
 without altering its
 meaning.](https://en.wikipedia.org/wiki/Stop_words)
 
+![wonderful day stopword module](./demo/stopword-demo.gif)
 
 [![NPM version][npm-version-image]][npm-url]
 [![NPM downloads][npm-downloads-image]][npm-url]
