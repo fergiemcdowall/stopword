@@ -3,10 +3,10 @@ const test = require('tape')
 
 
 test('remove stopwords, default to english and preserve case', function (t) {
-  t.plan(1);
+  t.plan(1)
   const oldString = 'a really Interesting string with some words'.split(' ')
   const newString = sw.removeStopwords(oldString)
-  t.looseEqual(newString, [ 'really', 'Interesting', 'string', 'words' ]);
+  t.looseEqual(newString, [ 'really', 'Interesting', 'string', 'words' ])
 })
 
 test('throw an error if specified language is not supported', function (t) {
@@ -17,10 +17,10 @@ test('throw an error if specified language is not supported', function (t) {
 })
 
 test('remove custom stopwords', function (t) {
-  t.plan(1);
+  t.plan(1)
   const oldString = 'a really interesting string with some words'.split(' ')
   const newString = sw.removeStopwords(oldString, ['interesting'])
-  t.looseEqual(newString, [ 'a', 'really', 'string', 'with', 'some', 'words' ]);
+  t.looseEqual(newString, [ 'a', 'really', 'string', 'with', 'some', 'words' ])
 })
 
 test('not remove any stopwords', function (t) {
@@ -262,7 +262,7 @@ test('remove arabic stopwords', function (t) {
   t.plan(1)
   const oldString = 'ورغم أن الحملة توقفت بقينا نتسلق سلّم الأمل نظن أن الحكومة تسبقنا نحو القمة لكننا صعقنا بتوقف الحملة عند أسماء بعينها وكأن الفساد اقتصر على شفيق جراية ومن معه من مهربين؛ لكن الأفظع هو أن ملف شفيق جراية ليس ملف فساد بل ملف تآمر وهو ما يعني أنّ الحكومة غالطت الجميع وجندت التونسيين لحرب واهية تجاهلت فيها الفساد الحقيقي الذي ظهر على شخصيات كثيرة في مقدمتها الأمين العام لحركة مشروع تونس محسن مرزوق'.split(' ')
   const newString = sw.removeStopwords(oldString, sw.ar)
-  t.looseEqual(newString, [ 'ورغم' ,'الحملة' ,'توقفت' ,'بقينا' ,'نتسلق' ,'سلّم' ,'الأمل' ,'نظن' ,'الحكومة' ,'تسبقنا' ,'القمة' ,'لكننا' ,'صعقنا' ,'بتوقف' ,'الحملة' ,'أسماء' ,'بعينها' ,'وكأن' ,'الفساد' ,'اقتصر' ,'شفيق' ,'جراية' ,'معه' ,'مهربين؛' ,'الأفظع' ,'ملف' ,'شفيق' ,'جراية' ,'ليس' ,'ملف' ,'فساد' ,'ملف' ,'تآمر' ,'يعني' ,'أنّ' ,'الحكومة' ,'غالطت' ,'الجميع' ,'وجندت' ,'التونسيين' ,'لحرب' ,'واهية' ,'تجاهلت' ,'الفساد' ,'الحقيقي' ,'ظهر' ,'شخصيات' ,'كثيرة' ,'مقدمتها' ,'الأمين' ,'العام' ,'لحركة' ,'مشروع' ,'تونس' ,'محسن' ,'مرزوق' ]);
+  t.looseEqual(newString, [ 'ورغم' ,'الحملة' ,'توقفت' ,'بقينا' ,'نتسلق' ,'سلّم' ,'الأمل' ,'نظن' ,'الحكومة' ,'تسبقنا' ,'القمة' ,'لكننا' ,'صعقنا' ,'بتوقف' ,'الحملة' ,'أسماء' ,'بعينها' ,'وكأن' ,'الفساد' ,'اقتصر' ,'شفيق' ,'جراية' ,'معه' ,'مهربين؛' ,'الأفظع' ,'ملف' ,'شفيق' ,'جراية' ,'ليس' ,'ملف' ,'فساد' ,'ملف' ,'تآمر' ,'يعني' ,'أنّ' ,'الحكومة' ,'غالطت' ,'الجميع' ,'وجندت' ,'التونسيين' ,'لحرب' ,'واهية' ,'تجاهلت' ,'الفساد' ,'الحقيقي' ,'ظهر' ,'شخصيات' ,'كثيرة' ,'مقدمتها' ,'الأمين' ,'العام' ,'لحركة' ,'مشروع' ,'تونس' ,'محسن' ,'مرزوق' ])
 })
 
 test('remove farsi stopwords and preserve case', function (t) {
