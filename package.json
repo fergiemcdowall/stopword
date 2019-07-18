@@ -23,9 +23,9 @@
     "nlp"
   ],
   "devDependencies": {
-    "standard": "^12.0.1",
-    "webpack": "^4.35.0",
-    "webpack-cli": "^3.3.5",
+    "standard": "^13.0.2",
+    "webpack": "^4.36.1",
+    "webpack-cli": "^3.3.6",
     "tape": "^4.11.0",
     "tape-run": "^6.0.0"
   },
