@@ -5,12 +5,24 @@ const glob = require('glob')
 module.exports =  [
   // Generating browser version of stopword
   {
-    mode: 'production',
+    mode: 'development',
     entry: './lib/stopword.js',
     output: {
       path: path.resolve(__dirname, 'dist'),
       filename: 'stopword.' + package.version+ '.js',
-      library: 'sw'
+      library: 'stopword'
+    },
+    devtool: "none", // prevent webpack from using eval() on my module
+  },
+
+  // Generating a latest browser version of stopword (same as latest version number)
+  {
+    mode: 'development',
+    entry: './lib/stopword.js',
+    output: {
+      path: path.resolve(__dirname, 'dist'),
+      filename: 'stopword.latest.js',
+      library: 'stopword'
     },
     devtool: "none", // prevent webpack from using eval() on my module
   },
