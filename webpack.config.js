@@ -5,7 +5,7 @@ const glob = require('glob')
 module.exports =  [
   // Generating browser version of stopword
   {
-    mode: 'development',
+    mode: 'production',
     entry: './lib/stopword.js',
     output: {
       path: path.resolve(__dirname, 'dist'),
@@ -17,7 +17,7 @@ module.exports =  [
 
   // Generating a latest browser version of stopword (same as latest version number)
   {
-    mode: 'development',
+    mode: 'production',
     entry: './lib/stopword.js',
     output: {
       path: path.resolve(__dirname, 'dist'),
