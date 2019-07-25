@@ -10,7 +10,7 @@ module.exports =  [
     output: {
       path: path.resolve(__dirname, 'dist'),
       filename: 'stopword.' + package.version+ '.js',
-      library: 'stopword'
+      library: 'sw'
     },
     devtool: "none", // prevent webpack from using eval() on my module
   },
@@ -22,7 +22,7 @@ module.exports =  [
     output: {
       path: path.resolve(__dirname, 'dist'),
       filename: 'stopword.latest.js',
-      library: 'stopword'
+      library: 'sw'
     },
     devtool: "none", // prevent webpack from using eval() on my module
   },
