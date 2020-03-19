@@ -285,6 +285,13 @@ test('remove bulgarian stopwords', function (t) {
   t.looseEqual(newString, ['генерал', 'Жуков', 'назначен', 'командир', 'Киевския', 'военен', 'окръг', 'Украйна', 'Баграмян', 'пише', 'писмо', 'моли', 'назначен', 'неговото', 'командване'])
 })
 
+test('remove catalan stopwords', function (t) {
+  t.plan(1)
+  const oldString = 'el candidat proposat exposa davant el Congrés dels Diputats el programa polític del Govern que pretengui formar i demana la confiança de la cambra'.split(' ')
+  const newString = sw.removeStopwords(oldString, sw.ca)
+  t.looseEqual(newString, ['candidat', 'proposat', 'exposa', 'davant', 'Congrés', 'Diputats', 'programa', 'polític', 'Govern', 'pretengui', 'formar', 'demana', 'confiança', 'cambra'])
+})
+
 // Right to Left languages
 test('remove arabic stopwords', function (t) {
   t.plan(1)
