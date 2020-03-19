@@ -337,7 +337,7 @@ test('remove hungarian stopwords', function (t) {
   t.plan(1)
   const oldString = 'ahogy a nyomozás során egyre több bizonyítékot és gyanúsítottat talál úgy fedezi fel politikai összeesküvések sorozatát és a Bábjátékos valódi azonosságát és céljait a film átfogó filozófiai témái közt a főszereplőn keresztül fontos szerepet kap az önazonosság egy technológiailag fejlett világban'.split(' ')
   const newString = sw.removeStopwords(oldString, sw.hu)
-  t.looseEqual(newString, [['nyomozás', 'bizonyítékot', 'gyanúsítottat', 'talál', 'fedezi', 'politikai', 'összeesküvések', 'sorozatát', 'Bábjátékos', 'valódi', 'azonosságát', 'céljait', 'film', 'átfogó', 'filozófiai', 'témái', 'közt', 'főszereplőn', 'fontos', 'szerepet', 'kap', 'önazonosság', 'technológiailag', 'fejlett', 'világban'])
+  t.looseEqual(newString, ['nyomozás', 'bizonyítékot', 'gyanúsítottat', 'talál', 'fedezi', 'politikai', 'összeesküvések', 'sorozatát', 'Bábjátékos', 'valódi', 'azonosságát', 'céljait', 'film', 'átfogó', 'filozófiai', 'témái', 'közt', 'főszereplőn', 'fontos', 'szerepet', 'kap', 'önazonosság', 'technológiailag', 'fejlett', 'világban'])
 })
 
 // Right to Left languages
