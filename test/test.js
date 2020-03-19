@@ -1,7 +1,6 @@
 const sw = require('../lib/stopword.js')
 const test = require('tape')
 
-
 test('remove stopwords, default to english and preserve case', function (t) {
   t.plan(1)
   const oldString = 'a really Interesting string with some words'.split(' ')
@@ -155,7 +154,7 @@ test('remove brazilian portuguese stopwords', function (t) {
   t.plan(1)
   const oldString = 'agora já são conhecidas as identidades de algumas das vítimas do incêndio de pedrógão grande em leiria que matou pessoas esta segunda-feira a embaixada de frança divulgou um comunicado onde confirma que um cidadão francês morreu no fogo de pedrógão'.split(' ')
   const newString = sw.removeStopwords(oldString, sw.ptbr)
-  t.looseEqual(newString, ['conhecidas' , 'identidades' , 'vítimas' , 'incêndio' , 'pedrógão' , 'leiria' , 'matou' , 'pessoas' , 'segunda-feira' , 'embaixada' , 'frança' , 'divulgou' , 'comunicado' , 'confirma' , 'cidadão' , 'francês' , 'morreu' , 'fogo' , 'pedrógão'])
+  t.looseEqual(newString, ['conhecidas', 'identidades', 'vítimas', 'incêndio', 'pedrógão', 'leiria', 'matou', 'pessoas', 'segunda-feira', 'embaixada', 'frança', 'divulgou', 'comunicado', 'confirma', 'cidadão', 'francês', 'morreu', 'fogo', 'pedrógão'])
 })
 
 test('remove punjabi gurmukhi stopwords', function (t) {
@@ -304,6 +303,13 @@ test('remove czech stopwords', function (t) {
   const oldString = 'ptakopysk má zploštělý zobák který je pokryt zrohovatělou ale citlivou kůží ježury mají válcovitý rypec oběma typům čenich slouží jak k vyhledávání potravy tak k určení místa kde se nachází'.split(' ')
   const newString = sw.removeStopwords(oldString, sw.cs)
   t.looseEqual(newString, ['ptakopysk', 'zploštělý', 'zobák', 'pokryt', 'zrohovatělou', 'citlivou', 'kůží', 'ježury', 'válcovitý', 'rypec', 'oběma', 'typům', 'čenich', 'slouží', 'vyhledávání', 'potravy', 'určení', 'místa', 'nachází'])
+})
+
+test('remove esperanto stopwords', function (t) {
+  t.plan(1)
+  const oldString = 'li mortiĝis kiam li estis 66jaraĝa en 1778 kaj liaj restoj estos metitaj en la Panteono fare de la Nacia Konvencio dum la Franca revolucio en 1794'.split(' ')
+  const newString = sw.removeStopwords(oldString, sw.eo)
+  t.looseEqual(newString, ['mortiĝis', 'kiam', '66jaraĝa', '1778', 'liaj', 'restoj', 'metitaj', 'Panteono', 'fare', 'Nacia', 'Konvencio', 'Franca', 'revolucio', '1794'])
 })
 
 // Right to Left languages
