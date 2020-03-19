@@ -278,6 +278,13 @@ test('remove breton stopwords', function (t) {
   t.looseEqual(newString, ['gallout', 'ra', 'pep', 'hini', 'ac’hanomp', 'klask', 'sevel', 'ar', 'pennadoù', 'vank', 'dimp', 'mankout', 'ra', 'dimp', 'ivez', 'pennadoù', 'hir', 'n\'hon', 'eus', 'nemet', '24', 'evit', 'ar', 'mare'])
 })
 
+test('remove bulgarian stopwords', function (t) {
+  t.plan(1)
+  const oldString = 'когато генерал Жуков е назначен за командир на Киевския военен окръг в Украйна Баграмян му пише писмо в което го моли да бъде назначен под неговото командване'.split(' ')
+  const newString = sw.removeStopwords(oldString, sw.bg)
+  t.looseEqual(newString, ['генерал', 'Жуков', 'назначен', 'командир', 'Киевския', 'военен', 'окръг', 'Украйна', 'Баграмян', 'пише', 'писмо', 'моли', 'назначен', 'неговото', 'командване'])
+})
+
 // Right to Left languages
 test('remove arabic stopwords', function (t) {
   t.plan(1)
