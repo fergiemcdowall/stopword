@@ -326,6 +326,13 @@ test('remove galician stopwords', function (t) {
   t.looseEqual(newString, ['máis', 'antigas', 'consistían', 'simple', 'torre', 'cadrada', 'muros', 'anchos', 'cara', 'século', 'XI', 'adquiriran', 'xa', 'características', 'típicas', 'forma', 'función', 'mudaron', 'tempo', 'variaban', 'rexión'])
 })
 
+test('remove greek stopwords', function (t) {
+  t.plan(1)
+  const oldString = 'eίναι σημαντικό ωστόσο ότι δεν υπάρχει καμία ομοφωνία στη χρονολογία του ψηφίσματος οι περισσότεροι ιστορικοί το τοποθετούν στο 433 άλλοι στο 432 και κάποιοι επιμένουν ότι μπορεί και να είναι πολύ μεταγενέστερο πιθανόν επειδή υπήρξαν και άλλα αντιμεγαρικά ψηφίσματα των Αθηναίων με αποτέλεσμα οι αρχαίοι ιστορικοί να τα συγχέουν'.split(' ')
+  const newString = sw.removeStopwords(oldString, sw.el)
+  t.looseEqual(newString, ['eίναι', 'σημαντικό', 'ωστόσο', 'ότι', 'υπάρχει', 'καμία', 'ομοφωνία', 'χρονολογία', 'ψηφίσματος', 'περισσότεροι', 'ιστορικοί', 'τοποθετούν', '433', 'άλλοι', '432', 'κάποιοι', 'επιμένουν', 'ότι', 'μπορεί', 'είναι', 'πολύ', 'μεταγενέστερο', 'πιθανόν', 'επειδή', 'υπήρξαν', 'άλλα', 'αντιμεγαρικά', 'ψηφίσματα', 'Αθηναίων', 'αποτέλεσμα', 'αρχαίοι', 'ιστορικοί', 'συγχέουν'])
+})
+
 // Right to Left languages
 test('remove arabic stopwords', function (t) {
   t.plan(1)
