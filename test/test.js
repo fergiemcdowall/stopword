@@ -315,8 +315,15 @@ test('remove esperanto stopwords', function (t) {
 test('remove estonian stopwords', function (t) {
   t.plan(1)
   const oldString = 'nad hakkavad puitu auke puurima kuid sealt hakkab vaiku välja voolama ja esimesed üraskid tavaliselt hukkuvad selles kui puu on nõrga tervisega siis tema vastupanuvõime ammendub peatselt ja siis suudavad üraskid end puu sisse närida'.split(' ')
-  const newString = sw.removeStopwords(oldString, sw.eo)
-  t.looseEqual(newString, ['nad', 'hakkavad', 'puitu', 'auke', 'puurima', 'kuid', 'sealt', 'hakkab', 'vaiku', 'välja', 'voolama', 'esimesed', 'üraskid', 'tavaliselt', 'hukkuvad', 'selles', 'kui', 'puu', 'on', 'nõrga', 'tervisega', 'siis', 'tema', 'vastupanuvõime', 'ammendub', 'peatselt', 'siis', 'suudavad', 'üraskid', 'end', 'puu', 'sisse', 'närida'])
+  const newString = sw.removeStopwords(oldString, sw.et)
+  t.looseEqual(newString, ['hakkavad', 'puitu', 'auke', 'puurima', 'kuid', 'sealt', 'hakkab', 'vaiku', 'välja', 'voolama', 'esimesed', 'üraskid', 'tavaliselt', 'hukkuvad', 'selles', 'puu', 'nõrga', 'tervisega', 'tema', 'vastupanuvõime', 'ammendub', 'peatselt', 'suudavad', 'üraskid', 'end', 'puu', 'sisse', 'närida'])
+})
+
+test('remove galician stopwords', function (t) {
+  t.plan(1)
+  const oldString = 'as máis antigas consistían nunha simple torre cadrada con muros anchos e cara o século XI adquiriran xa as características típicas a súa forma e función mudaron co tempo e variaban coa rexión'.split(' ')
+  const newString = sw.removeStopwords(oldString, sw.gl)
+  t.looseEqual(newString, ['máis', 'antigas', 'consistían', 'simple', 'torre', 'cadrada', 'muros', 'anchos', 'cara', 'século', 'XI', 'adquiriran', 'xa', 'características', 'típicas', 'forma', 'función', 'mudaron', 'tempo', 'variaban', 'rexión'])
 })
 
 // Right to Left languages
