@@ -312,6 +312,13 @@ test('remove esperanto stopwords', function (t) {
   t.looseEqual(newString, ['mortiĝis', 'kiam', '66jaraĝa', '1778', 'liaj', 'restoj', 'metitaj', 'Panteono', 'fare', 'Nacia', 'Konvencio', 'Franca', 'revolucio', '1794'])
 })
 
+test('remove estonian stopwords', function (t) {
+  t.plan(1)
+  const oldString = 'nad hakkavad puitu auke puurima kuid sealt hakkab vaiku välja voolama ja esimesed üraskid tavaliselt hukkuvad selles kui puu on nõrga tervisega siis tema vastupanuvõime ammendub peatselt ja siis suudavad üraskid end puu sisse närida'.split(' ')
+  const newString = sw.removeStopwords(oldString, sw.eo)
+  t.looseEqual(newString, ['nad', 'hakkavad', 'puitu', 'auke', 'puurima', 'kuid', 'sealt', 'hakkab', 'vaiku', 'välja', 'voolama', 'esimesed', 'üraskid', 'tavaliselt', 'hukkuvad', 'selles', 'kui', 'puu', 'on', 'nõrga', 'tervisega', 'siis', 'tema', 'vastupanuvõime', 'ammendub', 'peatselt', 'siis', 'suudavad', 'üraskid', 'end', 'puu', 'sisse', 'närida'])
+})
+
 // Right to Left languages
 test('remove arabic stopwords', function (t) {
   t.plan(1)
