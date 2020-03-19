@@ -292,6 +292,13 @@ test('remove catalan stopwords', function (t) {
   t.looseEqual(newString, ['candidat', 'proposat', 'exposa', 'davant', 'Congrés', 'Diputats', 'programa', 'polític', 'Govern', 'pretengui', 'formar', 'demana', 'confiança', 'cambra'])
 })
 
+test('remove catalan stopwords', function (t) {
+  t.plan(1)
+  const oldString = 'stanovnici priobalja su bili poznati po brodograditeljskom i pomorskom umijeću poznati po gradnji brodova i gusarenju bili su Liburni male i brze lađe kojima su plovili zvale su se lembi'.split(' ')
+  const newString = sw.removeStopwords(oldString, sw.hr)
+  t.looseEqual(newString, ['stanovnici', 'priobalja', 'poznati', 'brodograditeljskom', 'pomorskom', 'umijeću', 'poznati', 'gradnji', 'brodova', 'gusarenju', 'Liburni', 'male', 'brze', 'lađe', 'plovili', 'zvale', 'lembi'])
+})
+
 // Right to Left languages
 test('remove arabic stopwords', function (t) {
   t.plan(1)
