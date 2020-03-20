@@ -80,7 +80,7 @@ var text = sw.removeStopwords(text[, stopwords])
 
 ### &lt;language code&gt;
 
-Arrays of stopwords for the following 52 languages are supplied: 
+Arrays of stopwords for the following 53 languages are supplied: 
 
 * `af` - Afrikaans
 * `ar` - Modern Standard Arabic
@@ -131,6 +131,7 @@ Arrays of stopwords for the following 52 languages are supplied:
 * `st` - Sotho
 * `sv` - Swedish
 * `sw` - Swahili
+* `th` - Thai
 * `vi` - Vietnamese
 * `yo` - Yoruba
 * `zh` - Chinese Simplified
@@ -143,7 +144,7 @@ norwegianStopwords = sw.no
 ```
 
 #### Languages with no space between words
-`ja` Japanese and `zh` Chinese Simplified and some of the other languages supported have no space between words. For these languages you need to split the text into an array of words in another way than just `textString.split(' ')`. You can check out [TinySegmenter](http://chasen.org/%7Etaku/software/TinySegmenter/) for Japanese and [chinese-tokenizer](https://github.com/yishn/chinese-tokenizer) for Chinese.
+`ja` Japanese, `th` Thai and `zh` Chinese Simplified and some of the other languages supported have no space between words. For these languages you need to split the text into an array of words in another way than just `textString.split(' ')`. You can check out [TinySegmenter](http://chasen.org/%7Etaku/software/TinySegmenter/) for Japanese and [chinese-tokenizer](https://github.com/yishn/chinese-tokenizer) for Chinese.
 
 ## Your language missing?
 If you can't find a stopword file for your language, you can try creating one with [`stopword-trainer`](https://github.com/eklem/stopword-trainer). We're happy to help you in the process.
