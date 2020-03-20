@@ -80,7 +80,7 @@ var text = sw.removeStopwords(text[, stopwords])
 
 ### &lt;language code&gt;
 
-Arrays of stopwords for the following 45 languages are supplied: 
+Arrays of stopwords for the following 46 languages are supplied: 
 
 * `af` - Afrikaans
 * `ar` - Modern Standard Arabic
@@ -111,6 +111,7 @@ Arrays of stopwords for the following 45 languages are supplied:
 * `id` - Indonesian
 * `it` - Italian
 * `ja` - Japanese
+* `ko` - Korean
 * `lgg` - Lugbara (without diacritics)
 * `lggo` - Lugbara official (with diacritics)
 * `nl` - Dutch

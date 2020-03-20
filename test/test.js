@@ -347,6 +347,13 @@ test('remove irish stopwords', function (t) {
   t.looseEqual(newString, ['raibh', 'drochamhrasach', 'leith', 'seanscéalta', 'Págánacha', 'shílfeá', 'sin', 'féin', 'bhain', 'tagairt', 'nithiúil', 'chreideamh', 'réamh-Chríostaí', 'leaganacha', 'rinne', 'scéalta', 'seo'])
 })
 
+test('remove korean stopwords', function (t) {
+  t.plan(1)
+  const oldString = '이 대회 결승전은 축구 자체보다 125,000명 정도 되는 웸블리 스타디움의 수용인원을 훌쩍 뛰어넘은 엄청난 인파로 인한 큰 혼란 때문에 더 중요하게 여겨진다 추정 300,000여 명의 관중들이 입장하면서 경기장의 테라스까지 꽉 차서 사람들이 넘칠 정도였고 관중들은 선수들이 경기하는 경기장 안 피치까지 내려가기 까지 했다'.split(' ')
+  const newString = sw.removeStopwords(oldString, sw.ko)
+  t.looseEqual(newString, ['대회', '결승전은', '축구', '자체보다', '125,000명', '정도', '되는', '웸블리', '스타디움의', '수용인원을', '훌쩍', '뛰어넘은', '엄청난', '인파로', '인한', '큰', '혼란', '더', '중요하게', '여겨진다', '추정', '300,000여', '명의', '관중들이', '입장하면서', '경기장의', '테라스까지', '꽉', '차서', '사람들이', '넘칠', '정도였고', '관중들은', '선수들이', '경기하는', '경기장', '안', '피치까지', '내려가기', '했다'])
+})
+
 // -----------------------
 // Right to Left languages
 test('remove arabic stopwords', function (t) {
