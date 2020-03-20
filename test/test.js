@@ -375,6 +375,13 @@ test('remove marathi stopwords', function (t) {
   t.looseEqual(newString, ['हिटलर', 'सोवियेत', 'संघावर', 'उलटला', 'जून', '२२', '१९४१', 'रोजी', 'त्याने', 'अचानक', 'सोवियेत', 'संघावर', 'चाल', 'ऑपरेशन', 'बार्बारोसा', 'सांकेतिक', 'नावाने', 'योजलेल्या', 'मोहिमेत', 'जर्मनीला', 'सुरुवातीला', 'भरभरुन', 'यश', 'मिळाले', '१९४१', 'शेवटीशेवटी', 'जर्मन', 'सैन्याने', 'मॉस्कोपर्यंत', 'धडक', 'मारली', 'परंतु', 'मोहीम', 'अडकून', 'पडली', 'सोवियेत', 'सैन्याने', 'कडवा', 'प्रतिकार', 'करीत', 'जर्मनीचा', 'रेटा', 'मोडून', 'काढला', 'पुढे', 'सोवियेत', 'सैन्याने', 'स्टालिनग्राडला', 'वेढा', 'घालुन', 'बसलेल्या', 'जर्मनीच्या', 'सहाव्या', 'सैन्यालाच', 'प्रतिवेढा', 'घालुन', 'पूर्ण', 'सैन्याला', 'युद्धबंदी', 'बनवले'])
 })
 
+test('remove romanian stopwords', function (t) {
+  t.plan(1)
+  const oldString = 'o sursă importantă a infecției în România sunt persoanele venite din afară care nu s-au autoizolat la domiciliu sau care au mințit că nu au fost într-o zonă afectată de infecția COVID-19'.split(' ')
+  const newString = sw.removeStopwords(oldString, sw.ro)
+  t.looseEqual(newString, ['o', 'sursă', 'importantă', 'a', 'infecției', 'România', 'persoanele', 'venite', 'afară', 's-au', 'autoizolat', 'domiciliu', 'mințit', 'fost', 'într-o', 'zonă', 'afectată', 'infecția', 'COVID-19'])
+})
+
 // -----------------------
 // Right to Left languages
 test('remove arabic stopwords', function (t) {
