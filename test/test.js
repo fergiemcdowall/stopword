@@ -354,6 +354,13 @@ test('remove korean stopwords', function (t) {
   t.looseEqual(newString, ['대회', '결승전은', '축구', '자체보다', '125,000명', '정도', '되는', '웸블리', '스타디움의', '수용인원을', '훌쩍', '뛰어넘은', '엄청난', '인파로', '인한', '큰', '혼란', '더', '중요하게', '여겨진다', '추정', '300,000여', '명의', '관중들이', '입장하면서', '경기장의', '테라스까지', '꽉', '차서', '사람들이', '넘칠', '정도였고', '관중들은', '선수들이', '경기하는', '경기장', '안', '피치까지', '내려가기', '했다'])
 })
 
+test('remove latin stopwords', function (t) {
+  t.plan(1)
+  const oldString = 'nomen Groenlandiae terram viridem significans e Scandinavis colonis venit in Sagis Islandicis Norvegicus natus Ericus Rufus in exilium propter necem eiectus est qui iuxta cum extensa familia et thrallis in navibus profectus est ad inveniendam terram Boream novam colonizatam terram Grœnland scilicet Terram Viridem nominavit sperans fore ut gratum nomen colonos attraheret'.split(' ')
+  const newString = sw.removeStopwords(oldString, sw.la)
+  t.looseEqual(newString, ['nomen', 'Groenlandiae', 'terram', 'viridem', 'significans', 'Scandinavis', 'colonis', 'venit', 'Sagis', 'Islandicis', 'Norvegicus', 'natus', 'Ericus', 'Rufus', 'exilium', 'propter', 'necem', 'eiectus', 'iuxta', 'extensa', 'familia', 'thrallis', 'navibus', 'profectus', 'inveniendam', 'terram', 'Boream', 'novam', 'colonizatam', 'terram', 'Grœnland', 'scilicet', 'Terram', 'Viridem', 'nominavit', 'sperans', 'fore', 'gratum', 'nomen', 'colonos', 'attraheret'])
+})
+
 // -----------------------
 // Right to Left languages
 test('remove arabic stopwords', function (t) {

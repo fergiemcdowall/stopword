@@ -112,6 +112,7 @@ Arrays of stopwords for the following 46 languages are supplied:
 * `it` - Italian
 * `ja` - Japanese
 * `ko` - Korean
+* `la` - Latin
 * `lgg` - Lugbara (without diacritics)
 * `lggo` - Lugbara official (with diacritics)
 * `nl` - Dutch
