@@ -382,6 +382,13 @@ test('remove romanian stopwords', function (t) {
   t.looseEqual(newString, ['o', 'sursă', 'importantă', 'a', 'infecției', 'România', 'persoanele', 'venite', 'afară', 's-au', 'autoizolat', 'domiciliu', 'mințit', 'fost', 'într-o', 'zonă', 'afectată', 'infecția', 'COVID-19'])
 })
 
+test('remove slovak stopwords', function (t) {
+  t.plan(1)
+  const oldString = 'o zhruba desať mesiacov neskôr zbadali dvaja lesní robotníci popoludní 18. septembra 1916 pramienok vytekajúci z telesa hrádze'.split(' ')
+  const newString = sw.removeStopwords(oldString, sw.sk)
+  t.looseEqual(newString, ['zhruba', 'desať', 'mesiacov', 'neskôr', 'zbadali', 'dvaja', 'lesní', 'robotníci', 'popoludní', '18.', 'septembra', '1916', 'pramienok', 'vytekajúci', 'telesa', 'hrádze'])
+})
+
 // -----------------------
 // Right to Left languages
 test('remove arabic stopwords', function (t) {
