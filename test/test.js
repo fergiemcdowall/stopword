@@ -403,6 +403,13 @@ test('remove thai stopwords', function (t) {
   t.looseEqual(newString, ['ปี', 'พ', 'ศ', '2461', 'ฝ่ายพันธมิตร', 'เพิ่ม', 'กำลัง', 'การปิดล้อม', 'อย่างต่อเนื่อง', 'บน', 'ช่องแคบ', 'โอ', 'ตรันโต', 'ตามที่', 'กองทัพเรือ', 'ออสเตรีย', 'ฮังการี', 'คาดการณ์', 'ส่งผลให้', 'ปฏิบัติ', 'การณ์', 'เรือ', 'อู', 'ออ', 'อสเตรีย', 'ฮังการี', 'เยอรมัน', 'ทะเล', 'เม', 'ดิ', 'เตอเรเนียนยาก', 'ผู้บัญชา', 'อง', 'ทัพเรือ', 'ออสเตรีย', 'ฮังการีคนใหม่', 'พลเรือตรี', 'มิ', 'กโลช', 'โฮร์', 'ตี', 'ตัดสินใจ', 'โจมตี', 'กองเรือ', 'ฝ่ายพันธมิตร', 'เรือประจัญบาน', 'เรือ', 'ลาดตระเวน', 'เรือ', 'พิฆาต'])
 })
 
+test('remove turkish stopwords', function (t) {
+  t.plan(1)
+  const oldString = 'bu anlaşmaya göre ABD askerleri 30 Haziran 2009 tarihinde Irak şehir merkezlerinden muharip güçlerini çekti[45] ve 30 Haziran Irak ta resmi tatil ilan edildi ancak anlaşma dahilinde 2009 yılını ortalarında bir halk referandumu yapılarak ABD güçlerinin konumu tekrar değerlendirildi'.split(' ')
+  const newString = sw.removeStopwords(oldString, sw.tr)
+  t.looseEqual(newString, ['anlaşmaya', 'ABD', 'askerleri', '30', 'Haziran', '2009', 'tarihinde', 'Irak', 'şehir', 'merkezlerinden', 'muharip', 'güçlerini', 'çekti[45]', '30', 'Haziran', 'Irak', 'ta', 'resmi', 'tatil', 'ilan', 'edildi', 'anlaşma', 'dahilinde', '2009', 'yılını', 'ortalarında', 'halk', 'referandumu', 'yapılarak', 'ABD', 'güçlerinin', 'konumu', 'tekrar', 'değerlendirildi'])
+})
+
 // -----------------------
 // Right to Left languages
 test('remove arabic stopwords', function (t) {
