@@ -340,6 +340,14 @@ test('remove hungarian stopwords', function (t) {
   t.looseEqual(newString, ['nyomozás', 'bizonyítékot', 'gyanúsítottat', 'talál', 'fedezi', 'politikai', 'összeesküvések', 'sorozatát', 'Bábjátékos', 'valódi', 'azonosságát', 'céljait', 'film', 'átfogó', 'filozófiai', 'témái', 'közt', 'főszereplőn', 'fontos', 'szerepet', 'kap', 'önazonosság', 'technológiailag', 'fejlett', 'világban'])
 })
 
+test('remove irish stopwords', function (t) {
+  t.plan(1)
+  const oldString = 'ní raibh siad chomh drochamhrasach i leith na seanscéalta Págánacha agus a shílfeá ach mar sin féin bhain siad gach tagairt nithiúil don chreideamh réamh-Chríostaí de na leaganacha a rinne siad de na scéalta seo'.split(' ')
+  const newString = sw.removeStopwords(oldString, sw.ga)
+  t.looseEqual(newString, ['raibh', 'drochamhrasach', 'leith', 'seanscéalta', 'Págánacha', 'shílfeá', 'sin', 'féin', 'bhain', 'tagairt', 'nithiúil', 'chreideamh', 'réamh-Chríostaí', 'leaganacha', 'rinne', 'scéalta', 'seo'])
+})
+
+// -----------------------
 // Right to Left languages
 test('remove arabic stopwords', function (t) {
   t.plan(1)
