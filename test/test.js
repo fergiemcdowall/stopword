@@ -389,6 +389,13 @@ test('remove slovak stopwords', function (t) {
   t.looseEqual(newString, ['zhruba', 'desať', 'mesiacov', 'neskôr', 'zbadali', 'dvaja', 'lesní', 'robotníci', 'popoludní', '18.', 'septembra', '1916', 'pramienok', 'vytekajúci', 'telesa', 'hrádze'])
 })
 
+test('remove slovenian stopwords', function (t) {
+  t.plan(1)
+  const oldString = 'Beta Andromede je rdeča orjakinja in je le za kanček temnejša kot Alfa njena barva pa je prepoznavna celo s prostim očesom dajbolj izrazito telo globokega vesolja je zagotovo Andromedina galaksija M31 tudi Velika galaksija v Andromedi ki je vidna celo s prostim očesom'.split(' ')
+  const newString = sw.removeStopwords(oldString, sw.sl)
+  t.looseEqual(newString, ['Beta', 'Andromede', 'rdeča', 'orjakinja', 'kanček', 'temnejša', 'Alfa', 'barva', 'prepoznavna', 'prostim', 'očesom', 'dajbolj', 'izrazito', 'telo', 'globokega', 'vesolja', 'zagotovo', 'Andromedina', 'galaksija', 'M31', 'galaksija', 'Andromedi', 'vidna', 'prostim', 'očesom'])
+})
+
 // -----------------------
 // Right to Left languages
 test('remove arabic stopwords', function (t) {
