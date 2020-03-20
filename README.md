@@ -115,6 +115,7 @@ Arrays of stopwords for the following 46 languages are supplied:
 * `la` - Latin
 * `lgg` - Lugbara (without diacritics)
 * `lggo` - Lugbara official (with diacritics)
+* `lv` - Latvian
 * `nl` - Dutch
 * `no` - Norwegian
 * `pl` - Polish

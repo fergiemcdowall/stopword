@@ -361,6 +361,13 @@ test('remove latin stopwords', function (t) {
   t.looseEqual(newString, ['nomen', 'Groenlandiae', 'terram', 'viridem', 'significans', 'Scandinavis', 'colonis', 'venit', 'Sagis', 'Islandicis', 'Norvegicus', 'natus', 'Ericus', 'Rufus', 'exilium', 'propter', 'necem', 'eiectus', 'iuxta', 'extensa', 'familia', 'thrallis', 'navibus', 'profectus', 'inveniendam', 'terram', 'Boream', 'novam', 'colonizatam', 'terram', 'Grœnland', 'scilicet', 'Terram', 'Viridem', 'nominavit', 'sperans', 'fore', 'gratum', 'nomen', 'colonos', 'attraheret'])
 })
 
+test('remove latvian stopwords', function (t) {
+  t.plan(1)
+  const oldString = 'darbs patentu birojā deva ar zinātni nesaistītus ienākumus Einšteins vienmēr esot uzskatījis ka praktiska ar zinātni nesaistīta nodarbošanās atbrīvo zinātnieku no rūpēm par iztiku un no nepieciešamības publicēties tikai pašas publicitātes pēc'.split(' ')
+  const newString = sw.removeStopwords(oldString, sw.lv)
+  t.looseEqual(newString, ['darbs', 'patentu', 'birojā', 'deva', 'zinātni', 'nesaistītus', 'ienākumus', 'Einšteins', 'vienmēr', 'esot', 'uzskatījis', 'praktiska', 'zinātni', 'nesaistīta', 'nodarbošanās', 'atbrīvo', 'zinātnieku', 'rūpēm', 'iztiku', 'nepieciešamības', 'publicēties', 'pašas', 'publicitātes'])
+})
+
 // -----------------------
 // Right to Left languages
 test('remove arabic stopwords', function (t) {
