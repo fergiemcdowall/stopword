@@ -125,7 +125,7 @@ Arrays of stopwords for the following 54 languages are supplied:
 * `ro` - Romanian
 * `ru` - Russian
 * `sk` - Slovak
-* `sk` - Slovenian
+* `sl` - Slovenian
 * `so` - Somali
 * `st` - Sotho
 * `es` - Spanish
