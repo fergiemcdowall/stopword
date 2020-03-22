@@ -82,45 +82,45 @@ var text = sw.removeStopwords(text[, stopwords])
 Arrays of stopwords for the following 54 languages are supplied: 
 
 * `af` - Afrikaans
-* `ar` - Modern Standard Arabic
-* `bg` - Bulgarian
+* `ar` - Arabic, Modern Standard
+* `hy` - Armenian
+* `eu` - Basque
 * `bn` - Bengali
 * `br` - Breton
+* `bg` - Bulgarian
 * `ca` - Catalan
+* `zh` - Chinese Simplified
+* `hr` - Croatian
 * `cs` - Czech
 * `da` - Danish
-* `de` - German
-* `el` - Greek
+* `nl` - Dutch
 * `en` - English
 * `eo` - Esperanto
-* `es` - Spanish
 * `et` - Estonian
-* `eu` - Basque
 * `fa` - Farsi
 * `fi` - Finnish
 * `fr` - French
-* `ga` - Irish
 * `gl` - Galician
+* `de` - German
+* `el` - Greek
 * `ha` - Hausa
 * `he` - Hebrew
 * `hi` - Hindi
-* `hr` - Croatian
 * `hu` - Hungarian
-* `hy` - Armenian
 * `id` - Indonesian
+* `ga` - Irish
 * `it` - Italian
 * `ja` - Japanese
 * `ko` - Korean
 * `la` - Latin
+* `lv` - Latvian
 * `lgg` - Lugbara (without diacritics)
 * `lggo` - Lugbara official (with diacritics)
-* `lv` - Latvian
 * `mr` - Marathi
-* `nl` - Dutch
 * `no` - Norwegian
 * `pl` - Polish
 * `pt` - Portuguese
-* `ptbr` - Brazilian Portuguese
+* `ptbr` - Portuguese (Brazilian)
 * `pa` - Punjabi Gurmukhi
 * `ro` - Romanian
 * `ru` - Russian
@@ -128,13 +128,13 @@ Arrays of stopwords for the following 54 languages are supplied:
 * `sk` - Slovenian
 * `so` - Somali
 * `st` - Sotho
-* `sv` - Swedish
+* `es` - Spanish
 * `sw` - Swahili
+* `sv` - Swedish
 * `th` - Thai
 * `tr` - Turkish
 * `vi` - Vietnamese
 * `yo` - Yoruba
-* `zh` - Chinese Simplified
 * `zu` - Zulu
 
 ```javascript
