@@ -6,7 +6,7 @@
   "scripts": {
     "compile-for-browser": "webpack",
     "empty-sandbox": "rm -rf test/sandbox && mkdir test/sandbox",
-    "test": "npm run empty-sandbox && npm run compile-for-browser && tape ./test/test.js && cat test/sandbox/bundle.js | tape-run && rm -rf test/sandbox"
+    "test": "standard './*.js' './test/*.js' && npm run empty-sandbox && npm run compile-for-browser && tape ./test/test.js && cat test/sandbox/bundle.js | tape-run && rm -rf test/sandbox"
   },
   "repository": {
     "type": "git",

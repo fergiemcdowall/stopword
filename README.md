@@ -6,8 +6,10 @@ altering its meaning.](https://en.wikipedia.org/wiki/Stop_words)
 
 [![NPM version][npm-version-image]][npm-url]
 [![NPM downloads][npm-downloads-image]][npm-url]
-[![MIT License][license-image]][license-url]
 [![Build Status][travis-image]][travis-url]
+[![Known Vulnerabilities][snyk-image]][snyk-url]
+[![JavaScript Style Guide][standardjs-image]][standardjs-url]
+[![MIT License][license-image]][license-url]
 
 ![wonderful day stopword module](./demo/stopword-demo.gif)
 
@@ -157,3 +159,7 @@ If you can't find a stopword file for your language, you can try creating one wi
 [npm-downloads-image]: http://img.shields.io/npm/dm/stopword.svg?style=flat
 [travis-url]: http://travis-ci.org/fergiemcdowall/stopword
 [travis-image]: http://img.shields.io/travis/fergiemcdowall/stopword.svg?style=flat
+[snyk-url]: https://snyk.io/test/github/fergiemcdowall/stopword?targetFile=package.json
+[snyk-image]: https://snyk.io/test/github/fergiemcdowall/stopword/badge.svg?targetFile=package.json
+[standardjs-url]: https://standardjs.com
+[standardjs-image]: https://img.shields.io/badge/code_style-standard-brightgreen.svg?style=flat-square
