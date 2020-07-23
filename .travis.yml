@@ -1,6 +1,4 @@
 language: node_js
-os: linux,
-dist: xenial,
 cache:
   directories:
     - node_modules
