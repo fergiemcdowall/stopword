@@ -64,6 +64,18 @@ const newString = sw.removeStopwords(oldString, [ 'even', 'a', 'custom', 'stopwo
 // newString is now [ 'you', 'can', 'roll', 'your', 'own']
 ```
 
+### Removing stopwords for i.e. two languages and a custom stopword list
+With spread syntax you can easily combine several stopword arrays into one.
+```javascript
+sw = require('stopword')
+const oldString = 'a really interesting string with some words trädgårdsägare är beredda att pröva vad som helst för att bli av med de hatade mördarsniglarna'.split(' ')
+const customStopwords = ['interesting', 'really']
+const newString = sw.removeStopwords(oldString, [...sw.en, ...sw.sv, ...sw.customStopwords]
+// newString is now ['string', 'words', 'trädgårdsägare', 'beredda', 'pröva', 'helst', 'hatade', 'mördarsniglarna']
+```
+
+
+
 ## API
 
 ### removeStopwords

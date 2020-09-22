@@ -22,6 +22,21 @@ test('remove custom stopwords', function (t) {
   t.deepEqual(newString, ['a', 'really', 'string', 'with', 'some', 'words'])
 })
 
+test('remove english and custom stopwords', function (t) {
+  t.plan(1)
+  const oldString = 'a really interesting string with some words'.split(' ')
+  const newString = sw.removeStopwords(oldString, [...sw.en, 'interesting'])
+  t.deepEqual(newString, ['really', 'string', 'words'])
+})
+
+test('remove english, swedish and custom stopwords', function (t) {
+  t.plan(1)
+  const oldString = 'a really interesting string with some words trädgårdsägare är beredda att pröva vad som helst för att bli av med de hatade mördarsniglarna'.split(' ')
+  const customStopwords = ['interesting', 'really']
+  const newString = sw.removeStopwords(oldString, [...sw.en, ...sw.sv, ...customStopwords])
+  t.deepEqual(newString, ['string', 'words', 'trädgårdsägare', 'beredda', 'pröva', 'helst', 'hatade', 'mördarsniglarna'])
+})
+
 test('not remove any stopwords', function (t) {
   t.plan(1)
   const oldString = 'a really interesting string with some words'.split(' ')
