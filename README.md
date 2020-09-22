@@ -65,7 +65,7 @@ const newString = sw.removeStopwords(oldString, [ 'even', 'a', 'custom', 'stopwo
 ```
 
 ### Removing stopwords for i.e. two languages and a custom stopword list
-With spread syntax you can easily combine several stopword arrays into one.
+With spread syntax you can easily combine several stopword arrays into one. Useful for situations where two langauages are used used interchangeably. Or when you have certain words that are used in every document that is not in your existing stopword arrays.
 ```javascript
 sw = require('stopword')
 const oldString = 'a really interesting string with some words trädgårdsägare är beredda att pröva vad som helst för att bli av med de hatade mördarsniglarna'.split(' ')
