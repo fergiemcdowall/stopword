@@ -1,5 +1,4 @@
 const path = require('path')
-const pkg = require('./package.json')
 const glob = require('glob')
 
 module.exports = [
@@ -9,19 +8,7 @@ module.exports = [
     entry: './lib/stopword.js',
     output: {
       path: path.resolve(__dirname, 'dist'),
-      filename: 'stopword.' + pkg.version + '.js',
-      library: 'sw'
-    },
-    devtool: 'none' // prevent webpack from using eval() on my module
-  },
-
-  // Generating a latest browser version of stopword (same as latest version number)
-  {
-    mode: 'production',
-    entry: './lib/stopword.js',
-    output: {
-      path: path.resolve(__dirname, 'dist'),
-      filename: 'stopword.latest.js',
+      filename: 'stopword.js',
       library: 'sw'
     },
     devtool: 'none' // prevent webpack from using eval() on my module
