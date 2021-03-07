@@ -30,7 +30,7 @@ languageSelect.addEventListener('change', function (event) {
 })
 
 languageSelect.innerHTML = allLanguages
-  .map((lang) => `<option value=${lang}>${lang.toUpperCase()}</option>`)
+  .map((lang) => `<option value=${lang}>${lang}</option>`)
   .join('')
 
 languageSelect.value = 'en'
