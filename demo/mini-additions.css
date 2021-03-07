@@ -1,32 +1,46 @@
-h1, h2, h3, h4, h5, h6 {
-  margin-left:0px;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-left: 0px;
 }
 
 h2 {
-  line-height:1em;
-  margin-top:5px;
-  margin-bottom:5px;
+  line-height: 1em;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+p {
+  padding: 0 0 0 0;
+  margin: 0 0 20px 0;
 }
 
 #header {
-  padding-left:10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 10px;
 }
 
 #addContainer {
-  background:#cccccc;
-  padding:10px;
+  background: #cccccc;
+  padding: 10px;
 }
 
 #newString {
   padding: 10px;
   background: #eeeeee;
 }
+
 #stopwordsRemoved span {
-  font-size:1.2rem;
+  font-size: 1.2rem;
 }
 
 input#text {
-  width:100%;
-  font-size:1.2rem;
-  margin-left:0;
+  width: 100%;
+  font-size: 1.2rem;
+  margin-left: 0;
 }

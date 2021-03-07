@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./mini-default.min.css">
-    <link rel="stylesheet" href="./mini-additions.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./mini-default.min.css" />
+    <link rel="stylesheet" href="./mini-additions.css" />
     <script src="../dist/stopword.js"></script>
     <title>Stopword browser demo</title>
   </head>
@@ -15,14 +15,11 @@
     </div>
 
     <div id="addContainer">
+      <h2>Language</h2>
+      <p><select id="languages"></select> Check which <a href="https://github.com/fergiemcdowall/stopword#language-code">Language code</a> to use.</p>
       <h2>Text with stopwords</h2>
       <input type="text" id="text" placeholder="Add some text" /><br />
     </div>
-
-    <!-- <div id="languageCode">
-      <label for="language"><a href="https://github.com/fergiemcdowall/stopword#language-code">Language code</a>: </label>
-      <input type="text" id="language" placeholder="" /> Defaults to english
-    </div> -->
 
     <div id="newString">
       <h2>End result</h2>
@@ -31,4 +28,4 @@
 
     <script src="./stopword-app.js"></script>
   </body>
-</html> 
+</html>
