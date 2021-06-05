@@ -70,7 +70,7 @@ With spread syntax you can easily combine several stopword arrays into one. Usef
 sw = require('stopword')
 const oldString = 'a really interesting string with some words trädgårdsägare är beredda att pröva vad som helst för att bli av med de hatade mördarsniglarna'.split(' ')
 const customStopwords = ['interesting', 'really']
-const newString = sw.removeStopwords(oldString, [...sw.en, ...sw.sv, ...sw.customStopwords]
+const newString = sw.removeStopwords(oldString, [...sw.en, ...sw.sv, ...customStopwords]
 // newString is now ['string', 'words', 'trädgårdsägare', 'beredda', 'pröva', 'helst', 'hatade', 'mördarsniglarna']
 ```
 
