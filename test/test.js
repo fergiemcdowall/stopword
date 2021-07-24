@@ -438,7 +438,7 @@ test('remove farsi stopwords and preserve case', function (t) {
   t.plan(1)
   const oldString = 'در این بیانیه آمده است که اتو قادر به صحبت کردن، قادر به دیدن و قادر به عکس العمل نشان دادن به درخواست های شفاهی نبود'.split(' ')
   const newString = sw.removeStopwords(oldString, sw.fa)
-  t.deepEqual(newString, ['در', 'این', 'بیانیه', 'آمده', 'است', 'که', 'اتو', 'قادر', 'به', 'صحبت', 'کردن،', 'قادر', 'به', 'دیدن', 'قادر', 'به', 'عکس', 'العمل', 'نشان', 'دادن', 'به', 'درخواست', 'های', 'شفاهی', 'نبود'])
+  t.deepEqual(newString, ['این', 'بیانیه', 'آمده', 'است', 'اتو', 'قادر', 'صحبت', 'کردن،', 'قادر', 'دیدن', 'قادر', 'عکس', 'العمل', 'نشان', 'دادن', 'درخواست', 'های', 'شفاهی', 'نبود'])
 })
 
 test('remove hebrew stopwords and preserve case', function (t) {
