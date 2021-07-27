@@ -425,6 +425,13 @@ test('remove turkish stopwords', function (t) {
   t.deepEqual(newString, ['anlaşmaya', 'ABD', 'askerleri', '30', 'Haziran', '2009', 'tarihinde', 'Irak', 'şehir', 'merkezlerinden', 'muharip', 'güçlerini', 'çekti[45]', '30', 'Haziran', 'Irak', 'ta', 'resmi', 'tatil', 'ilan', 'edildi', 'anlaşma', 'dahilinde', '2009', 'yılını', 'ortalarında', 'halk', 'referandumu', 'yapılarak', 'ABD', 'güçlerinin', 'konumu', 'tekrar', 'değerlendirildi'])
 })
 
+test('remove tagalog (filipino) stopwords', function (t) {
+  t.plan(1)
+  const oldString = ['mayroon', 'silang', 'karapatang', 'magkaroon', 'ng', 'ari-arian', 'makilahok', 'sa', 'kalakalan', 'at', 'maaaring', 'hiwalayan', 'o', 'dibosiyuhin', 'ang', 'asawang', 'lalaki', 'maaari', 'rin', 'silang', 'maging', 'pinuno', 'ng', 'nayon', 'kung', 'walang', 'tagapagmanang', 'lalaki', 'sa', 'katungkulan']
+  const newString = sw.removeStopwords(oldString, sw.tl)
+  t.deepEqual(newString, ['silang', 'karapatang', 'magkaroon', 'ari-arian', 'makilahok', 'kalakalan', 'hiwalayan', 'dibosiyuhin', 'asawang', 'lalaki', 'rin', 'silang', 'pinuno', 'nayon', 'tagapagmanang', 'lalaki', 'katungkulan'])
+})
+
 // -----------------------
 // Right to Left languages
 test('remove arabic stopwords', function (t) {

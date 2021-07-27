@@ -93,7 +93,7 @@ var text = sw.removeStopwords(text[, stopwords])
 
 ### &lt;language code&gt;
 
-Arrays of stopwords for the following 54 languages are supplied: 
+Arrays of stopwords for the following 55 languages are supplied: 
 
 * `af` - Afrikaans
 * `ar` - Arabic, Modern Standard
@@ -146,6 +146,7 @@ Arrays of stopwords for the following 54 languages are supplied:
 * `sw` - Swahili
 * `sv` - Swedish
 * `th` - Thai
+* `tl` - Tagalog (Filipino)
 * `tr` - Turkish
 * `vi` - Vietnamese
 * `yo` - Yoruba
@@ -163,6 +164,8 @@ norwegianStopwords = sw.no
 ## Your language missing?
 If you can't find a stopword file for your language, you can try creating one with [`stopword-trainer`](https://github.com/eklem/stopword-trainer). We're happy to help you in the process.
 
+## Contributions
+Most of this work is from other projects and people, and wouldn't be possible without them. Thanks to among others the [stopwords-iso](https://github.com/stopwords-iso) project and the [more-stoplist](https://github.com/dohliam/more-stoplists) project. We'll add a more complete contribution overview later. Thanks for all your input, issues and PRs!
 
 [license-image]: http://img.shields.io/badge/license-MIT-blue.svg?style=flat
 [license-url]: LICENSE
