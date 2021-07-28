@@ -131,6 +131,7 @@ Arrays of stopwords for the following 55 languages are supplied:
 * `lgg` - Lugbara (without diacritics)
 * `lggo` - Lugbara official (with diacritics)
 * `mr` - Marathi
+* `my` - Myanmar
 * `no` - Norwegian
 * `pl` - Polish
 * `pt` - Portuguese
@@ -148,6 +149,7 @@ Arrays of stopwords for the following 55 languages are supplied:
 * `th` - Thai
 * `tl` - Tagalog (Filipino)
 * `tr` - Turkish
+* `ur` - Urdu
 * `vi` - Vietnamese
 * `yo` - Yoruba
 * `zu` - Zulu
