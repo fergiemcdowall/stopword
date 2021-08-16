@@ -31,7 +31,7 @@
     "tape": "^5.3.1",
     "tape-run": "^9.0.0",
     "webpack": "^5.50.0",
-    "webpack-cli": "^4.7.2"
+    "webpack-cli": "^4.8.0"
   },
   "author": "Fergus McDowall",
   "license": "MIT",
