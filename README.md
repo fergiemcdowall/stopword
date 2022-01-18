@@ -166,7 +166,7 @@ norwegianStopwords = sw.no
 If you can't find a stopword file for your language, you can try creating one with [`stopword-trainer`](https://github.com/eklem/stopword-trainer). We're happy to help you in the process.
 
 ## Contributions
-Most of this work is from other projects and people, and wouldn't be possible without them. Thanks to among others the [stopwords-iso](https://github.com/stopwords-iso) project and the [more-stoplist](https://github.com/dohliam/more-stoplists) project. And thanks for all your code input: @arthurdenner, @micalevisk, @fabric-io-rodrigues, @behzadmoradi, @guysaar223, @ConnorKrammer, @GreXLin85, @nanopx and @virtual!
+Most of this work is from other projects and people, and wouldn't be possible without them. Thanks to among others the [stopwords-iso](https://github.com/stopwords-iso) project and the [more-stoplist](https://github.com/dohliam/more-stoplists) project. And thanks for all your code input: @arthurdenner, @micalevisk, @fabric-io-rodrigues, @behzadmoradi, @guysaar223, @ConnorKrammer, @GreXLin85, @nanopx, @virtual and @JustroX!
 
 [license-image]: http://img.shields.io/badge/license-MIT-blue.svg?style=flat
 [license-url]: LICENSE
