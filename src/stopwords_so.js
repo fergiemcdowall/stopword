@@ -16,5 +16,5 @@ limitations under the License.
 /* This list is frequency sorted. That means it can be sliced from the bottom
 and be less agressive in excluding stopwords */
 
-const words = ['oo', 'atabo', 'ay', 'ku', 'waxeey', 'uu', 'lakin', 'si', 'ayuu', 'soo', 'waa', 'ka', 'kasoo', 'kale', 'waxuu', 'ayee', 'ayaa', 'kuu', 'isku', 'ugu', 'jiray', 'dhan', 'dambeestii', 'inuu', 'in', 'jirtay', 'uheestay', 'aad', 'uga', 'hadana', 'timaado', 'timaaday']
-exports.words = words
+const so = ['oo', 'atabo', 'ay', 'ku', 'waxeey', 'uu', 'lakin', 'si', 'ayuu', 'soo', 'waa', 'ka', 'kasoo', 'kale', 'waxuu', 'ayee', 'ayaa', 'kuu', 'isku', 'ugu', 'jiray', 'dhan', 'dambeestii', 'inuu', 'in', 'jirtay', 'uheestay', 'aad', 'uga', 'hadana', 'timaado', 'timaaday']
+export { so }

@@ -16,5 +16,5 @@ limitations under the License.
 /* This list is frequency sorted. That means it can be sliced from the bottom
 and be less agressive in excluding stopwords */
 
-const words = ['ta', 'da', 'ya', 'sai', 'ba', 'yi', 'na', 'kuma', 'ma', 'ji', 'cikin', 'in', 'ni', 'wata', 'wani', 'ce', 'tana', 'don', 'za', 'sun', 'amma', 'ga', 'ina', 'ne', 'tselane', 'mai', 'suka', 'wannan', 'a', 'ko', 'lokacin', 'su', 'take', 'kaka', 'shi', 'yake', 'yana', 'mulongo', 'mata', 'ka', 'ban', 'ita', 'tafi', 'shanshani', 'kai', 'daɗi', 'mi', 'ƙato', 'fara', 'rana']
-exports.words = words
+const ha = ['ta', 'da', 'ya', 'sai', 'ba', 'yi', 'na', 'kuma', 'ma', 'ji', 'cikin', 'in', 'ni', 'wata', 'wani', 'ce', 'tana', 'don', 'za', 'sun', 'amma', 'ga', 'ina', 'ne', 'tselane', 'mai', 'suka', 'wannan', 'a', 'ko', 'lokacin', 'su', 'take', 'kaka', 'shi', 'yake', 'yana', 'mulongo', 'mata', 'ka', 'ban', 'ita', 'tafi', 'shanshani', 'kai', 'daɗi', 'mi', 'ƙato', 'fara', 'rana']
+export { ha }

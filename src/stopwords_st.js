@@ -16,5 +16,5 @@ limitations under the License.
 /* This list is frequency sorted. That means it can be sliced from the bottom
 and be less agressive in excluding stopwords */
 
-const words = ['a', 'le', 'o', 'ba', 'ho', 'oa', 'ea', 'ka', 'hae', 'tselane', 'eaba', 'ke', 'hore', 'ha', 'e', 'ne', 're', 'bona', 'me', 'limo', 'tsa', 'haholo', 'la', 'empa', 'ngoanake', 'se', 'moo', 'm\'e', 'bane', 'mo', 'tse', 'sa', 'li', 'ena', 'bina', 'pina', 'hape']
-exports.words = words
+const st = ['a', 'le', 'o', 'ba', 'ho', 'oa', 'ea', 'ka', 'hae', 'tselane', 'eaba', 'ke', 'hore', 'ha', 'e', 'ne', 're', 'bona', 'me', 'limo', 'tsa', 'haholo', 'la', 'empa', 'ngoanake', 'se', 'moo', 'm\'e', 'bane', 'mo', 'tse', 'sa', 'li', 'ena', 'bina', 'pina', 'hape']
+export { st }

@@ -16,5 +16,5 @@ limitations under the License.
 /* This list is frequency sorted. That means it can be sliced from the bottom
 and be less agressive in excluding stopwords */
 
-const words = ['ma', 'ni', 'ri', 'eri', 'di', 'yi', 'si', 'ba', 'nga', 'i', 'ra', 'ku', 'be', 'yo', 'da', 'azini', 'dria', 'ru', 'azi', 'mu', 'te', 'ndra', 'diyi', 'ima', 'mi', 'alu', 'nde', 'alia', 'le', 'vile', 'dri', 'pati', 'aria', 'bo', 'e\'yo', 'tu', 'kini', 'dii', 'ama', 'eyi', 'dika', 'pi', 'e', 'angu', 'e\'do', 'pie', 'ka', 'ti', 'o\'du', 'du']
-exports.words = words
+const lgg = ['ma', 'ni', 'ri', 'eri', 'di', 'yi', 'si', 'ba', 'nga', 'i', 'ra', 'ku', 'be', 'yo', 'da', 'azini', 'dria', 'ru', 'azi', 'mu', 'te', 'ndra', 'diyi', 'ima', 'mi', 'alu', 'nde', 'alia', 'le', 'vile', 'dri', 'pati', 'aria', 'bo', 'e\'yo', 'tu', 'kini', 'dii', 'ama', 'eyi', 'dika', 'pi', 'e', 'angu', 'e\'do', 'pie', 'ka', 'ti', 'o\'du', 'du']
+export { lgg }
