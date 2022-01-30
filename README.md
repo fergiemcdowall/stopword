@@ -92,30 +92,29 @@ var text = sw.removeStopwords(text[, stopwords])
 
 ### &lt;language code&gt;
 
-Arrays of stopwords for the following 57 languages are supplied: 
+Language codes follow [ISO 639-2 Language Code list](https://www.loc.gov/standards/iso639-2/php/code_list.php) and using the bibliographic (B) versions. Arrays of stopwords for the following 57 languages are supplied:
 
-* `af` - Afrikaans
-* `ar` - Arabic, Modern Standard
-* `hy` - Armenian
-* `eu` - Basque
-* `bn` - Bengali
-* `br` - Breton
-* `bg` - Bulgarian
-* `ca` - Catalan
-* `zh` - Chinese Simplified
-* `hr` - Croatian
-* `cs` - Czech
-* `da` - Danish
-* `nl` - Dutch
-* `en` - English
-* `eo` - Esperanto
-* `et` - Estonian
-* `fa` - Farsi
-* `fi` - Finnish
-* `fr` - French
-* `gl` - Galician
-* `de` - German
-* `el` - Greek
+* `afr` - Afrikaans
+* `ara` - Arabic, modern standard
+* `arm` - Armenian
+* `baq` - Basque
+* `ben` - Bengali
+* `bre` - Breton
+* `bul` - Bulgarian
+* `cat` - Catalan
+* `chi` - Chinese simplified
+* `hrv` - Croatian
+* `cze` - Czech
+* `dan` - Danish
+* `dut` - Dutch
+* `eng` - English
+* `epo` - Esperanto
+* `est` - Estonian
+* `fin` - Finnish
+* `fre` - French
+* `glg` - Galician
+* `ger` - German
+* `gre` - Greek, modern
 * `ha` - Hausa
 * `he` - Hebrew
 * `hi` - Hindi
@@ -132,6 +131,7 @@ Arrays of stopwords for the following 57 languages are supplied:
 * `mr` - Marathi
 * `my` - Myanmar
 * `no` - Norwegian
+* `per` - Persian/ Farsi
 * `pl` - Polish
 * `pt` - Portuguese
 * `ptbr` - Portuguese (Brazilian)

@@ -1,5 +1,32 @@
 const test = require('ava')
-const { removeStopwords, af, ar, bn, bg, br, ca, cs, da, de, el, en, eo, es, et, eu, fa, fr, ga, gl, fi, ha, he, hi, hr, hu, hy, id, it, ja, ko, la, lgg, lggo, lv, mr, my, nl, no, pa, pl, pt, ptbr, ro, ru, sk, sl, so, st, sv, sw, th, tl, tr, ur, vi, yo, zh, zu } = require('../dist/stopword.cjs.js')
+const { removeStopwords, afr, ara, arm, baq, ben, bre, bul, cat, chi, hrv, cze, dan, dut, eng, epo, est, fin, fre, glg, ger, gre, es, ga, ha, he, hi, hu, id, it, ja, ko, la, lgg, lggo, lv, mr, my, no, per, pa, pl, pt, ptbr, ro, ru, sk, sl, so, st, sv, sw, th, tl, tr, ur, vi, yo, zu } = require('../dist/stopword.cjs.js')
+
+// matching old variables
+const af = afr // afrikaans
+const ar = ara // arabic, modern standard
+const hy = arm // armenian
+const eu = baq // basque
+const bn = ben // bengali
+const br = bre // breton
+const bg = bul // bulgarian
+const ca = cat // catalan
+const zh = chi // chinese simplified
+const hr = hrv // croatian
+const cs = cze // czech
+const da = dan // danish
+const nl = dut // dutch
+const en = eng // english
+const eo = epo // english
+const et = est // estonian
+const fi = fin // finish
+const fr = fre // french
+const gl = glg // galician
+const de = ger // german
+const el = gre // greek, modern
+
+const fa = per // persian / farsi
+
+// const { removeStopwords, af, ar, bn, bg, br, ca, cs, da, de, el, en, eo, es, et, eu, fa, fr, ga, gl, fi, ha, he, hi, hr, hu, hy, id, it, ja, ko, la, lgg, lggo, lv, mr, my, nl, no, pa, pl, pt, ptbr, ro, ru, sk, sl, so, st, sv, sw, th, tl, tr, ur, vi, yo, zh, zu } = require('../dist/stopword.cjs.js')
 
 test('remove stopwords, default to english and preserve case', (t) => {
   t.plan(1)
@@ -18,7 +45,7 @@ test('remove custom stopwords', (t) => {
 test('remove english and custom stopwords', (t) => {
   t.plan(1)
   const oldString = 'a really interesting string with some words'.split(' ')
-  const newString = removeStopwords(oldString, [...en, 'interesting'])
+  const newString = removeStopwords(oldString, [...eng, 'interesting'])
   t.deepEqual(newString, ['really', 'string', 'words'])
 })
 
@@ -427,6 +454,8 @@ test('remove tagalog (filipino) stopwords', (t) => {
 
 // -----------------------
 // Right to Left languages
+// -----------------------
+
 test('remove arabic stopwords', (t) => {
   t.plan(1)
   const oldString = 'ورغم أن الحملة توقفت بقينا نتسلق سلّم الأمل نظن أن الحكومة تسبقنا نحو القمة لكننا صعقنا بتوقف الحملة عند أسماء بعينها وكأن الفساد اقتصر على شفيق جراية ومن معه من مهربين؛ لكن الأفظع هو أن ملف شفيق جراية ليس ملف فساد بل ملف تآمر وهو ما يعني أنّ الحكومة غالطت الجميع وجندت التونسيين لحرب واهية تجاهلت فيها الفساد الحقيقي الذي ظهر على شخصيات كثيرة في مقدمتها الأمين العام لحركة مشروع تونس محسن مرزوق'.split(' ')

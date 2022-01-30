@@ -16,5 +16,5 @@ limitations under the License.
 /* This list is frequency sorted. That means it can be sliced from the bottom
 and be less agressive in excluding stopwords */
 
-const af = ['die', 'het', 'en', 'sy', 'nie', 'was', 'hy', 'te', 'is', 'ek', 'om', 'hulle', 'in', 'my', '\'n', 'vir', 'toe', 'haar', 'van', 'dit', 'op', 'se', 'wat', 'met', 'gaan', 'baie', 'ons', 'jy', 'na', 'maar', 'hom', 'so', 'n', 'huis', 'kan', 'aan', 'dat', 'daar', 'sal', 'jou', 'gesê', 'by', 'kom', 'een', 'ma', 'as', 'son', 'groot', 'begin', 'al']
-export { af }
+const afr = ['die', 'het', 'en', 'sy', 'nie', 'was', 'hy', 'te', 'is', 'ek', 'om', 'hulle', 'in', 'my', '\'n', 'vir', 'toe', 'haar', 'van', 'dit', 'op', 'se', 'wat', 'met', 'gaan', 'baie', 'ons', 'jy', 'na', 'maar', 'hom', 'so', 'n', 'huis', 'kan', 'aan', 'dat', 'daar', 'sal', 'jou', 'gesê', 'by', 'kom', 'een', 'ma', 'as', 'son', 'groot', 'begin', 'al']
+export { afr }
