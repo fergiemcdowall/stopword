@@ -23,7 +23,7 @@ export default [
     output: [
       { name: 'sw', file: './dist/stopword.umd.min.js', format: 'umd', exports: 'named' },
       { file: './dist/stopword.cjs.min.js', format: 'cjs' },
-      { file: './dist/stopword.esm.min.mjs', format: 'esm' }
+      { file: './dist/stopword.esm.min.mjs', format: 'es' }
     ],
     plugins: [
       resolve(), // so Rollup can find `ms`

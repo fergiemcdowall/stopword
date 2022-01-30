@@ -25,7 +25,8 @@
   ],
   "devDependencies": {
     "batr": "^2.0.2",
-    "rollup-plugin-terser": "7.0.2"
+    "rollup-plugin-terser": "7.0.2",
+    "rollup-plugin-license": "2.6.1"
   },
   "author": "Fergus McDowall",
   "license": "MIT",
