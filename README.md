@@ -92,40 +92,40 @@ var text = sw.removeStopwords(text[, stopwords])
 
 ### &lt;language code&gt;
 
-Language codes follow [ISO 639-2 Language Code list](https://www.loc.gov/standards/iso639-2/php/code_list.php) and using the bibliographic (B) versions. Arrays of stopwords for the following 57 languages are supplied:
+Language codes follow [ISO 639-3 Language Code list](https://iso639-3.sil.org/code_tables/639/data) and using the bibliographic (B) versions. Arrays of stopwords for the following 57 languages are supplied:
 
 * `afr` - Afrikaans
-* `ara` - Arabic, modern standard
-* `arm` - Armenian
-* `baq` - Basque
+* `ara` - Arabic, Macrolanguage
+* `hye` - Armenian
+* `eus` - Basque
 * `ben` - Bengali
 * `bre` - Breton
 * `bul` - Bulgarian
-* `cat` - Catalan
-* `chi` - Chinese simplified
+* `cat` - Catalan, Valencian 
+* `zho` - Chinese, Macrolanguage
 * `hrv` - Croatian
-* `cze` - Czech
+* `ces` - Czech
 * `dan` - Danish
-* `dut` - Dutch
+* `nld` - Dutch
 * `eng` - English
 * `epo` - Esperanto
-* `est` - Estonian
+* `est` - Estonian, Macrolanguage
 * `fin` - Finnish
-* `fre` - French
+* `fra` - French
 * `glg` - Galician
-* `ger` - German
-* `gre` - Greek, modern
-* `ha` - Hausa
-* `he` - Hebrew
-* `hi` - Hindi
-* `hu` - Hungarian
-* `id` - Indonesian
-* `ga` - Irish
-* `it` - Italian
-* `ja` - Japanese
-* `ko` - Korean
-* `la` - Latin
-* `lv` - Latvian
+* `deu` - German
+* `ell` - Greek, Modern
+* `hau` - Hausa
+* `heb` - Hebrew
+* `hin` - Hindi
+* `hun` - Hungarian
+* `ind` - Indonesian
+* `gle` - Irish
+* `ita` - Italian
+* `jpn` - Japanese
+* `kor` - Korean
+* `lat` - Latin
+* `lav` - Latvian, Macrolanguage
 * `lgg` - Lugbara (without diacritics)
 * `lggo` - Lugbara official (with diacritics)
 * `mr` - Marathi

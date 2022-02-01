@@ -1,28 +1,39 @@
 const test = require('ava')
-const { removeStopwords, afr, ara, arm, baq, ben, bre, bul, cat, chi, hrv, cze, dan, dut, eng, epo, est, fin, fre, glg, ger, gre, es, ga, ha, he, hi, hu, id, it, ja, ko, la, lgg, lggo, lv, mr, my, no, per, pa, pl, pt, ptbr, ro, ru, sk, sl, so, st, sv, sw, th, tl, tr, ur, vi, yo, zu } = require('../dist/stopword.cjs.js')
+const { removeStopwords, afr, ara, hye, eus, ben, bre, bul, cat, zho, hrv, ces, dan, nld, eng, epo, est, fin, fra, glg, deu, ell, hau, heb, hin, hun, ind, gle, ita, jpn, kor, lat, lav, es, lgg, lggo, mr, my, no, per, pa, pl, pt, ptbr, ro, ru, sk, sl, so, st, sv, sw, th, tl, tr, ur, vi, yo, zu } = require('../dist/stopword.cjs.js')
 
-// matching old variables
+// matching old language codes / variables
 const af = afr // afrikaans
-const ar = ara // arabic, modern standard
-const hy = arm // armenian
-const eu = baq // basque
+const ar = ara // arabic, macrolanguage
+const hy = hye // armenian
+const eu = eus // basque
 const bn = ben // bengali
 const br = bre // breton
 const bg = bul // bulgarian
 const ca = cat // catalan
-const zh = chi // chinese simplified
+const zh = zho // chinese, macrolanguage
 const hr = hrv // croatian
-const cs = cze // czech
+const cs = ces // czech
 const da = dan // danish
-const nl = dut // dutch
+const nl = nld // dutch
 const en = eng // english
-const eo = epo // english
+const eo = epo // esperanto
 const et = est // estonian
 const fi = fin // finish
-const fr = fre // french
+const fr = fra // french
 const gl = glg // galician
-const de = ger // german
-const el = gre // greek, modern
+const de = deu // german
+const el = ell // greek, modern
+const ha = hau // hausa
+const he = heb // hebrew
+const hi = hin // hindu
+const hu = hun // hungarian
+const id = ind // indonesian
+const ga = gle // irish
+const it = ita // italian
+const ja = jpn // japanese
+const ko = kor // korean
+const la = lat // latin
+const lv = lav // latvian
 
 const fa = per // persian / farsi
 
