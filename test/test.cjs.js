@@ -1,5 +1,5 @@
 const test = require('ava')
-const { removeStopwords, afr, ara, hye, eus, ben, bre, bul, cat, zho, hrv, ces, dan, nld, eng, epo, est, fin, fra, glg, deu, ell, hau, heb, hin, hun, ind, gle, ita, jpn, kor, lat, lav, es, lgg, lggo, mr, my, no, per, pa, pl, pt, ptbr, ro, ru, sk, sl, so, st, sv, sw, th, tl, tr, ur, vi, yo, zu } = require('../dist/stopword.cjs.js')
+const { removeStopwords, afr, ara, hye, eus, ben, bre, bul, cat, zho, hrv, ces, dan, nld, eng, epo, est, fin, fra, glg, deu, ell, hau, heb, hin, hun, ind, gle, ita, jpn, kor, lat, lav, es, lgg, lggNd, mar, mya, nob, fas, pol, por, porBr, panGu, ro, ru, sk, sl, so, st, sv, sw, th, tl, tr, ur, vi, yo, zu } = require('../dist/stopword.cjs.js')
 
 // matching old language codes / variables
 const af = afr // afrikaans
@@ -34,8 +34,14 @@ const ja = jpn // japanese
 const ko = kor // korean
 const la = lat // latin
 const lv = lav // latvian
-
-const fa = per // persian / farsi
+const mr = mar // marathi
+const my = mya // myanmar
+const no = nob // norwegian bokmål
+const fa = fas // persian (farsi)
+const pl = pol // polish
+const pt = por // portugese
+const ptbr = porBr // portugese
+const pa = panGu // punjabi (punjabi) - grmukhi script
 
 // const { removeStopwords, af, ar, bn, bg, br, ca, cs, da, de, el, en, eo, es, et, eu, fa, fr, ga, gl, fi, ha, he, hi, hr, hu, hy, id, it, ja, ko, la, lgg, lggo, lv, mr, my, nl, no, pa, pl, pt, ptbr, ro, ru, sk, sl, so, st, sv, sw, th, tl, tr, ur, vi, yo, zh, zu } = require('../dist/stopword.cjs.js')
 
@@ -270,14 +276,14 @@ test('remove vietnamese stopwords', (t) => {
 test('remove lugbara (without diacritics) stopwords', (t) => {
   t.plan(1)
   const oldString = 'ri kome izu ni ma dria ri enya nya kabele izu ni si ku I vile akuri ra mu a\'a oce ambu ni ma talaa a\'a di idri ru eli izu'.split(' ')
-  const newString = removeStopwords(oldString, lgg)
+  const newString = removeStopwords(oldString, lggNd)
   t.deepEqual(newString, ['kome', 'izu', 'enya', 'nya', 'kabele', 'izu', 'akuri', 'a\'a', 'oce', 'ambu', 'talaa', 'a\'a', 'idri', 'eli', 'izu'])
 })
 
 test('remove lugbara official (with diacritics) stopwords', (t) => {
   t.plan(1)
   const oldString = 'rɨ kómé èzʉ́ ni mà drìá, rɨ nyaká nyá kà\'bèlé èzʉ́ nɨ sɨ ̀ Kʉ \'ɨ ́ vɨ ́lé àkú rɨ ̀ rá mu a\'á òce àzɨ ́ àmbú nɨ mà táláá a\'á élɨ ́ èzʉ́'.split(' ')
-  const newString = removeStopwords(oldString, lggo)
+  const newString = removeStopwords(oldString, lgg)
   t.deepEqual(newString, ['kómé', 'èzʉ́', 'ni', 'drìá,', 'nyaká', 'nyá', 'kà\'bèlé', 'èzʉ́', '\'ɨ', '́lé', 'àkú', 'mu', 'a\'á', 'òce', 'àmbú', 'táláá', 'a\'á', 'élɨ', 'èzʉ́'])
 })
 

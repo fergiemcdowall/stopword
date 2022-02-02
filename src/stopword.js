@@ -30,17 +30,17 @@ import { ita } from './stopwords_ita.js'
 import { jpn } from './stopwords_jpn.js'
 import { kor } from './stopwords_kor.js'
 import { lat } from './stopwords_lat.js'
-import { lgg } from './stopwords_lgg.js'
-import { lggo } from './stopwords_lggo.js'
 import { lav } from './stopwords_lav.js'
-import { mr } from './stopwords_mr.js'
-import { my } from './stopwords_my.js'
-import { no } from './stopwords_no.js'
-import { pa } from './stopwords_pa.js'
-import { per } from './stopwords_per.js'
-import { pl } from './stopwords_pl.js'
-import { pt } from './stopwords_pt.js'
-import { ptbr } from './stopwords_ptbr.js'
+import { lgg } from './stopwords_lgg.js'
+import { lggNd } from './stopwords_lggNd.js'
+import { mar } from './stopwords_mar.js'
+import { mya } from './stopwords_mya.js'
+import { nob } from './stopwords_nob.js'
+import { panGu } from './stopwords_panGu.js'
+import { fas } from './stopwords_fas.js'
+import { pol } from './stopwords_pol.js'
+import { por } from './stopwords_por.js'
+import { porBr } from './stopwords_porBr.js'
 import { ro } from './stopwords_ro.js'
 import { ru } from './stopwords_ru.js'
 import { sk } from './stopwords_sk.js'
@@ -69,5 +69,5 @@ const removeStopwords = function (tokens, stopwords) {
   })
 }
 
-export { removeStopwords, afr, ara, hye, eus, ben, bre, bul, cat, zho, hrv, ces, dan, nld, eng, epo, est, per, fin, fra, glg, deu, ell, hau, heb, hin, es, hun, ind, gle, ita, jpn, kor, lat, lav, lgg, lggo, mr, my, no, pa, pl, pt, ptbr, ro, ru, sk, sl, so, st, sv, sw, th, tl, tr, ur, vi, yo, zu }
+export { removeStopwords, afr, ara, hye, eus, ben, bre, bul, cat, zho, hrv, ces, dan, nld, eng, epo, est, fin, fra, glg, deu, ell, hau, heb, hin, es, hun, ind, gle, ita, jpn, kor, lat, lav, lgg, lggNd, mar, mya, nob, fas, pol, por, porBr, panGu, ro, ru, sk, sl, so, st, sv, sw, th, tl, tr, ur, vi, yo, zu }
 // export { removeStopwords, af, ar, bn, bg, br, ca, cs, da, de, el, en, eo, es, et, eu, fa, fr, ga, gl, fi, ha, he, hi, hr, hu, hy, id, it, ja, ko, la, lgg, lggo, lv, mr, my, nl, no, pa, pl, pt, ptbr, ro, ru, sk, sl, so, st, sv, sw, th, tl, tr, ur, vi, yo, zh, zu }

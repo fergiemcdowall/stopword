@@ -16,5 +16,5 @@ limitations under the License.
 /* This list is frequency sorted. That means it can be sliced from the bottom
 and be less agressive in excluding stopwords */
 
-const lgg = ['ma', 'ni', 'ri', 'eri', 'di', 'yi', 'si', 'ba', 'nga', 'i', 'ra', 'ku', 'be', 'yo', 'da', 'azini', 'dria', 'ru', 'azi', 'mu', 'te', 'ndra', 'diyi', 'ima', 'mi', 'alu', 'nde', 'alia', 'le', 'vile', 'dri', 'pati', 'aria', 'bo', 'e\'yo', 'tu', 'kini', 'dii', 'ama', 'eyi', 'dika', 'pi', 'e', 'angu', 'e\'do', 'pie', 'ka', 'ti', 'o\'du', 'du']
+const lgg = ['́', '̀', 'nɨ', 'mà', 'rɨ', 'dɨ', 'ɨ', '́nɨ', 'èrɨ', '́á\'', 'sɨ', 'àzɨ', 'yɨ', 'rá', 'vɨ', 'nga', 'be', 'mɨ', 'à', 'dà', 'kʉ', 'bá', ' ́lé', 'má', 'e', 'yo', '̀yɨ', 'ma', 'kɨ', 'àlʉ', '́mà', 'rʉ́', 'drɨ', 'patí', 'a', 'è', 'yó', 'te', '̀á', 'mà', 'mâ', 'dálé', 'yí', '̌', 'pɨ', 'e\'yó', 'ndráa', 'bo', 'di', 'drìá']
 export { lgg }

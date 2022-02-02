@@ -92,7 +92,7 @@ var text = sw.removeStopwords(text[, stopwords])
 
 ### &lt;language code&gt;
 
-Language codes follow [ISO 639-3 Language Code list](https://iso639-3.sil.org/code_tables/639/data) and using the bibliographic (B) versions. Arrays of stopwords for the following 57 languages are supplied:
+Language codes follow [ISO 639-3 Language Code list](https://iso639-3.sil.org/code_tables/639/data). Arrays of stopwords for the following 57 languages are supplied:
 
 * `afr` - Afrikaans
 * `ara` - Arabic, Macrolanguage
@@ -126,16 +126,16 @@ Language codes follow [ISO 639-3 Language Code list](https://iso639-3.sil.org/co
 * `kor` - Korean
 * `lat` - Latin
 * `lav` - Latvian, Macrolanguage
-* `lgg` - Lugbara (without diacritics)
-* `lggo` - Lugbara official (with diacritics)
-* `mr` - Marathi
-* `my` - Myanmar
-* `no` - Norwegian
-* `per` - Persian/ Farsi
-* `pl` - Polish
-* `pt` - Portuguese
-* `ptbr` - Portuguese (Brazilian)
-* `pa` - Punjabi Gurmukhi
+* `lgg` - Lugbara
+* `lggNd` - Lugbara (no diacritics)
+* `mar` - Marathi
+* `mya` - Myanmar (Burmese)
+* `nob` - Norwegian bokmål
+* `fas` - Persian (Farsi)
+* `pol` - Polish
+* `por` - Portuguese
+* `porBr` - Portuguese (Brazilian)
+* `panGu` - Panjabi, Punjabi (Gurmukhi script)
 * `ro` - Romanian
 * `ru` - Russian
 * `sk` - Slovak
