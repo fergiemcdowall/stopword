@@ -1,5 +1,5 @@
 const test = require('ava')
-const { removeStopwords, afr, ara, hye, eus, ben, bre, bul, cat, zho, hrv, ces, dan, nld, eng, epo, est, fin, fra, glg, deu, ell, hau, heb, hin, hun, ind, gle, ita, jpn, kor, lat, lav, es, lgg, lggNd, mar, mya, nob, fas, pol, por, porBr, panGu, ro, ru, sk, sl, so, st, sv, sw, th, tl, tr, ur, vi, yo, zu } = require('../dist/stopword.cjs.js')
+const { removeStopwords, afr, ara, hye, eus, ben, bre, bul, cat, zho, hrv, ces, dan, nld, eng, epo, est, fin, fra, glg, deu, ell, hau, heb, hin, hun, ind, gle, ita, jpn, kor, lat, lav, lgg, lggNd, mar, mya, nob, fas, pol, por, porBr, panGu, ron, rus, slk, slv, som, sot, spa, swa, swe, tha, tgl, tur, urd, vie, yor, zul } = require('../dist/stopword.cjs.js')
 
 // matching old language codes / variables
 const af = afr // afrikaans
@@ -33,6 +33,9 @@ const it = ita // italian
 const ja = jpn // japanese
 const ko = kor // korean
 const la = lat // latin
+// lugbara isn't possible to convert from old to new ISO-codes because of the old naming
+// lgg -> Lugbara
+// lggNd -> Lugbara w/ no diacritics
 const lv = lav // latvian
 const mr = mar // marathi
 const my = mya // myanmar
@@ -40,8 +43,24 @@ const no = nob // norwegian bokmål
 const fa = fas // persian (farsi)
 const pl = pol // polish
 const pt = por // portugese
-const ptbr = porBr // portugese
-const pa = panGu // punjabi (punjabi) - grmukhi script
+const ptbr = porBr // portugese (brazilian)
+const pa = panGu // punjabi (punjabi), grmukhi script
+const ro = ron // romanian (moldavian, moldovan)
+const ru = rus // russian
+const sk = slk // slovak
+const sl = slv // slovenian
+const so = som // somali
+const st = sot // sotho, southern
+const es = spa // spanish, castilian
+const sw = swa // swahili, macrolanguage
+const sv = swe // swedish
+const th = tha // thai
+const tl = tgl // tagalog (filipino)
+const tr = tur // turkish
+const ur = urd // urdu
+const vi = vie // vietnamese
+const yo = yor // youruba
+const zu = zul // zulu
 
 // const { removeStopwords, af, ar, bn, bg, br, ca, cs, da, de, el, en, eo, es, et, eu, fa, fr, ga, gl, fi, ha, he, hi, hr, hu, hy, id, it, ja, ko, la, lgg, lggo, lv, mr, my, nl, no, pa, pl, pt, ptbr, ro, ru, sk, sl, so, st, sv, sw, th, tl, tr, ur, vi, yo, zh, zu } = require('../dist/stopword.cjs.js')
 

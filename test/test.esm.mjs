@@ -1,5 +1,66 @@
 import test from 'ava'
-import { removeStopwords, af, ar, bn, bg, br, ca, cs, da, de, el, en, eo, es, et, eu, fa, fr, ga, gl, fi, ha, he, hi, hr, hu, hy, id, it, ja, ko, la, lgg, lggo, lv, mr, my, nl, no, pa, pl, pt, ptbr, ro, ru, sk, sl, so, st, sv, sw, th, tl, tr, ur, vi, yo, zh, zu } from '../dist/stopword.esm.mjs'
+import { removeStopwords, afr, ara, hye, eus, ben, bre, bul, cat, zho, hrv, ces, dan, nld, eng, epo, est, fin, fra, glg, deu, ell, hau, heb, hin, hun, ind, gle, ita, jpn, kor, lat, lav, lgg, lggNd, mar, mya, nob, fas, pol, por, porBr, panGu, ron, rus, slk, slv, som, sot, spa, swa, swe, tha, tgl, tur, urd, vie, yor, zul } from '../dist/stopword.esm.mjs'
+
+// matching old language codes / variables
+const af = afr // afrikaans
+const ar = ara // arabic, macrolanguage
+const hy = hye // armenian
+const eu = eus // basque
+const bn = ben // bengali
+const br = bre // breton
+const bg = bul // bulgarian
+const ca = cat // catalan
+const zh = zho // chinese, macrolanguage
+const hr = hrv // croatian
+const cs = ces // czech
+const da = dan // danish
+const nl = nld // dutch
+const en = eng // english
+const eo = epo // esperanto
+const et = est // estonian
+const fi = fin // finish
+const fr = fra // french
+const gl = glg // galician
+const de = deu // german
+const el = ell // greek, modern
+const ha = hau // hausa
+const he = heb // hebrew
+const hi = hin // hindu
+const hu = hun // hungarian
+const id = ind // indonesian
+const ga = gle // irish
+const it = ita // italian
+const ja = jpn // japanese
+const ko = kor // korean
+const la = lat // latin
+// lugbara isn't possible to convert from old to new ISO-codes because of the old naming
+// lgg -> Lugbara
+// lggNd -> Lugbara w/ no diacritics
+const lv = lav // latvian
+const mr = mar // marathi
+const my = mya // myanmar
+const no = nob // norwegian bokmål
+const fa = fas // persian (farsi)
+const pl = pol // polish
+const pt = por // portugese
+const ptbr = porBr // portugese (brazilian)
+const pa = panGu // punjabi (punjabi), grmukhi script
+const ro = ron // romanian (moldavian, moldovan)
+const ru = rus // russian
+const sk = slk // slovak
+const sl = slv // slovenian
+const so = som // somali
+const st = sot // sotho, southern
+const es = spa // spanish, castilian
+const sw = swa // swahili, macrolanguage
+const sv = swe // swedish
+const th = tha // thai
+const tl = tgl // tagalog (filipino)
+const tr = tur // turkish
+const ur = urd // urdu
+const vi = vie // vietnamese
+const yo = yor // youruba
+const zu = zul // zulu
 
 test('remove stopwords, default to english and preserve case', (t) => {
   t.plan(1)
@@ -232,14 +293,14 @@ test('remove vietnamese stopwords', (t) => {
 test('remove lugbara (without diacritics) stopwords', (t) => {
   t.plan(1)
   const oldString = 'ri kome izu ni ma dria ri enya nya kabele izu ni si ku I vile akuri ra mu a\'a oce ambu ni ma talaa a\'a di idri ru eli izu'.split(' ')
-  const newString = removeStopwords(oldString, lgg)
+  const newString = removeStopwords(oldString, lggNd)
   t.deepEqual(newString, ['kome', 'izu', 'enya', 'nya', 'kabele', 'izu', 'akuri', 'a\'a', 'oce', 'ambu', 'talaa', 'a\'a', 'idri', 'eli', 'izu'])
 })
 
 test('remove lugbara official (with diacritics) stopwords', (t) => {
   t.plan(1)
   const oldString = 'rɨ kómé èzʉ́ ni mà drìá, rɨ nyaká nyá kà\'bèlé èzʉ́ nɨ sɨ ̀ Kʉ \'ɨ ́ vɨ ́lé àkú rɨ ̀ rá mu a\'á òce àzɨ ́ àmbú nɨ mà táláá a\'á élɨ ́ èzʉ́'.split(' ')
-  const newString = removeStopwords(oldString, lggo)
+  const newString = removeStopwords(oldString, lgg)
   t.deepEqual(newString, ['kómé', 'èzʉ́', 'ni', 'drìá,', 'nyaká', 'nyá', 'kà\'bèlé', 'èzʉ́', '\'ɨ', '́lé', 'àkú', 'mu', 'a\'á', 'òce', 'àmbú', 'táláá', 'a\'á', 'élɨ', 'èzʉ́'])
 })
 

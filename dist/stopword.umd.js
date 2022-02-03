@@ -340,30 +340,6 @@
 
     const hin = ['अंदर', 'अत', 'अदि', 'अप', 'अपना', 'अपनि', 'अपनी', 'अपने', 'अभि', 'अभी', 'आदि', 'आप', 'इंहिं', 'इंहें', 'इंहों', 'इतयादि', 'इत्यादि', 'इन', 'इनका', 'इन्हीं', 'इन्हें', 'इन्हों', 'इस', 'इसका', 'इसकि', 'इसकी', 'इसके', 'इसमें', 'इसि', 'इसी', 'इसे', 'उंहिं', 'उंहें', 'उंहों', 'उन', 'उनका', 'उनकि', 'उनकी', 'उनके', 'उनको', 'उन्हीं', 'उन्हें', 'उन्हों', 'उस', 'उसके', 'उसि', 'उसी', 'उसे', 'एक', 'एवं', 'एस', 'एसे', 'ऐसे', 'ओर', 'और', 'कइ', 'कई', 'कर', 'करता', 'करते', 'करना', 'करने', 'करें', 'कहते', 'कहा', 'का', 'काफि', 'काफ़ी', 'कि', 'किंहें', 'किंहों', 'कितना', 'किन्हें', 'किन्हों', 'किया', 'किर', 'किस', 'किसि', 'किसी', 'किसे', 'की', 'कुछ', 'कुल', 'के', 'को', 'कोइ', 'कोई', 'कोन', 'कोनसा', 'कौन', 'कौनसा', 'गया', 'घर', 'जब', 'जहाँ', 'जहां', 'जा', 'जिंहें', 'जिंहों', 'जितना', 'जिधर', 'जिन', 'जिन्हें', 'जिन्हों', 'जिस', 'जिसे', 'जीधर', 'जेसा', 'जेसे', 'जैसा', 'जैसे', 'जो', 'तक', 'तब', 'तरह', 'तिंहें', 'तिंहों', 'तिन', 'तिन्हें', 'तिन्हों', 'तिस', 'तिसे', 'तो', 'था', 'थि', 'थी', 'थे', 'दबारा', 'दवारा', 'दिया', 'दुसरा', 'दुसरे', 'दूसरे', 'दो', 'द्वारा', 'न', 'नहिं', 'नहीं', 'ना', 'निचे', 'निहायत', 'नीचे', 'ने', 'पर', 'पहले', 'पुरा', 'पूरा', 'पे', 'फिर', 'बनि', 'बनी', 'बहि', 'बही', 'बहुत', 'बाद', 'बाला', 'बिलकुल', 'भि', 'भितर', 'भी', 'भीतर', 'मगर', 'मानो', 'मे', 'में', 'यदि', 'यह', 'यहाँ', 'यहां', 'यहि', 'यही', 'या', 'यिह', 'ये', 'रखें', 'रवासा', 'रहा', 'रहे', 'ऱ्वासा', 'लिए', 'लिये', 'लेकिन', 'व', 'वगेरह', 'वरग', 'वर्ग', 'वह', 'वहाँ', 'वहां', 'वहिं', 'वहीं', 'वाले', 'वुह', 'वे', 'वग़ैरह', 'संग', 'सकता', 'सकते', 'सबसे', 'सभि', 'सभी', 'साथ', 'साबुत', 'साभ', 'सारा', 'से', 'सो', 'हि', 'ही', 'हुअ', 'हुआ', 'हुइ', 'हुई', 'हुए', 'हे', 'हें', 'है', 'हैं', 'हो', 'होता', 'होति', 'होती', 'होते', 'होना', 'होने'];
 
-    /*
-    Copyright (c) 2011, David Przybilla, Chris Umbel
-
-    Permission is hereby granted, free of charge, to any person obtaining a copy
-    of this software and associated documentation files (the "Software"), to deal
-    in the Software without restriction, including without limitation the rights
-    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-    copies of the Software, and to permit persons to whom the Software is
-    furnished to do so, subject to the following conditions:
-
-    The above copyright notice and this permission notice shall be included in
-    all copies or substantial portions of the Software.
-
-    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-    THE SOFTWARE.
-    */
-
-    const es = ['a', 'un', 'el', 'ella', 'y', 'sobre', 'de', 'la', 'que', 'en', 'los', 'del', 'se', 'las', 'por', 'un', 'para', 'con', 'no', 'una', 'su', 'al', 'lo', 'como', 'más', 'pero', 'sus', 'le', 'ya', 'o', 'porque', 'cuando', 'muy', 'sin', 'sobre', 'también', 'me', 'hasta', 'donde', 'quien', 'desde', 'nos', 'durante', 'uno', 'ni', 'contra', 'ese', 'eso', 'mí', 'qué', 'otro', 'él', 'cual', 'poco', 'mi', 'tú', 'te', 'ti', 'sí', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '_'];
-
     // Copyright (c) 2017 Peter Graham, contributors. Released under the Apache-2.0 license.
 
     const gle = ['a', 'ach', 'ag', 'agus', 'an', 'aon', 'ar', 'arna', 'as', 'b\'', 'ba', 'beirt', 'bhúr', 'caoga', 'ceathair', 'ceathrar', 'chomh', 'chtó', 'chuig', 'chun', 'cois', 'céad', 'cúig', 'cúigear', 'd\'', 'daichead', 'dar', 'de', 'deich', 'deichniúr', 'den', 'dhá', 'do', 'don', 'dtí', 'dá', 'dár', 'dó', 'faoi', 'faoin', 'faoina', 'faoinár', 'fara', 'fiche', 'gach', 'gan', 'go', 'gur', 'haon', 'hocht', 'i', 'iad', 'idir', 'in', 'ina', 'ins', 'inár', 'is', 'le', 'leis', 'lena', 'lenár', 'm\'', 'mar', 'mo', 'mé', 'na', 'nach', 'naoi', 'naonúr', 'ná', 'ní', 'níor', 'nó', 'nócha', 'ocht', 'ochtar', 'os', 'roimh', 'sa', 'seacht', 'seachtar', 'seachtó', 'seasca', 'seisear', 'siad', 'sibh', 'sinn', 'sna', 'sé', 'sí', 'tar', 'thar', 'thú', 'triúr', 'trí', 'trína', 'trínár', 'tríocha', 'tú', 'um', 'ár', 'é', 'éis', 'í', 'ó', 'ón', 'óna', 'ónár'];
@@ -702,7 +678,7 @@
 
     // Copyright (c) 2017 Peter Graham, contributors. Released under the Apache-2.0 license.
 
-    const ro = ['acea', 'aceasta', 'această', 'aceea', 'acei', 'aceia', 'acel', 'acela', 'acele', 'acelea', 'acest', 'acesta', 'aceste', 'acestea', 'aceşti', 'aceştia', 'acolo', 'acord', 'acum', 'ai', 'aia', 'aibă', 'aici', 'al', 'ale', 'alea', 'altceva', 'altcineva', 'am', 'ar', 'are', 'asemenea', 'asta', 'astea', 'astăzi', 'asupra', 'au', 'avea', 'avem', 'aveţi', 'azi', 'aş', 'aşadar', 'aţi', 'bine', 'bucur', 'bună', 'ca', 'care', 'caut', 'ce', 'cel', 'ceva', 'chiar', 'cinci', 'cine', 'cineva', 'contra', 'cu', 'cum', 'cumva', 'curând', 'curînd', 'când', 'cât', 'câte', 'câtva', 'câţi', 'cînd', 'cît', 'cîte', 'cîtva', 'cîţi', 'că', 'căci', 'cărei', 'căror', 'cărui', 'către', 'da', 'dacă', 'dar', 'datorită', 'dată', 'dau', 'de', 'deci', 'deja', 'deoarece', 'departe', 'deşi', 'din', 'dinaintea', 'dintr-', 'dintre', 'doi', 'doilea', 'două', 'drept', 'după', 'dă', 'ea', 'ei', 'el', 'ele', 'eram', 'este', 'eu', 'eşti', 'face', 'fata', 'fi', 'fie', 'fiecare', 'fii', 'fim', 'fiu', 'fiţi', 'frumos', 'fără', 'graţie', 'halbă', 'iar', 'ieri', 'la', 'le', 'li', 'lor', 'lui', 'lângă', 'lîngă', 'mai', 'mea', 'mei', 'mele', 'mereu', 'meu', 'mi', 'mie', 'mine', 'mult', 'multă', 'mulţi', 'mulţumesc', 'mâine', 'mîine', 'mă', 'ne', 'nevoie', 'nici', 'nicăieri', 'nimeni', 'nimeri', 'nimic', 'nişte', 'noastre', 'noastră', 'noi', 'noroc', 'nostru', 'nouă', 'noştri', 'nu', 'opt', 'ori', 'oricare', 'orice', 'oricine', 'oricum', 'oricând', 'oricât', 'oricînd', 'oricît', 'oriunde', 'patra', 'patru', 'patrulea', 'pe', 'pentru', 'peste', 'pic', 'poate', 'pot', 'prea', 'prima', 'primul', 'prin', 'printr-', 'puţin', 'puţina', 'puţină', 'până', 'pînă', 'rog', 'sa', 'sale', 'sau', 'se', 'spate', 'spre', 'sub', 'sunt', 'suntem', 'sunteţi', 'sută', 'sînt', 'sîntem', 'sînteţi', 'să', 'săi', 'său', 'ta', 'tale', 'te', 'timp', 'tine', 'toate', 'toată', 'tot', 'totuşi', 'toţi', 'trei', 'treia', 'treilea', 'tu', 'tăi', 'tău', 'un', 'una', 'unde', 'undeva', 'unei', 'uneia', 'unele', 'uneori', 'unii', 'unor', 'unora', 'unu', 'unui', 'unuia', 'unul', 'vi', 'voastre', 'voastră', 'voi', 'vostru', 'vouă', 'voştri', 'vreme', 'vreo', 'vreun', 'vă', 'zece', 'zero', 'zi', 'zice', 'îi', 'îl', 'îmi', 'împotriva', 'în', 'înainte', 'înaintea', 'încotro', 'încât', 'încît', 'între', 'întrucât', 'întrucît', 'îţi', 'ăla', 'ălea', 'ăsta', 'ăstea', 'ăştia', 'şapte', 'şase', 'şi', 'ştiu', 'ţi', 'ţie'];
+    const ron = ['acea', 'aceasta', 'această', 'aceea', 'acei', 'aceia', 'acel', 'acela', 'acele', 'acelea', 'acest', 'acesta', 'aceste', 'acestea', 'aceşti', 'aceştia', 'acolo', 'acord', 'acum', 'ai', 'aia', 'aibă', 'aici', 'al', 'ale', 'alea', 'altceva', 'altcineva', 'am', 'ar', 'are', 'asemenea', 'asta', 'astea', 'astăzi', 'asupra', 'au', 'avea', 'avem', 'aveţi', 'azi', 'aş', 'aşadar', 'aţi', 'bine', 'bucur', 'bună', 'ca', 'care', 'caut', 'ce', 'cel', 'ceva', 'chiar', 'cinci', 'cine', 'cineva', 'contra', 'cu', 'cum', 'cumva', 'curând', 'curînd', 'când', 'cât', 'câte', 'câtva', 'câţi', 'cînd', 'cît', 'cîte', 'cîtva', 'cîţi', 'că', 'căci', 'cărei', 'căror', 'cărui', 'către', 'da', 'dacă', 'dar', 'datorită', 'dată', 'dau', 'de', 'deci', 'deja', 'deoarece', 'departe', 'deşi', 'din', 'dinaintea', 'dintr-', 'dintre', 'doi', 'doilea', 'două', 'drept', 'după', 'dă', 'ea', 'ei', 'el', 'ele', 'eram', 'este', 'eu', 'eşti', 'face', 'fata', 'fi', 'fie', 'fiecare', 'fii', 'fim', 'fiu', 'fiţi', 'frumos', 'fără', 'graţie', 'halbă', 'iar', 'ieri', 'la', 'le', 'li', 'lor', 'lui', 'lângă', 'lîngă', 'mai', 'mea', 'mei', 'mele', 'mereu', 'meu', 'mi', 'mie', 'mine', 'mult', 'multă', 'mulţi', 'mulţumesc', 'mâine', 'mîine', 'mă', 'ne', 'nevoie', 'nici', 'nicăieri', 'nimeni', 'nimeri', 'nimic', 'nişte', 'noastre', 'noastră', 'noi', 'noroc', 'nostru', 'nouă', 'noştri', 'nu', 'opt', 'ori', 'oricare', 'orice', 'oricine', 'oricum', 'oricând', 'oricât', 'oricînd', 'oricît', 'oriunde', 'patra', 'patru', 'patrulea', 'pe', 'pentru', 'peste', 'pic', 'poate', 'pot', 'prea', 'prima', 'primul', 'prin', 'printr-', 'puţin', 'puţina', 'puţină', 'până', 'pînă', 'rog', 'sa', 'sale', 'sau', 'se', 'spate', 'spre', 'sub', 'sunt', 'suntem', 'sunteţi', 'sută', 'sînt', 'sîntem', 'sînteţi', 'să', 'săi', 'său', 'ta', 'tale', 'te', 'timp', 'tine', 'toate', 'toată', 'tot', 'totuşi', 'toţi', 'trei', 'treia', 'treilea', 'tu', 'tăi', 'tău', 'un', 'una', 'unde', 'undeva', 'unei', 'uneia', 'unele', 'uneori', 'unii', 'unor', 'unora', 'unu', 'unui', 'unuia', 'unul', 'vi', 'voastre', 'voastră', 'voi', 'vostru', 'vouă', 'voştri', 'vreme', 'vreo', 'vreun', 'vă', 'zece', 'zero', 'zi', 'zice', 'îi', 'îl', 'îmi', 'împotriva', 'în', 'înainte', 'înaintea', 'încotro', 'încât', 'încît', 'între', 'întrucât', 'întrucît', 'îţi', 'ăla', 'ălea', 'ăsta', 'ăstea', 'ăştia', 'şapte', 'şase', 'şi', 'ştiu', 'ţi', 'ţie'];
 
     /*
     Copyright (c) 2011, Polyakov Vladimir, Chris Umbel
@@ -726,15 +702,15 @@
     THE SOFTWARE.
     */
 
-    const ru = ['и', 'в', 'во', 'не', 'что', 'он', 'на', 'я', 'с', 'со', 'как', 'а', 'то', 'все', 'она', 'так', 'его', 'но', 'да', 'ты', 'к', 'у', 'же', 'вы', 'за', 'бы', 'по', 'только', 'ее', 'мне', 'было', 'вот', 'от', 'меня', 'еще', 'нет', 'о', 'из', 'ему', 'теперь', 'когда', 'даже', 'ну', 'ли', 'если', 'уже', 'или', 'ни', 'быть', 'был', 'него', 'до', 'вас', 'нибудь', 'уж', 'вам', 'сказал', 'ведь', 'там', 'потом', 'себя', 'ничего', 'ей', 'может', 'они', 'тут', 'где', 'есть', 'надо', 'ней', 'для', 'мы', 'тебя', 'их', 'чем', 'была', 'сам', 'чтоб', 'без', 'будто', 'чего', 'раз', 'тоже', 'себе', 'под', 'будет', 'ж', 'тогда', 'кто', 'этот', 'того', 'потому', 'этого', 'какой', 'совсем', 'ним', 'этом', 'почти', 'мой', 'тем', 'чтобы', 'нее', 'были', 'куда', 'всех', 'никогда', 'сегодня', 'можно', 'при', 'об', 'другой', 'хоть', 'после', 'над', 'больше', 'тот', 'через', 'эти', 'нас', 'про', 'всего', 'них', 'какая', 'много', 'разве', 'эту', 'моя', 'свою', 'этой', 'перед', 'иногда', 'лучше', 'чуть', 'том', 'нельзя', 'такой', 'им', 'более', 'всегда', 'конечно', 'всю', 'между', 'это', 'лишь'];
+    const rus = ['и', 'в', 'во', 'не', 'что', 'он', 'на', 'я', 'с', 'со', 'как', 'а', 'то', 'все', 'она', 'так', 'его', 'но', 'да', 'ты', 'к', 'у', 'же', 'вы', 'за', 'бы', 'по', 'только', 'ее', 'мне', 'было', 'вот', 'от', 'меня', 'еще', 'нет', 'о', 'из', 'ему', 'теперь', 'когда', 'даже', 'ну', 'ли', 'если', 'уже', 'или', 'ни', 'быть', 'был', 'него', 'до', 'вас', 'нибудь', 'уж', 'вам', 'сказал', 'ведь', 'там', 'потом', 'себя', 'ничего', 'ей', 'может', 'они', 'тут', 'где', 'есть', 'надо', 'ней', 'для', 'мы', 'тебя', 'их', 'чем', 'была', 'сам', 'чтоб', 'без', 'будто', 'чего', 'раз', 'тоже', 'себе', 'под', 'будет', 'ж', 'тогда', 'кто', 'этот', 'того', 'потому', 'этого', 'какой', 'совсем', 'ним', 'этом', 'почти', 'мой', 'тем', 'чтобы', 'нее', 'были', 'куда', 'всех', 'никогда', 'сегодня', 'можно', 'при', 'об', 'другой', 'хоть', 'после', 'над', 'больше', 'тот', 'через', 'эти', 'нас', 'про', 'всего', 'них', 'какая', 'много', 'разве', 'эту', 'моя', 'свою', 'этой', 'перед', 'иногда', 'лучше', 'чуть', 'том', 'нельзя', 'такой', 'им', 'более', 'всегда', 'конечно', 'всю', 'между', 'это', 'лишь'];
 
     // Copyright (c) 2017 Peter Graham, contributors. Released under the Apache-2.0 license.
 
-    const sk = ['a', 'aby', 'aj', 'ako', 'aký', 'ale', 'alebo', 'ani', 'avšak', 'ba', 'bez', 'buï', 'cez', 'do', 'ho', 'hoci', 'i', 'ich', 'im', 'ja', 'jeho', 'jej', 'jemu', 'ju', 'k', 'kam', 'kde', 'kedže', 'keï', 'kto', 'ktorý', 'ku', 'lebo', 'ma', 'mi', 'mne', 'mnou', 'mu', 'my', 'mòa', 'môj', 'na', 'nad', 'nami', 'neho', 'nej', 'nemu', 'nich', 'nielen', 'nim', 'no', 'nám', 'nás', 'náš', 'ním', 'o', 'od', 'on', 'ona', 'oni', 'ono', 'ony', 'po', 'pod', 'pre', 'pred', 'pri', 's', 'sa', 'seba', 'sem', 'so', 'svoj', 'taký', 'tam', 'teba', 'tebe', 'tebou', 'tej', 'ten', 'ti', 'tie', 'to', 'toho', 'tomu', 'tou', 'tvoj', 'ty', 'tá', 'tým', 'v', 'vami', 'veï', 'vo', 'vy', 'vám', 'vás', 'váš', 'však', 'z', 'za', 'zo', 'a', 'èi', 'èo', 'èí', 'òom', 'òou', 'òu', 'že'];
+    const slk = ['a', 'aby', 'aj', 'ako', 'aký', 'ale', 'alebo', 'ani', 'avšak', 'ba', 'bez', 'buï', 'cez', 'do', 'ho', 'hoci', 'i', 'ich', 'im', 'ja', 'jeho', 'jej', 'jemu', 'ju', 'k', 'kam', 'kde', 'kedže', 'keï', 'kto', 'ktorý', 'ku', 'lebo', 'ma', 'mi', 'mne', 'mnou', 'mu', 'my', 'mòa', 'môj', 'na', 'nad', 'nami', 'neho', 'nej', 'nemu', 'nich', 'nielen', 'nim', 'no', 'nám', 'nás', 'náš', 'ním', 'o', 'od', 'on', 'ona', 'oni', 'ono', 'ony', 'po', 'pod', 'pre', 'pred', 'pri', 's', 'sa', 'seba', 'sem', 'so', 'svoj', 'taký', 'tam', 'teba', 'tebe', 'tebou', 'tej', 'ten', 'ti', 'tie', 'to', 'toho', 'tomu', 'tou', 'tvoj', 'ty', 'tá', 'tým', 'v', 'vami', 'veï', 'vo', 'vy', 'vám', 'vás', 'váš', 'však', 'z', 'za', 'zo', 'a', 'èi', 'èo', 'èí', 'òom', 'òou', 'òu', 'že'];
 
     // Copyright (c) 2017 Peter Graham, contributors. Released under the Apache-2.0 license.
 
-    const sl = ['a', 'ali', 'april', 'avgust', 'b', 'bi', 'bil', 'bila', 'bile', 'bili', 'bilo', 'biti', 'blizu', 'bo', 'bodo', 'bojo', 'bolj', 'bom', 'bomo', 'boste', 'bova', 'boš', 'brez', 'c', 'cel', 'cela', 'celi', 'celo', 'd', 'da', 'daleč', 'dan', 'danes', 'datum', 'december', 'deset', 'deseta', 'deseti', 'deseto', 'devet', 'deveta', 'deveti', 'deveto', 'do', 'dober', 'dobra', 'dobri', 'dobro', 'dokler', 'dol', 'dolg', 'dolga', 'dolgi', 'dovolj', 'drug', 'druga', 'drugi', 'drugo', 'dva', 'dve', 'e', 'eden', 'en', 'ena', 'ene', 'eni', 'enkrat', 'eno', 'etc.', 'f', 'februar', 'g', 'g.', 'ga', 'ga.', 'gor', 'gospa', 'gospod', 'h', 'halo', 'i', 'idr.', 'ii', 'iii', 'in', 'iv', 'ix', 'iz', 'j', 'januar', 'jaz', 'je', 'ji', 'jih', 'jim', 'jo', 'julij', 'junij', 'jutri', 'k', 'kadarkoli', 'kaj', 'kajti', 'kako', 'kakor', 'kamor', 'kamorkoli', 'kar', 'karkoli', 'katerikoli', 'kdaj', 'kdo', 'kdorkoli', 'ker', 'ki', 'kje', 'kjer', 'kjerkoli', 'ko', 'koder', 'koderkoli', 'koga', 'komu', 'kot', 'kratek', 'kratka', 'kratke', 'kratki', 'l', 'lahka', 'lahke', 'lahki', 'lahko', 'le', 'lep', 'lepa', 'lepe', 'lepi', 'lepo', 'leto', 'm', 'maj', 'majhen', 'majhna', 'majhni', 'malce', 'malo', 'manj', 'marec', 'me', 'med', 'medtem', 'mene', 'mesec', 'mi', 'midva', 'midve', 'mnogo', 'moj', 'moja', 'moje', 'mora', 'morajo', 'moram', 'moramo', 'morate', 'moraš', 'morem', 'mu', 'n', 'na', 'nad', 'naj', 'najina', 'najino', 'najmanj', 'naju', 'največ', 'nam', 'narobe', 'nas', 'nato', 'nazaj', 'naš', 'naša', 'naše', 'ne', 'nedavno', 'nedelja', 'nek', 'neka', 'nekaj', 'nekatere', 'nekateri', 'nekatero', 'nekdo', 'neke', 'nekega', 'neki', 'nekje', 'neko', 'nekoga', 'nekoč', 'ni', 'nikamor', 'nikdar', 'nikjer', 'nikoli', 'nič', 'nje', 'njega', 'njegov', 'njegova', 'njegovo', 'njej', 'njemu', 'njen', 'njena', 'njeno', 'nji', 'njih', 'njihov', 'njihova', 'njihovo', 'njiju', 'njim', 'njo', 'njun', 'njuna', 'njuno', 'no', 'nocoj', 'november', 'npr.', 'o', 'ob', 'oba', 'obe', 'oboje', 'od', 'odprt', 'odprta', 'odprti', 'okoli', 'oktober', 'on', 'onadva', 'one', 'oni', 'onidve', 'osem', 'osma', 'osmi', 'osmo', 'oz.', 'p', 'pa', 'pet', 'peta', 'petek', 'peti', 'peto', 'po', 'pod', 'pogosto', 'poleg', 'poln', 'polna', 'polni', 'polno', 'ponavadi', 'ponedeljek', 'ponovno', 'potem', 'povsod', 'pozdravljen', 'pozdravljeni', 'prav', 'prava', 'prave', 'pravi', 'pravo', 'prazen', 'prazna', 'prazno', 'prbl.', 'precej', 'pred', 'prej', 'preko', 'pri', 'pribl.', 'približno', 'primer', 'pripravljen', 'pripravljena', 'pripravljeni', 'proti', 'prva', 'prvi', 'prvo', 'r', 'ravno', 'redko', 'res', 'reč', 's', 'saj', 'sam', 'sama', 'same', 'sami', 'samo', 'se', 'sebe', 'sebi', 'sedaj', 'sedem', 'sedma', 'sedmi', 'sedmo', 'sem', 'september', 'seveda', 'si', 'sicer', 'skoraj', 'skozi', 'slab', 'smo', 'so', 'sobota', 'spet', 'sreda', 'srednja', 'srednji', 'sta', 'ste', 'stran', 'stvar', 'sva', 't', 'ta', 'tak', 'taka', 'take', 'taki', 'tako', 'takoj', 'tam', 'te', 'tebe', 'tebi', 'tega', 'težak', 'težka', 'težki', 'težko', 'ti', 'tista', 'tiste', 'tisti', 'tisto', 'tj.', 'tja', 'to', 'toda', 'torek', 'tretja', 'tretje', 'tretji', 'tri', 'tu', 'tudi', 'tukaj', 'tvoj', 'tvoja', 'tvoje', 'u', 'v', 'vaju', 'vam', 'vas', 'vaš', 'vaša', 'vaše', 've', 'vedno', 'velik', 'velika', 'veliki', 'veliko', 'vendar', 'ves', 'več', 'vi', 'vidva', 'vii', 'viii', 'visok', 'visoka', 'visoke', 'visoki', 'vsa', 'vsaj', 'vsak', 'vsaka', 'vsakdo', 'vsake', 'vsaki', 'vsakomur', 'vse', 'vsega', 'vsi', 'vso', 'včasih', 'včeraj', 'x', 'z', 'za', 'zadaj', 'zadnji', 'zakaj', 'zaprta', 'zaprti', 'zaprto', 'zdaj', 'zelo', 'zunaj', 'č', 'če', 'često', 'četrta', 'četrtek', 'četrti', 'četrto', 'čez', 'čigav', 'š', 'šest', 'šesta', 'šesti', 'šesto', 'štiri', 'ž', 'že'];
+    const slv = ['a', 'ali', 'april', 'avgust', 'b', 'bi', 'bil', 'bila', 'bile', 'bili', 'bilo', 'biti', 'blizu', 'bo', 'bodo', 'bojo', 'bolj', 'bom', 'bomo', 'boste', 'bova', 'boš', 'brez', 'c', 'cel', 'cela', 'celi', 'celo', 'd', 'da', 'daleč', 'dan', 'danes', 'datum', 'december', 'deset', 'deseta', 'deseti', 'deseto', 'devet', 'deveta', 'deveti', 'deveto', 'do', 'dober', 'dobra', 'dobri', 'dobro', 'dokler', 'dol', 'dolg', 'dolga', 'dolgi', 'dovolj', 'drug', 'druga', 'drugi', 'drugo', 'dva', 'dve', 'e', 'eden', 'en', 'ena', 'ene', 'eni', 'enkrat', 'eno', 'etc.', 'f', 'februar', 'g', 'g.', 'ga', 'ga.', 'gor', 'gospa', 'gospod', 'h', 'halo', 'i', 'idr.', 'ii', 'iii', 'in', 'iv', 'ix', 'iz', 'j', 'januar', 'jaz', 'je', 'ji', 'jih', 'jim', 'jo', 'julij', 'junij', 'jutri', 'k', 'kadarkoli', 'kaj', 'kajti', 'kako', 'kakor', 'kamor', 'kamorkoli', 'kar', 'karkoli', 'katerikoli', 'kdaj', 'kdo', 'kdorkoli', 'ker', 'ki', 'kje', 'kjer', 'kjerkoli', 'ko', 'koder', 'koderkoli', 'koga', 'komu', 'kot', 'kratek', 'kratka', 'kratke', 'kratki', 'l', 'lahka', 'lahke', 'lahki', 'lahko', 'le', 'lep', 'lepa', 'lepe', 'lepi', 'lepo', 'leto', 'm', 'maj', 'majhen', 'majhna', 'majhni', 'malce', 'malo', 'manj', 'marec', 'me', 'med', 'medtem', 'mene', 'mesec', 'mi', 'midva', 'midve', 'mnogo', 'moj', 'moja', 'moje', 'mora', 'morajo', 'moram', 'moramo', 'morate', 'moraš', 'morem', 'mu', 'n', 'na', 'nad', 'naj', 'najina', 'najino', 'najmanj', 'naju', 'največ', 'nam', 'narobe', 'nas', 'nato', 'nazaj', 'naš', 'naša', 'naše', 'ne', 'nedavno', 'nedelja', 'nek', 'neka', 'nekaj', 'nekatere', 'nekateri', 'nekatero', 'nekdo', 'neke', 'nekega', 'neki', 'nekje', 'neko', 'nekoga', 'nekoč', 'ni', 'nikamor', 'nikdar', 'nikjer', 'nikoli', 'nič', 'nje', 'njega', 'njegov', 'njegova', 'njegovo', 'njej', 'njemu', 'njen', 'njena', 'njeno', 'nji', 'njih', 'njihov', 'njihova', 'njihovo', 'njiju', 'njim', 'njo', 'njun', 'njuna', 'njuno', 'no', 'nocoj', 'november', 'npr.', 'o', 'ob', 'oba', 'obe', 'oboje', 'od', 'odprt', 'odprta', 'odprti', 'okoli', 'oktober', 'on', 'onadva', 'one', 'oni', 'onidve', 'osem', 'osma', 'osmi', 'osmo', 'oz.', 'p', 'pa', 'pet', 'peta', 'petek', 'peti', 'peto', 'po', 'pod', 'pogosto', 'poleg', 'poln', 'polna', 'polni', 'polno', 'ponavadi', 'ponedeljek', 'ponovno', 'potem', 'povsod', 'pozdravljen', 'pozdravljeni', 'prav', 'prava', 'prave', 'pravi', 'pravo', 'prazen', 'prazna', 'prazno', 'prbl.', 'precej', 'pred', 'prej', 'preko', 'pri', 'pribl.', 'približno', 'primer', 'pripravljen', 'pripravljena', 'pripravljeni', 'proti', 'prva', 'prvi', 'prvo', 'r', 'ravno', 'redko', 'res', 'reč', 's', 'saj', 'sam', 'sama', 'same', 'sami', 'samo', 'se', 'sebe', 'sebi', 'sedaj', 'sedem', 'sedma', 'sedmi', 'sedmo', 'sem', 'september', 'seveda', 'si', 'sicer', 'skoraj', 'skozi', 'slab', 'smo', 'so', 'sobota', 'spet', 'sreda', 'srednja', 'srednji', 'sta', 'ste', 'stran', 'stvar', 'sva', 't', 'ta', 'tak', 'taka', 'take', 'taki', 'tako', 'takoj', 'tam', 'te', 'tebe', 'tebi', 'tega', 'težak', 'težka', 'težki', 'težko', 'ti', 'tista', 'tiste', 'tisti', 'tisto', 'tj.', 'tja', 'to', 'toda', 'torek', 'tretja', 'tretje', 'tretji', 'tri', 'tu', 'tudi', 'tukaj', 'tvoj', 'tvoja', 'tvoje', 'u', 'v', 'vaju', 'vam', 'vas', 'vaš', 'vaša', 'vaše', 've', 'vedno', 'velik', 'velika', 'veliki', 'veliko', 'vendar', 'ves', 'več', 'vi', 'vidva', 'vii', 'viii', 'visok', 'visoka', 'visoke', 'visoki', 'vsa', 'vsaj', 'vsak', 'vsaka', 'vsakdo', 'vsake', 'vsaki', 'vsakomur', 'vse', 'vsega', 'vsi', 'vso', 'včasih', 'včeraj', 'x', 'z', 'za', 'zadaj', 'zadnji', 'zakaj', 'zaprta', 'zaprti', 'zaprto', 'zdaj', 'zelo', 'zunaj', 'č', 'če', 'često', 'četrta', 'četrtek', 'četrti', 'četrto', 'čez', 'čigav', 'š', 'šest', 'šesta', 'šesti', 'šesto', 'štiri', 'ž', 'že'];
 
     /* Copyright 2016 Liam Doherty
 
@@ -754,7 +730,7 @@
     /* This list is frequency sorted. That means it can be sliced from the bottom
     and be less agressive in excluding stopwords */
 
-    const so = ['oo', 'atabo', 'ay', 'ku', 'waxeey', 'uu', 'lakin', 'si', 'ayuu', 'soo', 'waa', 'ka', 'kasoo', 'kale', 'waxuu', 'ayee', 'ayaa', 'kuu', 'isku', 'ugu', 'jiray', 'dhan', 'dambeestii', 'inuu', 'in', 'jirtay', 'uheestay', 'aad', 'uga', 'hadana', 'timaado', 'timaaday'];
+    const som = ['oo', 'atabo', 'ay', 'ku', 'waxeey', 'uu', 'lakin', 'si', 'ayuu', 'soo', 'waa', 'ka', 'kasoo', 'kale', 'waxuu', 'ayee', 'ayaa', 'kuu', 'isku', 'ugu', 'jiray', 'dhan', 'dambeestii', 'inuu', 'in', 'jirtay', 'uheestay', 'aad', 'uga', 'hadana', 'timaado', 'timaaday'];
 
     /* Copyright 2016 Liam Doherty
 
@@ -774,97 +750,7 @@
     /* This list is frequency sorted. That means it can be sliced from the bottom
     and be less agressive in excluding stopwords */
 
-    const st = ['a', 'le', 'o', 'ba', 'ho', 'oa', 'ea', 'ka', 'hae', 'tselane', 'eaba', 'ke', 'hore', 'ha', 'e', 'ne', 're', 'bona', 'me', 'limo', 'tsa', 'haholo', 'la', 'empa', 'ngoanake', 'se', 'moo', 'm\'e', 'bane', 'mo', 'tse', 'sa', 'li', 'ena', 'bina', 'pina', 'hape'];
-
-    /*
-    Creative Commons – Attribution / ShareAlike 3.0 license
-    http://creativecommons.org/licenses/by-sa/3.0/
-
-    List based on frequently used words in subtitles in 2012.
-
-    Thanks to
-    opensubtitles.org
-    https://invokeit.wordpress.com/frequency-word-lists/#comment-9707
-    */
-
-    const sv = ['jag', 'det', 'är', 'du', 'inte', 'att', 'en', 'och', 'har', 'vi', 'på', 'i', 'för', 'han', 'vad', 'med', 'mig', 'som', 'här', 'om', 'dig', 'var', 'den', 'så', 'till', 'kan', 'de', 'ni', 'ska', 'ett', 'men', 'av', 'vill', 'nu', 'ja', 'nej', 'bara', 'hon', 'hur', 'min', 'där', 'honom', 'kom', 'din', 'då', 'när', 'ha', 'er', 'ta', 'ut', 'får', 'man', 'vara', 'oss', 'dem', 'eller', 'varför', 'alla', 'från', 'upp', 'igen', 'sa', 'hade', 'allt', 'in', 'sig', 'ingen', 'henne', 'vem', 'mitt', 'nåt', 'blir', 'än', 'bli', 'ju', 'två', 'tar', 'hans', 'ditt', 'mina', 'åt', 'väl', 'också', 'nån', 'låt', 'detta', 'va', 'dina', 'dom', 'blev', 'inga', 'sin', 'just', 'många', 'vart', 'vilken', 'ur', 'ens', 'sitt', 'e', 'jo', 'era', 'deras', 'fem', 'sex', 'denna', 'vilket', 'fyra', 'vårt', 'emot', 'tio', 'ert', 'sju', 'åtta', 'nånting', 'ned', 'ers', 'nio', 'mej', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '_'];
-
-    /*
-    Copyright (c) 2016 Liam Doherty
-
-    Licensed under the Apache License, Version 2.0 (the "License");
-    you may not use this file except in compliance with the License.
-    You may obtain a copy of the License at
-
-        http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing, software
-    distributed under the License is distributed on an "AS IS" BASIS,
-    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-    See the License for the specific language governing permissions and
-    limitations under the License.
-    */
-
-    // This list is frequency sorted. That means it can be sliced from the bottom
-    // and be less agressive in excluding stopwords */
-
-    const sw = ['na', 'ya', 'wa', 'kwa', 'ni', 'za', 'katika', 'la', 'kuwa', 'kama', 'kwamba', 'cha', 'hiyo', 'lakini', 'yake', 'hata', 'wakati', 'hivyo', 'sasa', 'wake', 'au', 'watu', 'hii', 'zaidi', 'vya', 'huo', 'tu', 'kwenye', 'si', 'pia', 'ili', 'moja', 'kila', 'baada', 'ambao', 'ambayo', 'yao', 'wao', 'kuna', 'hilo', 'kutoka', 'kubwa', 'pamoja', 'bila', 'huu', 'hayo', 'sana', 'ndani', 'mkuu', 'hizo', 'kufanya', 'wengi', 'hadi', 'mmoja', 'hili', 'juu', 'kwanza', 'wetu', 'kuhusu', 'baadhi', 'wote', 'yetu', 'hivi', 'kweli', 'mara', 'wengine', 'nini', 'ndiyo', 'zao', 'kati', 'hao', 'hapa', 'kutokana', 'muda', 'habari', 'ambaye', 'wenye', 'nyingine', 'hakuna', 'tena', 'hatua', 'bado', 'nafasi', 'basi', 'kabisa', 'hicho', 'nje', 'huyo', 'vile', 'yote', 'mkubwa', 'alikuwa', 'zote', 'leo', 'haya', 'huko', 'kutoa', 'mwa', 'kiasi', 'hasa', 'nyingi', 'kabla', 'wale', 'chini', 'gani', 'hapo', 'lazima', 'mwingine', 'bali', 'huku', 'zake', 'ilikuwa', 'tofauti', 'kupata', 'mbalimbali', 'pale', 'kusema', 'badala', 'wazi', 'yeye', 'alisema', 'hawa', 'ndio', 'hizi', 'tayari', 'wala', 'muhimu', 'ile', 'mpya', 'ambazo', 'dhidi', 'kwenda', 'sisi', 'kwani', 'jinsi', 'binafsi', 'kutumia', 'mbili', 'mbali', 'kuu', 'mengine', 'mbele', 'namna', 'mengi', 'upande'];
-
-    // Copyright (c) 2017 Peter Graham, contributors. Released under the Apache-2.0 license.
-
-    const th = ['กล่าว', 'กว่า', 'กัน', 'กับ', 'การ', 'ก็', 'ก่อน', 'ขณะ', 'ขอ', 'ของ', 'ขึ้น', 'คง', 'ครั้ง', 'ความ', 'คือ', 'จะ', 'จัด', 'จาก', 'จึง', 'ช่วง', 'ซึ่ง', 'ดัง', 'ด้วย', 'ด้าน', 'ตั้ง', 'ตั้งแต่', 'ตาม', 'ต่อ', 'ต่าง', 'ต่างๆ', 'ต้อง', 'ถึง', 'ถูก', 'ถ้า', 'ทั้ง', 'ทั้งนี้', 'ทาง', 'ที่', 'ที่สุด', 'ทุก', 'ทํา', 'ทําให้', 'นอกจาก', 'นัก', 'นั้น', 'นี้', 'น่า', 'นํา', 'บาง', 'ผล', 'ผ่าน', 'พบ', 'พร้อม', 'มา', 'มาก', 'มี', 'ยัง', 'รวม', 'ระหว่าง', 'รับ', 'ราย', 'ร่วม', 'ลง', 'วัน', 'ว่า', 'สุด', 'ส่ง', 'ส่วน', 'สําหรับ', 'หนึ่ง', 'หรือ', 'หลัง', 'หลังจาก', 'หลาย', 'หาก', 'อยาก', 'อยู่', 'อย่าง', 'ออก', 'อะไร', 'อาจ', 'อีก', 'เขา', 'เข้า', 'เคย', 'เฉพาะ', 'เช่น', 'เดียว', 'เดียวกัน', 'เนื่องจาก', 'เปิด', 'เปิดเผย', 'เป็น', 'เป็นการ', 'เพราะ', 'เพื่อ', 'เมื่อ', 'เรา', 'เริ่ม', 'เลย', 'เห็น', 'เอง', 'แต่', 'แบบ', 'แรก', 'และ', 'แล้ว', 'แห่ง', 'โดย', 'ใน', 'ให้', 'ได้', 'ไป', 'ไม่', 'ไว้'];
-
-    /* The MIT License (MIT)
-
-    Copyright (c) 2016 Gene Diaz
-
-    Permission is hereby granted, free of charge, to any person obtaining a copy
-    of this software and associated documentation files (the "Software"), to deal
-    in the Software without restriction, including without limitation the rights
-    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-    copies of the Software, and to permit persons to whom the Software is
-    furnished to do so, subject to the following conditions:
-
-    The above copyright notice and this permission notice shall be included in all
-    copies or substantial portions of the Software.
-
-    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-    SOFTWARE. */
-
-    const tl = ['akin', 'aking', 'ako', 'alin', 'am', 'amin', 'aming', 'ang', 'ano', 'anumang', 'apat', 'at', 'atin', 'ating', 'ay', 'bababa', 'bago', 'bakit', 'bawat', 'bilang', 'dahil', 'dalawa', 'dapat', 'din', 'dito', 'doon', 'gagawin', 'gayunman', 'ginagawa', 'ginawa', 'ginawang', 'gumawa', 'gusto', 'habang', 'hanggang', 'hindi', 'huwag', 'iba', 'ibaba', 'ibabaw', 'ibig', 'ikaw', 'ilagay', 'ilalim', 'ilan', 'inyong', 'isa', 'isang', 'itaas', 'ito', 'iyo', 'iyon', 'iyong', 'ka', 'kahit', 'kailangan', 'kailanman', 'kami', 'kanila', 'kanilang', 'kanino', 'kanya', 'kanyang', 'kapag', 'kapwa', 'karamihan', 'katiyakan', 'katulad', 'kaya', 'kaysa', 'ko', 'kong', 'kulang', 'kumuha', 'kung', 'laban', 'lahat', 'lamang', 'likod', 'lima', 'maaari', 'maaaring', 'maging', 'mahusay', 'makita', 'marami', 'marapat', 'masyado', 'may', 'mayroon', 'mga', 'minsan', 'mismo', 'mula', 'muli', 'na', 'nabanggit', 'naging', 'nagkaroon', 'nais', 'nakita', 'namin', 'napaka', 'narito', 'nasaan', 'ng', 'ngayon', 'ni', 'nila', 'nilang', 'nito', 'niya', 'niyang', 'noon', 'o', 'pa', 'paano', 'pababa', 'paggawa', 'pagitan', 'pagkakaroon', 'pagkatapos', 'palabas', 'pamamagitan', 'panahon', 'pangalawa', 'para', 'paraan', 'pareho', 'pataas', 'pero', 'pumunta', 'pumupunta', 'sa', 'saan', 'sabi', 'sabihin', 'sarili', 'sila', 'sino', 'siya', 'tatlo', 'tayo', 'tulad', 'tungkol', 'una', 'walang'];
-
-    // Copyright (c) 2017 Peter Graham, contributors. Released under the Apache-2.0 license.
-
-    const tr = ['acaba', 'acep', 'adeta', 'altmış', 'altmış', 'altı', 'altı', 'ama', 'ancak', 'arada', 'artık', 'aslında', 'aynen', 'ayrıca', 'az', 'bana', 'bari', 'bazen', 'bazı', 'bazı', 'başka', 'belki', 'ben', 'benden', 'beni', 'benim', 'beri', 'beş', 'beş', 'beş', 'bile', 'bin', 'bir', 'biraz', 'biri', 'birkaç', 'birkez', 'birçok', 'birşey', 'birşeyi', 'birşey', 'birşeyi', 'birşey', 'biz', 'bizden', 'bize', 'bizi', 'bizim', 'bu', 'buna', 'bunda', 'bundan', 'bunlar', 'bunları', 'bunların', 'bunu', 'bunun', 'burada', 'böyle', 'böylece', 'bütün', 'da', 'daha', 'dahi', 'dahil', 'daima', 'dair', 'dayanarak', 'de', 'defa', 'deđil', 'değil', 'diye', 'diđer', 'diğer', 'doksan', 'dokuz', 'dolayı', 'dolayısıyla', 'dört', 'edecek', 'eden', 'ederek', 'edilecek', 'ediliyor', 'edilmesi', 'ediyor', 'elli', 'en', 'etmesi', 'etti', 'ettiği', 'ettiğini', 'eđer', 'eğer', 'fakat', 'gibi', 'göre', 'halbuki', 'halen', 'hangi', 'hani', 'hariç', 'hatta', 'hele', 'hem', 'henüz', 'hep', 'hepsi', 'her', 'herhangi', 'herkes', 'herkesin', 'hiç', 'hiçbir', 'iken', 'iki', 'ila', 'ile', 'ilgili', 'ilk', 'illa', 'ise', 'itibaren', 'itibariyle', 'iyi', 'iyice', 'için', 'işte', 'işte', 'kadar', 'kanımca', 'karşın', 'katrilyon', 'kendi', 'kendilerine', 'kendini', 'kendisi', 'kendisine', 'kendisini', 'kere', 'kez', 'keşke', 'ki', 'kim', 'kimden', 'kime', 'kimi', 'kimse', 'kırk', 'kısaca', 'kırk', 'lakin', 'madem', 'međer', 'milyar', 'milyon', 'mu', 'mü', 'mı', 'mı', 'nasıl', 'nasıl', 'ne', 'neden', 'nedenle', 'nerde', 'nere', 'nerede', 'nereye', 'nitekim', 'niye', 'niçin', 'o', 'olan', 'olarak', 'oldu', 'olduklarını', 'olduğu', 'olduğunu', 'olmadı', 'olmadığı', 'olmak', 'olması', 'olmayan', 'olmaz', 'olsa', 'olsun', 'olup', 'olur', 'olursa', 'oluyor', 'on', 'ona', 'ondan', 'onlar', 'onlardan', 'onlari', 'onların', 'onları', 'onların', 'onu', 'onun', 'otuz', 'oysa', 'pek', 'rağmen', 'sadece', 'sanki', 'sekiz', 'seksen', 'sen', 'senden', 'seni', 'senin', 'siz', 'sizden', 'sizi', 'sizin', 'sonra', 'tarafından', 'trilyon', 'tüm', 'var', 'vardı', 've', 'veya', 'veyahut', 'ya', 'yahut', 'yani', 'yapacak', 'yapmak', 'yaptı', 'yaptıkları', 'yaptığı', 'yaptığını', 'yapılan', 'yapılması', 'yapıyor', 'yedi', 'yerine', 'yetmiş', 'yetmiş', 'yetmiş', 'yine', 'yirmi', 'yoksa', 'yüz', 'zaten', 'çok', 'çünkü', 'öyle', 'üzere', 'üç', 'şey', 'şeyden', 'şeyi', 'şeyler', 'şu', 'şuna', 'şunda', 'şundan', 'şunu', 'şey', 'şeyden', 'şeyi', 'şeyler', 'şu', 'şuna', 'şunda', 'şundan', 'şunları', 'şunu', 'şöyle', 'şayet', 'şimdi', 'şu', 'şöyle'];
-
-    /* The MIT License (MIT)
-
-    Copyright (c) 2016 Gene Diaz
-
-    Permission is hereby granted, free of charge, to any person obtaining a copy
-    of this software and associated documentation files (the "Software"), to deal
-    in the Software without restriction, including without limitation the rights
-    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-    copies of the Software, and to permit persons to whom the Software is
-    furnished to do so, subject to the following conditions:
-
-    The above copyright notice and this permission notice shall be included in all
-    copies or substantial portions of the Software.
-
-    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-    SOFTWARE. */
-
-    const ur = ['آئی', 'آئے', 'آج', 'آخر', 'آخرکبر', 'آدهی', 'آًب', 'آٹھ', 'آیب', 'اة', 'اخبزت', 'اختتبم', 'ادھر', 'ارد', 'اردگرد', 'ارکبى', 'اش', 'اضتعوبل', 'اضتعوبلات', 'اضطرذ', 'اضکب', 'اضکی', 'اضکے', 'اطراف', 'اغیب', 'افراد', 'الگ', 'اور', 'اوًچب', 'اوًچبئی', 'اوًچی', 'اوًچے', 'اى', 'اً', 'اًذر', 'اًہیں', 'اٹھبًب', 'اپٌب', 'اپٌے', 'اچھب', 'اچھی', 'اچھے', 'اکثر', 'اکٹھب', 'اکٹھی', 'اکٹھے', 'اکیلا', 'اکیلی', 'اکیلے', 'اگرچہ', 'اہن', 'ایطے', 'ایک', 'ب', 'ت', 'تبزٍ', 'تت', 'تر', 'ترتیت', 'تریي', 'تعذاد', 'تن', 'تو', 'توبم', 'توہی', 'توہیں', 'تٌہب', 'تک', 'تھب', 'تھوڑا', 'تھوڑی', 'تھوڑے', 'تھی', 'تھے', 'تیي', 'ثب', 'ثبئیں', 'ثبترتیت', 'ثبری', 'ثبرے', 'ثبعث', 'ثبلا', 'ثبلترتیت', 'ثبہر', 'ثدبئے', 'ثرآں', 'ثراں', 'ثرش', 'ثعذ', 'ثغیر', 'ثلٌذ', 'ثلٌذوثبلا', 'ثلکہ', 'ثي', 'ثٌب', 'ثٌبرہب', 'ثٌبرہی', 'ثٌبرہے', 'ثٌبًب', 'ثٌذ', 'ثٌذکرو', 'ثٌذکرًب', 'ثٌذی', 'ثڑا', 'ثڑوں', 'ثڑی', 'ثڑے', 'ثھر', 'ثھرا', 'ثھراہوا', 'ثھرپور', 'ثھی', 'ثہت', 'ثہتر', 'ثہتری', 'ثہتریي', 'ثیچ', 'ج', 'خب', 'خبرہب', 'خبرہی', 'خبرہے', 'خبهوظ', 'خبًب', 'خبًتب', 'خبًتی', 'خبًتے', 'خبًٌب', 'خت', 'ختن', 'خجکہ', 'خص', 'خططرذ', 'خلذی', 'خو', 'خواى', 'خوًہی', 'خوکہ', 'خٌبة', 'خگہ', 'خگہوں', 'خگہیں', 'خیطب', 'خیطبکہ', 'در', 'درخبت', 'درخہ', 'درخے', 'درزقیقت', 'درضت', 'دش', 'دفعہ', 'دلچطپ', 'دلچطپی', 'دلچطپیبں', 'دو', 'دور', 'دوراى', 'دوضرا', 'دوضروں', 'دوضری', 'دوضرے', 'دوًوں', 'دکھبئیں', 'دکھبتب', 'دکھبتی', 'دکھبتے', 'دکھبو', 'دکھبًب', 'دکھبیب', 'دی', 'دیب', 'دیتب', 'دیتی', 'دیتے', 'دیر', 'دیٌب', 'دیکھو', 'دیکھٌب', 'دیکھی', 'دیکھیں', 'دے', 'ر', 'راضتوں', 'راضتہ', 'راضتے', 'رریعہ', 'رریعے', 'رکي', 'رکھ', 'رکھب', 'رکھتب', 'رکھتبہوں', 'رکھتی', 'رکھتے', 'رکھی', 'رکھے', 'رہب', 'رہی', 'رہے', 'ز', 'زبصل', 'زبضر', 'زبل', 'زبلات', 'زبلیہ', 'زصوں', 'زصہ', 'زصے', 'زقبئق', 'زقیتیں', 'زقیقت', 'زکن', 'زکویہ', 'زیبدٍ', 'صبف', 'صسیر', 'صفر', 'صورت', 'صورتسبل', 'صورتوں', 'صورتیں', 'ض', 'ضبت', 'ضبتھ', 'ضبدٍ', 'ضبرا', 'ضبرے', 'ضبل', 'ضبلوں', 'ضت', 'ضرور', 'ضرورت', 'ضروری', 'ضلطلہ', 'ضوچ', 'ضوچب', 'ضوچتب', 'ضوچتی', 'ضوچتے', 'ضوچو', 'ضوچٌب', 'ضوچی', 'ضوچیں', 'ضکب', 'ضکتب', 'ضکتی', 'ضکتے', 'ضکٌب', 'ضکی', 'ضکے', 'ضیذھب', 'ضیذھی', 'ضیذھے', 'ضیکٌڈ', 'ضے', 'طرف', 'طریق', 'طریقوں', 'طریقہ', 'طریقے', 'طور', 'طورپر', 'ظبہر', 'ع', 'عذد', 'عظین', 'علاقوں', 'علاقہ', 'علاقے', 'علاوٍ', 'عووهی', 'غبیذ', 'غخص', 'غذ', 'غروع', 'غروعبت', 'غے', 'فرد', 'فی', 'ق', 'قجل', 'قجیلہ', 'قطن', 'لئے', 'لا', 'لازهی', 'لو', 'لوجب', 'لوجی', 'لوجے', 'لوسبت', 'لوسہ', 'لوگ', 'لوگوں', 'لڑکپي', 'لگتب', 'لگتی', 'لگتے', 'لگٌب', 'لگی', 'لگیں', 'لگے', 'لی', 'لیب', 'لیٌب', 'لیں', 'لے', 'ه', 'هتعلق', 'هختلف', 'هسترم', 'هسترهہ', 'هسطوش', 'هسیذ', 'هطئلہ', 'هطئلے', 'هطبئل', 'هطتعول', 'هطلق', 'هعلوم', 'هػتول', 'هلا', 'هوکي', 'هوکٌبت', 'هوکٌہ', 'هٌبضت', 'هڑا', 'هڑًب', 'هڑے', 'هکول', 'هگر', 'هہرثبى', 'هیرا', 'هیری', 'هیرے', 'هیں', 'و', 'وار', 'والے', 'وٍ', 'ًئی', 'ًئے', 'ًب', 'ًبپطٌذ', 'ًبگسیر', 'ًطجت', 'ًقطہ', 'ًو', 'ًوخواى', 'ًکبلٌب', 'ًکتہ', 'ًہ', 'ًہیں', 'ًیب', 'ًے', 'ٓ آش', 'ٹھیک', 'پبئے', 'پبش', 'پبًب', 'پبًچ', 'پر', 'پراًب', 'پطٌذ', 'پل', 'پورا', 'پوچھب', 'پوچھتب', 'پوچھتی', 'پوچھتے', 'پوچھو', 'پوچھوں', 'پوچھٌب', 'پوچھیں', 'پچھلا', 'پھر', 'پہلا', 'پہلی', 'پہلےضی', 'پہلےضے', 'پہلےضےہی', 'پیع', 'چبر', 'چبہب', 'چبہٌب', 'چبہے', 'چلا', 'چلو', 'چلیں', 'چلے', 'چکب', 'چکی', 'چکیں', 'چکے', 'چھوٹب', 'چھوٹوں', 'چھوٹی', 'چھوٹے', 'چھہ', 'چیسیں', 'ڈھوًڈا', 'ڈھوًڈلیب', 'ڈھوًڈو', 'ڈھوًڈًب', 'ڈھوًڈی', 'ڈھوًڈیں', 'ک', 'کئی', 'کئے', 'کب', 'کبفی', 'کبم', 'کت', 'کجھی', 'کرا', 'کرتب', 'کرتبہوں', 'کرتی', 'کرتے', 'کرتےہو', 'کررہب', 'کررہی', 'کررہے', 'کرو', 'کرًب', 'کریں', 'کرے', 'کطی', 'کل', 'کن', 'کوئی', 'کوتر', 'کورا', 'کوروں', 'کورٍ', 'کورے', 'کوطي', 'کوى', 'کوًطب', 'کوًطی', 'کوًطے', 'کھولا', 'کھولو', 'کھولٌب', 'کھولی', 'کھولیں', 'کھولے', 'کہ', 'کہب', 'کہتب', 'کہتی', 'کہتے', 'کہو', 'کہوں', 'کہٌب', 'کہی', 'کہیں', 'کہے', 'کی', 'کیب', 'کیطب', 'کیطرف', 'کیطے', 'کیلئے', 'کیوًکہ', 'کیوں', 'کیے', 'کے', 'کےثعذ', 'کےرریعے', 'گئی', 'گئے', 'گب', 'گرد', 'گروٍ', 'گروپ', 'گروہوں', 'گٌتی', 'گی', 'گیب', 'گے', 'ہر', 'ہن', 'ہو', 'ہوئی', 'ہوئے', 'ہوا', 'ہوبرا', 'ہوبری', 'ہوبرے', 'ہوتب', 'ہوتی', 'ہوتے', 'ہورہب', 'ہورہی', 'ہورہے', 'ہوضکتب', 'ہوضکتی', 'ہوضکتے', 'ہوًب', 'ہوًی', 'ہوًے', 'ہوچکب', 'ہوچکی', 'ہوچکے', 'ہوگئی', 'ہوگئے', 'ہوگیب', 'ہوں', 'ہی', 'ہیں', 'ہے', 'ی', 'یقیٌی', 'یہ', 'یہبں'];
+    const sot = ['a', 'le', 'o', 'ba', 'ho', 'oa', 'ea', 'ka', 'hae', 'tselane', 'eaba', 'ke', 'hore', 'ha', 'e', 'ne', 're', 'bona', 'me', 'limo', 'tsa', 'haholo', 'la', 'empa', 'ngoanake', 'se', 'moo', 'm\'e', 'bane', 'mo', 'tse', 'sa', 'li', 'ena', 'bina', 'pina', 'hape'];
 
     /*
     Copyright (c) 2011, David Przybilla, Chris Umbel
@@ -888,7 +774,121 @@
     THE SOFTWARE.
     */
 
-    const vi = ['bị', 'bởi', 'cả', 'các', 'cái', 'cần', 'càng', 'chỉ', 'chiếc', 'cho', 'chứ', 'chưa', 'chuyện', 'có', 'có thể', 'cứ', 'của', 'cùng', 'cũng', 'đã', 'đang', 'để', 'đến nỗi', 'đều', 'điều', 'do', 'đó', 'được', 'dưới', 'gì', 'khi', 'không', 'là', 'lại', 'lên', 'lúc', 'mà', 'mỗi', 'một cách', 'này', 'nên', 'nếu', 'ngay', 'nhiều', 'như', 'nhưng', 'những', 'nơi', 'nữa', 'phải', 'qua', 'ra', 'rằng', 'rất', 'rồi', 'sau', 'sẽ', 'so', 'sự', 'tại', 'theo', 'thì', 'trên', 'trước', 'từ', 'từng', 'và', 'vẫn', 'vào', 'vậy', 'vì', 'việc', 'với', 'vừa', 'vâng', 'à', 'ừ', 'từ'];
+    const spa = ['a', 'un', 'el', 'ella', 'y', 'sobre', 'de', 'la', 'que', 'en', 'los', 'del', 'se', 'las', 'por', 'un', 'para', 'con', 'no', 'una', 'su', 'al', 'lo', 'como', 'más', 'pero', 'sus', 'le', 'ya', 'o', 'porque', 'cuando', 'muy', 'sin', 'sobre', 'también', 'me', 'hasta', 'donde', 'quien', 'desde', 'nos', 'durante', 'uno', 'ni', 'contra', 'ese', 'eso', 'mí', 'qué', 'otro', 'él', 'cual', 'poco', 'mi', 'tú', 'te', 'ti', 'sí', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '_'];
+
+    /*
+    Copyright (c) 2016 Liam Doherty
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+    */
+
+    // This list is frequency sorted. That means it can be sliced from the bottom
+    // and be less agressive in excluding stopwords */
+
+    const swa = ['na', 'ya', 'wa', 'kwa', 'ni', 'za', 'katika', 'la', 'kuwa', 'kama', 'kwamba', 'cha', 'hiyo', 'lakini', 'yake', 'hata', 'wakati', 'hivyo', 'sasa', 'wake', 'au', 'watu', 'hii', 'zaidi', 'vya', 'huo', 'tu', 'kwenye', 'si', 'pia', 'ili', 'moja', 'kila', 'baada', 'ambao', 'ambayo', 'yao', 'wao', 'kuna', 'hilo', 'kutoka', 'kubwa', 'pamoja', 'bila', 'huu', 'hayo', 'sana', 'ndani', 'mkuu', 'hizo', 'kufanya', 'wengi', 'hadi', 'mmoja', 'hili', 'juu', 'kwanza', 'wetu', 'kuhusu', 'baadhi', 'wote', 'yetu', 'hivi', 'kweli', 'mara', 'wengine', 'nini', 'ndiyo', 'zao', 'kati', 'hao', 'hapa', 'kutokana', 'muda', 'habari', 'ambaye', 'wenye', 'nyingine', 'hakuna', 'tena', 'hatua', 'bado', 'nafasi', 'basi', 'kabisa', 'hicho', 'nje', 'huyo', 'vile', 'yote', 'mkubwa', 'alikuwa', 'zote', 'leo', 'haya', 'huko', 'kutoa', 'mwa', 'kiasi', 'hasa', 'nyingi', 'kabla', 'wale', 'chini', 'gani', 'hapo', 'lazima', 'mwingine', 'bali', 'huku', 'zake', 'ilikuwa', 'tofauti', 'kupata', 'mbalimbali', 'pale', 'kusema', 'badala', 'wazi', 'yeye', 'alisema', 'hawa', 'ndio', 'hizi', 'tayari', 'wala', 'muhimu', 'ile', 'mpya', 'ambazo', 'dhidi', 'kwenda', 'sisi', 'kwani', 'jinsi', 'binafsi', 'kutumia', 'mbili', 'mbali', 'kuu', 'mengine', 'mbele', 'namna', 'mengi', 'upande'];
+
+    /*
+    Creative Commons – Attribution / ShareAlike 3.0 license
+    http://creativecommons.org/licenses/by-sa/3.0/
+
+    List based on frequently used words in subtitles in 2012.
+
+    Thanks to
+    opensubtitles.org
+    https://invokeit.wordpress.com/frequency-word-lists/#comment-9707
+    */
+
+    const swe = ['jag', 'det', 'är', 'du', 'inte', 'att', 'en', 'och', 'har', 'vi', 'på', 'i', 'för', 'han', 'vad', 'med', 'mig', 'som', 'här', 'om', 'dig', 'var', 'den', 'så', 'till', 'kan', 'de', 'ni', 'ska', 'ett', 'men', 'av', 'vill', 'nu', 'ja', 'nej', 'bara', 'hon', 'hur', 'min', 'där', 'honom', 'kom', 'din', 'då', 'när', 'ha', 'er', 'ta', 'ut', 'får', 'man', 'vara', 'oss', 'dem', 'eller', 'varför', 'alla', 'från', 'upp', 'igen', 'sa', 'hade', 'allt', 'in', 'sig', 'ingen', 'henne', 'vem', 'mitt', 'nåt', 'blir', 'än', 'bli', 'ju', 'två', 'tar', 'hans', 'ditt', 'mina', 'åt', 'väl', 'också', 'nån', 'låt', 'detta', 'va', 'dina', 'dom', 'blev', 'inga', 'sin', 'just', 'många', 'vart', 'vilken', 'ur', 'ens', 'sitt', 'e', 'jo', 'era', 'deras', 'fem', 'sex', 'denna', 'vilket', 'fyra', 'vårt', 'emot', 'tio', 'ert', 'sju', 'åtta', 'nånting', 'ned', 'ers', 'nio', 'mej', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '_'];
+
+    // Copyright (c) 2017 Peter Graham, contributors. Released under the Apache-2.0 license.
+
+    const tha = ['กล่าว', 'กว่า', 'กัน', 'กับ', 'การ', 'ก็', 'ก่อน', 'ขณะ', 'ขอ', 'ของ', 'ขึ้น', 'คง', 'ครั้ง', 'ความ', 'คือ', 'จะ', 'จัด', 'จาก', 'จึง', 'ช่วง', 'ซึ่ง', 'ดัง', 'ด้วย', 'ด้าน', 'ตั้ง', 'ตั้งแต่', 'ตาม', 'ต่อ', 'ต่าง', 'ต่างๆ', 'ต้อง', 'ถึง', 'ถูก', 'ถ้า', 'ทั้ง', 'ทั้งนี้', 'ทาง', 'ที่', 'ที่สุด', 'ทุก', 'ทํา', 'ทําให้', 'นอกจาก', 'นัก', 'นั้น', 'นี้', 'น่า', 'นํา', 'บาง', 'ผล', 'ผ่าน', 'พบ', 'พร้อม', 'มา', 'มาก', 'มี', 'ยัง', 'รวม', 'ระหว่าง', 'รับ', 'ราย', 'ร่วม', 'ลง', 'วัน', 'ว่า', 'สุด', 'ส่ง', 'ส่วน', 'สําหรับ', 'หนึ่ง', 'หรือ', 'หลัง', 'หลังจาก', 'หลาย', 'หาก', 'อยาก', 'อยู่', 'อย่าง', 'ออก', 'อะไร', 'อาจ', 'อีก', 'เขา', 'เข้า', 'เคย', 'เฉพาะ', 'เช่น', 'เดียว', 'เดียวกัน', 'เนื่องจาก', 'เปิด', 'เปิดเผย', 'เป็น', 'เป็นการ', 'เพราะ', 'เพื่อ', 'เมื่อ', 'เรา', 'เริ่ม', 'เลย', 'เห็น', 'เอง', 'แต่', 'แบบ', 'แรก', 'และ', 'แล้ว', 'แห่ง', 'โดย', 'ใน', 'ให้', 'ได้', 'ไป', 'ไม่', 'ไว้'];
+
+    /* The MIT License (MIT)
+
+    Copyright (c) 2016 Gene Diaz
+
+    Permission is hereby granted, free of charge, to any person obtaining a copy
+    of this software and associated documentation files (the "Software"), to deal
+    in the Software without restriction, including without limitation the rights
+    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+    copies of the Software, and to permit persons to whom the Software is
+    furnished to do so, subject to the following conditions:
+
+    The above copyright notice and this permission notice shall be included in all
+    copies or substantial portions of the Software.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+    SOFTWARE. */
+
+    const tgl = ['akin', 'aking', 'ako', 'alin', 'am', 'amin', 'aming', 'ang', 'ano', 'anumang', 'apat', 'at', 'atin', 'ating', 'ay', 'bababa', 'bago', 'bakit', 'bawat', 'bilang', 'dahil', 'dalawa', 'dapat', 'din', 'dito', 'doon', 'gagawin', 'gayunman', 'ginagawa', 'ginawa', 'ginawang', 'gumawa', 'gusto', 'habang', 'hanggang', 'hindi', 'huwag', 'iba', 'ibaba', 'ibabaw', 'ibig', 'ikaw', 'ilagay', 'ilalim', 'ilan', 'inyong', 'isa', 'isang', 'itaas', 'ito', 'iyo', 'iyon', 'iyong', 'ka', 'kahit', 'kailangan', 'kailanman', 'kami', 'kanila', 'kanilang', 'kanino', 'kanya', 'kanyang', 'kapag', 'kapwa', 'karamihan', 'katiyakan', 'katulad', 'kaya', 'kaysa', 'ko', 'kong', 'kulang', 'kumuha', 'kung', 'laban', 'lahat', 'lamang', 'likod', 'lima', 'maaari', 'maaaring', 'maging', 'mahusay', 'makita', 'marami', 'marapat', 'masyado', 'may', 'mayroon', 'mga', 'minsan', 'mismo', 'mula', 'muli', 'na', 'nabanggit', 'naging', 'nagkaroon', 'nais', 'nakita', 'namin', 'napaka', 'narito', 'nasaan', 'ng', 'ngayon', 'ni', 'nila', 'nilang', 'nito', 'niya', 'niyang', 'noon', 'o', 'pa', 'paano', 'pababa', 'paggawa', 'pagitan', 'pagkakaroon', 'pagkatapos', 'palabas', 'pamamagitan', 'panahon', 'pangalawa', 'para', 'paraan', 'pareho', 'pataas', 'pero', 'pumunta', 'pumupunta', 'sa', 'saan', 'sabi', 'sabihin', 'sarili', 'sila', 'sino', 'siya', 'tatlo', 'tayo', 'tulad', 'tungkol', 'una', 'walang'];
+
+    // Copyright (c) 2017 Peter Graham, contributors. Released under the Apache-2.0 license.
+
+    const tur = ['acaba', 'acep', 'adeta', 'altmış', 'altmış', 'altı', 'altı', 'ama', 'ancak', 'arada', 'artık', 'aslında', 'aynen', 'ayrıca', 'az', 'bana', 'bari', 'bazen', 'bazı', 'bazı', 'başka', 'belki', 'ben', 'benden', 'beni', 'benim', 'beri', 'beş', 'beş', 'beş', 'bile', 'bin', 'bir', 'biraz', 'biri', 'birkaç', 'birkez', 'birçok', 'birşey', 'birşeyi', 'birşey', 'birşeyi', 'birşey', 'biz', 'bizden', 'bize', 'bizi', 'bizim', 'bu', 'buna', 'bunda', 'bundan', 'bunlar', 'bunları', 'bunların', 'bunu', 'bunun', 'burada', 'böyle', 'böylece', 'bütün', 'da', 'daha', 'dahi', 'dahil', 'daima', 'dair', 'dayanarak', 'de', 'defa', 'deđil', 'değil', 'diye', 'diđer', 'diğer', 'doksan', 'dokuz', 'dolayı', 'dolayısıyla', 'dört', 'edecek', 'eden', 'ederek', 'edilecek', 'ediliyor', 'edilmesi', 'ediyor', 'elli', 'en', 'etmesi', 'etti', 'ettiği', 'ettiğini', 'eđer', 'eğer', 'fakat', 'gibi', 'göre', 'halbuki', 'halen', 'hangi', 'hani', 'hariç', 'hatta', 'hele', 'hem', 'henüz', 'hep', 'hepsi', 'her', 'herhangi', 'herkes', 'herkesin', 'hiç', 'hiçbir', 'iken', 'iki', 'ila', 'ile', 'ilgili', 'ilk', 'illa', 'ise', 'itibaren', 'itibariyle', 'iyi', 'iyice', 'için', 'işte', 'işte', 'kadar', 'kanımca', 'karşın', 'katrilyon', 'kendi', 'kendilerine', 'kendini', 'kendisi', 'kendisine', 'kendisini', 'kere', 'kez', 'keşke', 'ki', 'kim', 'kimden', 'kime', 'kimi', 'kimse', 'kırk', 'kısaca', 'kırk', 'lakin', 'madem', 'međer', 'milyar', 'milyon', 'mu', 'mü', 'mı', 'mı', 'nasıl', 'nasıl', 'ne', 'neden', 'nedenle', 'nerde', 'nere', 'nerede', 'nereye', 'nitekim', 'niye', 'niçin', 'o', 'olan', 'olarak', 'oldu', 'olduklarını', 'olduğu', 'olduğunu', 'olmadı', 'olmadığı', 'olmak', 'olması', 'olmayan', 'olmaz', 'olsa', 'olsun', 'olup', 'olur', 'olursa', 'oluyor', 'on', 'ona', 'ondan', 'onlar', 'onlardan', 'onlari', 'onların', 'onları', 'onların', 'onu', 'onun', 'otuz', 'oysa', 'pek', 'rağmen', 'sadece', 'sanki', 'sekiz', 'seksen', 'sen', 'senden', 'seni', 'senin', 'siz', 'sizden', 'sizi', 'sizin', 'sonra', 'tarafından', 'trilyon', 'tüm', 'var', 'vardı', 've', 'veya', 'veyahut', 'ya', 'yahut', 'yani', 'yapacak', 'yapmak', 'yaptı', 'yaptıkları', 'yaptığı', 'yaptığını', 'yapılan', 'yapılması', 'yapıyor', 'yedi', 'yerine', 'yetmiş', 'yetmiş', 'yetmiş', 'yine', 'yirmi', 'yoksa', 'yüz', 'zaten', 'çok', 'çünkü', 'öyle', 'üzere', 'üç', 'şey', 'şeyden', 'şeyi', 'şeyler', 'şu', 'şuna', 'şunda', 'şundan', 'şunu', 'şey', 'şeyden', 'şeyi', 'şeyler', 'şu', 'şuna', 'şunda', 'şundan', 'şunları', 'şunu', 'şöyle', 'şayet', 'şimdi', 'şu', 'şöyle'];
+
+    /* The MIT License (MIT)
+
+    Copyright (c) 2016 Gene Diaz
+
+    Permission is hereby granted, free of charge, to any person obtaining a copy
+    of this software and associated documentation files (the "Software"), to deal
+    in the Software without restriction, including without limitation the rights
+    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+    copies of the Software, and to permit persons to whom the Software is
+    furnished to do so, subject to the following conditions:
+
+    The above copyright notice and this permission notice shall be included in all
+    copies or substantial portions of the Software.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+    SOFTWARE. */
+
+    const urd = ['آئی', 'آئے', 'آج', 'آخر', 'آخرکبر', 'آدهی', 'آًب', 'آٹھ', 'آیب', 'اة', 'اخبزت', 'اختتبم', 'ادھر', 'ارد', 'اردگرد', 'ارکبى', 'اش', 'اضتعوبل', 'اضتعوبلات', 'اضطرذ', 'اضکب', 'اضکی', 'اضکے', 'اطراف', 'اغیب', 'افراد', 'الگ', 'اور', 'اوًچب', 'اوًچبئی', 'اوًچی', 'اوًچے', 'اى', 'اً', 'اًذر', 'اًہیں', 'اٹھبًب', 'اپٌب', 'اپٌے', 'اچھب', 'اچھی', 'اچھے', 'اکثر', 'اکٹھب', 'اکٹھی', 'اکٹھے', 'اکیلا', 'اکیلی', 'اکیلے', 'اگرچہ', 'اہن', 'ایطے', 'ایک', 'ب', 'ت', 'تبزٍ', 'تت', 'تر', 'ترتیت', 'تریي', 'تعذاد', 'تن', 'تو', 'توبم', 'توہی', 'توہیں', 'تٌہب', 'تک', 'تھب', 'تھوڑا', 'تھوڑی', 'تھوڑے', 'تھی', 'تھے', 'تیي', 'ثب', 'ثبئیں', 'ثبترتیت', 'ثبری', 'ثبرے', 'ثبعث', 'ثبلا', 'ثبلترتیت', 'ثبہر', 'ثدبئے', 'ثرآں', 'ثراں', 'ثرش', 'ثعذ', 'ثغیر', 'ثلٌذ', 'ثلٌذوثبلا', 'ثلکہ', 'ثي', 'ثٌب', 'ثٌبرہب', 'ثٌبرہی', 'ثٌبرہے', 'ثٌبًب', 'ثٌذ', 'ثٌذکرو', 'ثٌذکرًب', 'ثٌذی', 'ثڑا', 'ثڑوں', 'ثڑی', 'ثڑے', 'ثھر', 'ثھرا', 'ثھراہوا', 'ثھرپور', 'ثھی', 'ثہت', 'ثہتر', 'ثہتری', 'ثہتریي', 'ثیچ', 'ج', 'خب', 'خبرہب', 'خبرہی', 'خبرہے', 'خبهوظ', 'خبًب', 'خبًتب', 'خبًتی', 'خبًتے', 'خبًٌب', 'خت', 'ختن', 'خجکہ', 'خص', 'خططرذ', 'خلذی', 'خو', 'خواى', 'خوًہی', 'خوکہ', 'خٌبة', 'خگہ', 'خگہوں', 'خگہیں', 'خیطب', 'خیطبکہ', 'در', 'درخبت', 'درخہ', 'درخے', 'درزقیقت', 'درضت', 'دش', 'دفعہ', 'دلچطپ', 'دلچطپی', 'دلچطپیبں', 'دو', 'دور', 'دوراى', 'دوضرا', 'دوضروں', 'دوضری', 'دوضرے', 'دوًوں', 'دکھبئیں', 'دکھبتب', 'دکھبتی', 'دکھبتے', 'دکھبو', 'دکھبًب', 'دکھبیب', 'دی', 'دیب', 'دیتب', 'دیتی', 'دیتے', 'دیر', 'دیٌب', 'دیکھو', 'دیکھٌب', 'دیکھی', 'دیکھیں', 'دے', 'ر', 'راضتوں', 'راضتہ', 'راضتے', 'رریعہ', 'رریعے', 'رکي', 'رکھ', 'رکھب', 'رکھتب', 'رکھتبہوں', 'رکھتی', 'رکھتے', 'رکھی', 'رکھے', 'رہب', 'رہی', 'رہے', 'ز', 'زبصل', 'زبضر', 'زبل', 'زبلات', 'زبلیہ', 'زصوں', 'زصہ', 'زصے', 'زقبئق', 'زقیتیں', 'زقیقت', 'زکن', 'زکویہ', 'زیبدٍ', 'صبف', 'صسیر', 'صفر', 'صورت', 'صورتسبل', 'صورتوں', 'صورتیں', 'ض', 'ضبت', 'ضبتھ', 'ضبدٍ', 'ضبرا', 'ضبرے', 'ضبل', 'ضبلوں', 'ضت', 'ضرور', 'ضرورت', 'ضروری', 'ضلطلہ', 'ضوچ', 'ضوچب', 'ضوچتب', 'ضوچتی', 'ضوچتے', 'ضوچو', 'ضوچٌب', 'ضوچی', 'ضوچیں', 'ضکب', 'ضکتب', 'ضکتی', 'ضکتے', 'ضکٌب', 'ضکی', 'ضکے', 'ضیذھب', 'ضیذھی', 'ضیذھے', 'ضیکٌڈ', 'ضے', 'طرف', 'طریق', 'طریقوں', 'طریقہ', 'طریقے', 'طور', 'طورپر', 'ظبہر', 'ع', 'عذد', 'عظین', 'علاقوں', 'علاقہ', 'علاقے', 'علاوٍ', 'عووهی', 'غبیذ', 'غخص', 'غذ', 'غروع', 'غروعبت', 'غے', 'فرد', 'فی', 'ق', 'قجل', 'قجیلہ', 'قطن', 'لئے', 'لا', 'لازهی', 'لو', 'لوجب', 'لوجی', 'لوجے', 'لوسبت', 'لوسہ', 'لوگ', 'لوگوں', 'لڑکپي', 'لگتب', 'لگتی', 'لگتے', 'لگٌب', 'لگی', 'لگیں', 'لگے', 'لی', 'لیب', 'لیٌب', 'لیں', 'لے', 'ه', 'هتعلق', 'هختلف', 'هسترم', 'هسترهہ', 'هسطوش', 'هسیذ', 'هطئلہ', 'هطئلے', 'هطبئل', 'هطتعول', 'هطلق', 'هعلوم', 'هػتول', 'هلا', 'هوکي', 'هوکٌبت', 'هوکٌہ', 'هٌبضت', 'هڑا', 'هڑًب', 'هڑے', 'هکول', 'هگر', 'هہرثبى', 'هیرا', 'هیری', 'هیرے', 'هیں', 'و', 'وار', 'والے', 'وٍ', 'ًئی', 'ًئے', 'ًب', 'ًبپطٌذ', 'ًبگسیر', 'ًطجت', 'ًقطہ', 'ًو', 'ًوخواى', 'ًکبلٌب', 'ًکتہ', 'ًہ', 'ًہیں', 'ًیب', 'ًے', 'ٓ آش', 'ٹھیک', 'پبئے', 'پبش', 'پبًب', 'پبًچ', 'پر', 'پراًب', 'پطٌذ', 'پل', 'پورا', 'پوچھب', 'پوچھتب', 'پوچھتی', 'پوچھتے', 'پوچھو', 'پوچھوں', 'پوچھٌب', 'پوچھیں', 'پچھلا', 'پھر', 'پہلا', 'پہلی', 'پہلےضی', 'پہلےضے', 'پہلےضےہی', 'پیع', 'چبر', 'چبہب', 'چبہٌب', 'چبہے', 'چلا', 'چلو', 'چلیں', 'چلے', 'چکب', 'چکی', 'چکیں', 'چکے', 'چھوٹب', 'چھوٹوں', 'چھوٹی', 'چھوٹے', 'چھہ', 'چیسیں', 'ڈھوًڈا', 'ڈھوًڈلیب', 'ڈھوًڈو', 'ڈھوًڈًب', 'ڈھوًڈی', 'ڈھوًڈیں', 'ک', 'کئی', 'کئے', 'کب', 'کبفی', 'کبم', 'کت', 'کجھی', 'کرا', 'کرتب', 'کرتبہوں', 'کرتی', 'کرتے', 'کرتےہو', 'کررہب', 'کررہی', 'کررہے', 'کرو', 'کرًب', 'کریں', 'کرے', 'کطی', 'کل', 'کن', 'کوئی', 'کوتر', 'کورا', 'کوروں', 'کورٍ', 'کورے', 'کوطي', 'کوى', 'کوًطب', 'کوًطی', 'کوًطے', 'کھولا', 'کھولو', 'کھولٌب', 'کھولی', 'کھولیں', 'کھولے', 'کہ', 'کہب', 'کہتب', 'کہتی', 'کہتے', 'کہو', 'کہوں', 'کہٌب', 'کہی', 'کہیں', 'کہے', 'کی', 'کیب', 'کیطب', 'کیطرف', 'کیطے', 'کیلئے', 'کیوًکہ', 'کیوں', 'کیے', 'کے', 'کےثعذ', 'کےرریعے', 'گئی', 'گئے', 'گب', 'گرد', 'گروٍ', 'گروپ', 'گروہوں', 'گٌتی', 'گی', 'گیب', 'گے', 'ہر', 'ہن', 'ہو', 'ہوئی', 'ہوئے', 'ہوا', 'ہوبرا', 'ہوبری', 'ہوبرے', 'ہوتب', 'ہوتی', 'ہوتے', 'ہورہب', 'ہورہی', 'ہورہے', 'ہوضکتب', 'ہوضکتی', 'ہوضکتے', 'ہوًب', 'ہوًی', 'ہوًے', 'ہوچکب', 'ہوچکی', 'ہوچکے', 'ہوگئی', 'ہوگئے', 'ہوگیب', 'ہوں', 'ہی', 'ہیں', 'ہے', 'ی', 'یقیٌی', 'یہ', 'یہبں'];
+
+    /*
+    Copyright (c) 2011, David Przybilla, Chris Umbel
+
+    Permission is hereby granted, free of charge, to any person obtaining a copy
+    of this software and associated documentation files (the "Software"), to deal
+    in the Software without restriction, including without limitation the rights
+    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+    copies of the Software, and to permit persons to whom the Software is
+    furnished to do so, subject to the following conditions:
+
+    The above copyright notice and this permission notice shall be included in
+    all copies or substantial portions of the Software.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+    THE SOFTWARE.
+    */
+
+    const vie = ['bị', 'bởi', 'cả', 'các', 'cái', 'cần', 'càng', 'chỉ', 'chiếc', 'cho', 'chứ', 'chưa', 'chuyện', 'có', 'có thể', 'cứ', 'của', 'cùng', 'cũng', 'đã', 'đang', 'để', 'đến nỗi', 'đều', 'điều', 'do', 'đó', 'được', 'dưới', 'gì', 'khi', 'không', 'là', 'lại', 'lên', 'lúc', 'mà', 'mỗi', 'một cách', 'này', 'nên', 'nếu', 'ngay', 'nhiều', 'như', 'nhưng', 'những', 'nơi', 'nữa', 'phải', 'qua', 'ra', 'rằng', 'rất', 'rồi', 'sau', 'sẽ', 'so', 'sự', 'tại', 'theo', 'thì', 'trên', 'trước', 'từ', 'từng', 'và', 'vẫn', 'vào', 'vậy', 'vì', 'việc', 'với', 'vừa', 'vâng', 'à', 'ừ', 'từ'];
 
     /* Copyright 2016 Liam Doherty
 
@@ -908,7 +908,7 @@
     /* This list is frequency sorted. That means it can be sliced from the bottom
     and be less agressive in excluding stopwords */
 
-    const yo = ['ó', 'ní', 'ìjàpá', 'ṣe', 'rẹ̀', 'tí', 'àwọn', 'sí', 'ni', 'náà', 'anansi', 'láti', 'kan', 'ti', 'ń', 'lọ', 'o', 'bí', 'padà', 'sì', 'wá', 'wangari', 'lè', 'wà', 'kí', 'púpọ̀', 'odò', 'mi', 'wọ́n', 'pẹ̀lú', 'a', 'ṣùgbọ́n', 'fún', 'jẹ́', 'fẹ́', 'oúnjẹ', 'rí', 'igi', 'kò', 'ilé', 'jù', 'olóńgbò', 'pé', 'é', 'gbogbo', 'iṣu', 'inú', 'bẹ̀rẹ̀', 'jẹ', 'fi', 'dúró', 'alẹ́', 'ọjọ́', 'nítorí', 'nǹkan', 'ọ̀rẹ́', 'àkókò', 'sínú', 'ṣ', 'yìí'];
+    const yor = ['ó', 'ní', 'ìjàpá', 'ṣe', 'rẹ̀', 'tí', 'àwọn', 'sí', 'ni', 'náà', 'anansi', 'láti', 'kan', 'ti', 'ń', 'lọ', 'o', 'bí', 'padà', 'sì', 'wá', 'wangari', 'lè', 'wà', 'kí', 'púpọ̀', 'odò', 'mi', 'wọ́n', 'pẹ̀lú', 'a', 'ṣùgbọ́n', 'fún', 'jẹ́', 'fẹ́', 'oúnjẹ', 'rí', 'igi', 'kò', 'ilé', 'jù', 'olóńgbò', 'pé', 'é', 'gbogbo', 'iṣu', 'inú', 'bẹ̀rẹ̀', 'jẹ', 'fi', 'dúró', 'alẹ́', 'ọjọ́', 'nítorí', 'nǹkan', 'ọ̀rẹ́', 'àkókò', 'sínú', 'ṣ', 'yìí'];
 
     /* Copyright 2016 Liam Doherty
 
@@ -928,7 +928,7 @@
     /* This list is frequency sorted. That means it can be sliced from the bottom
     and be less agressive in excluding stopwords */
 
-    const zu = ['ukuthi', 'kodwa', 'futhi', 'kakhulu', 'wakhe', 'kusho', 'uma', 'wathi', 'umama', 'kanye', 'phansi', 'ngesikhathi', 'lapho', 'u', 'zakhe', 'khona', 'ukuba', 'nje', 'phezulu', 'yakhe', 'kungani', 'wase', 'la', 'mina', 'wami', 'ukuze', 'unonkungu', 'wabona', 'wahamba', 'lakhe', 'yami', 'kanjani', 'kwakukhona', 'ngelinye'];
+    const zul = ['ukuthi', 'kodwa', 'futhi', 'kakhulu', 'wakhe', 'kusho', 'uma', 'wathi', 'umama', 'kanye', 'phansi', 'ngesikhathi', 'lapho', 'u', 'zakhe', 'khona', 'ukuba', 'nje', 'phezulu', 'yakhe', 'kungani', 'wase', 'la', 'mina', 'wami', 'ukuze', 'unonkungu', 'wabona', 'wahamba', 'lakhe', 'yami', 'kanjani', 'kwakukhona', 'ngelinye'];
 
     const defaultStopwords = eng;
 
@@ -955,7 +955,6 @@
     exports.ell = ell;
     exports.eng = eng;
     exports.epo = epo;
-    exports.es = es;
     exports.est = est;
     exports.eus = eus;
     exports.fas = fas;
@@ -986,22 +985,23 @@
     exports.por = por;
     exports.porBr = porBr;
     exports.removeStopwords = removeStopwords;
-    exports.ro = ro;
-    exports.ru = ru;
-    exports.sk = sk;
-    exports.sl = sl;
-    exports.so = so;
-    exports.st = st;
-    exports.sv = sv;
-    exports.sw = sw;
-    exports.th = th;
-    exports.tl = tl;
-    exports.tr = tr;
-    exports.ur = ur;
-    exports.vi = vi;
-    exports.yo = yo;
+    exports.ron = ron;
+    exports.rus = rus;
+    exports.slk = slk;
+    exports.slv = slv;
+    exports.som = som;
+    exports.sot = sot;
+    exports.spa = spa;
+    exports.swa = swa;
+    exports.swe = swe;
+    exports.tgl = tgl;
+    exports.tha = tha;
+    exports.tur = tur;
+    exports.urd = urd;
+    exports.vie = vie;
+    exports.yor = yor;
     exports.zho = zho;
-    exports.zu = zu;
+    exports.zul = zul;
 
     Object.defineProperty(exports, '__esModule', { value: true });
 

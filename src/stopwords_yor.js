@@ -16,5 +16,5 @@ limitations under the License.
 /* This list is frequency sorted. That means it can be sliced from the bottom
 and be less agressive in excluding stopwords */
 
-const st = ['a', 'le', 'o', 'ba', 'ho', 'oa', 'ea', 'ka', 'hae', 'tselane', 'eaba', 'ke', 'hore', 'ha', 'e', 'ne', 're', 'bona', 'me', 'limo', 'tsa', 'haholo', 'la', 'empa', 'ngoanake', 'se', 'moo', 'm\'e', 'bane', 'mo', 'tse', 'sa', 'li', 'ena', 'bina', 'pina', 'hape']
-export { st }
+const yor = ['ó', 'ní', 'ìjàpá', 'ṣe', 'rẹ̀', 'tí', 'àwọn', 'sí', 'ni', 'náà', 'anansi', 'láti', 'kan', 'ti', 'ń', 'lọ', 'o', 'bí', 'padà', 'sì', 'wá', 'wangari', 'lè', 'wà', 'kí', 'púpọ̀', 'odò', 'mi', 'wọ́n', 'pẹ̀lú', 'a', 'ṣùgbọ́n', 'fún', 'jẹ́', 'fẹ́', 'oúnjẹ', 'rí', 'igi', 'kò', 'ilé', 'jù', 'olóńgbò', 'pé', 'é', 'gbogbo', 'iṣu', 'inú', 'bẹ̀rẹ̀', 'jẹ', 'fi', 'dúró', 'alẹ́', 'ọjọ́', 'nítorí', 'nǹkan', 'ọ̀rẹ́', 'àkókò', 'sínú', 'ṣ', 'yìí']
+export { yor }

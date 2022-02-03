@@ -127,7 +127,7 @@ Language codes follow [ISO 639-3 Language Code list](https://iso639-3.sil.org/co
 * `lat` - Latin
 * `lav` - Latvian, Macrolanguage
 * `lgg` - Lugbara
-* `lggNd` - Lugbara (no diacritics)
+* `lggNd` - Lugbara, No diacritics
 * `mar` - Marathi
 * `mya` - Myanmar (Burmese)
 * `nob` - Norwegian bokmål
@@ -135,23 +135,23 @@ Language codes follow [ISO 639-3 Language Code list](https://iso639-3.sil.org/co
 * `pol` - Polish
 * `por` - Portuguese
 * `porBr` - Portuguese (Brazilian)
-* `panGu` - Panjabi, Punjabi (Gurmukhi script)
-* `ro` - Romanian
-* `ru` - Russian
-* `sk` - Slovak
-* `sl` - Slovenian
-* `so` - Somali
-* `st` - Sotho
-* `es` - Spanish
-* `sw` - Swahili
-* `sv` - Swedish
-* `th` - Thai
-* `tl` - Tagalog (Filipino)
-* `tr` - Turkish
-* `ur` - Urdu
-* `vi` - Vietnamese
-* `yo` - Yoruba
-* `zu` - Zulu
+* `panGu` - Punjabi (Panjabi), Gurmukhi script
+* `ron` - Romanian (Moldavian, Moldovan)
+* `rus` - Russian
+* `slk` - Slovak
+* `slv` - Slovenian
+* `som` - Somali
+* `sot` - Sotho, Southern
+* `spa` - Spanish
+* `swa` - Swahili, Macrolanguage
+* `swe` - Swedish
+* `tha` - Thai
+* `tgl` - Tagalog (Filipino)
+* `tur` - Turkish
+* `urd` - Urdu
+* `vie` - Vietnamese
+* `yor` - Yoruba
+* `zul` - Zulu
 
 ```javascript
 sw = require('stopword')
