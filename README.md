@@ -92,7 +92,7 @@ var text = sw.removeStopwords(text[, stopwords])
 
 ### &lt;language code&gt;
 
-Language codes follow [ISO 639-3 Language Code list](https://iso639-3.sil.org/code_tables/639/data). Arrays of stopwords for the following 57 languages are supplied:
+Language codes follow [ISO 639-3 Language Code list](https://iso639-3.sil.org/code_tables/639/data/all). Arrays of stopwords for the following 57 languages are supplied:
 
 * `afr` - Afrikaans
 * `ara` - Arabic, Macrolanguage
