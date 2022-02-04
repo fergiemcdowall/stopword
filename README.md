@@ -4,6 +4,9 @@ stopwords from an input text. [In natural language processing, "Stopwords" are
 words that are so frequent that they can safely be removed from a text without
 altering its meaning.](https://en.wikipedia.org/wiki/Stop_words)
 
+## Breaking change!
+Language codes are changed from ISO-639-1 (two characters) to ISO-639-3. This to have room for more small languages that wasn't specified in ISO-639-1.
+
 [![NPM version][npm-version-image]][npm-url]
 [![NPM downloads][npm-downloads-image]][npm-url]
 [![Build Status][travis-image]][travis-url]
@@ -14,17 +17,37 @@ altering its meaning.](https://en.wikipedia.org/wiki/Stop_words)
 
 Live [stopword browser demo](http://fergiemcdowall.github.io/stopword/demo/).
 
-## Usage
+## Getting the script in your environment
 
-### Node.js
+### CJS - CommonJS
+Deconstruction require:
 ```javascript
-sw = require('stopword')
-// sw.removeStopwords and sw.[language code] now available
+const { removeStopwords, eng, fra } = require('stopword')
+// 'removeStopwords', 'eng' and 'fra' available
 ```
 
-### Script tag method
+Old style require:
+```javascript
+const sw = require('stopword')
+// sw.removeStopwords and sw.<language code> now available
+```
+
+### ESM - Ecmascript Modules
+Deconstruction import:
+```javascript
+import { removeStopwords, eng, fra } from './dist/stopword.esm.mjs'
+// 'removeStopwords', 'eng' and 'fra' available
+```
+
+Old style import:
+```javascript
+import * as sw from './dist/stopword.esm.mjs'
+// 'sw.removeStopwords' + 'sw.<language codes>' available
+```
+
+### UMD - Script tag method
 ```html
-<script src="stopword.js"></script>
+<script src="stopword.umd.js"></script>
 
 <script>
 // sw.removeStopwords and sw.[language code] now available
@@ -32,13 +55,15 @@ sw = require('stopword')
 ```
 
 
+## Usage
+
 ### Default (English)
 By default, `stopword` will strip an array of "meaningless" English words
 
 ```javascript
-sw = require('stopword')
+const { removeStopwords } = require('stopword')
 const oldString = 'a really Interesting string with some words'.split(' ')
-const newString = sw.removeStopwords(oldString)
+const newString = removeStopwords(oldString)
 // newString is now [ 'really', 'Interesting', 'string', 'words' ]
 
 ```
@@ -46,30 +71,30 @@ const newString = sw.removeStopwords(oldString)
 ### Other languages
 You can also specify a language other than English:
 ```javascript
-sw = require('stopword')
+const { removeStopwords, swe } = require('stopword')
 const oldString = 'Trädgårdsägare är beredda att pröva vad som helst för att bli av med de hatade mördarsniglarna åäö'.split(' ')
-// sw.sv contains swedish stopwords
-const newString = sw.removeStopwords(oldString, sw.sv)
+// swe contains swedish stopwords
+const newString = removeStopwords(oldString, swe)
 // newString is now [ 'Trädgårdsägare', 'beredda', 'pröva', 'helst', 'hatade', 'mördarsniglarna', 'åäö' ]
 ```
 
 ### Custom list of stopwords
 And last, but not least, it is possible to use your own, custom list of stopwords:
 ```javascript
-sw = require('stopword')
+const { removeStopwords } = require('stopword')
 const oldString = 'you can even roll your own custom stopword list'.split(' ')
 // Just add your own list/array of stopwords
-const newString = sw.removeStopwords(oldString, [ 'even', 'a', 'custom', 'stopword', 'list', 'is', 'possible']
+const newString = removeStopwords(oldString, [ 'even', 'a', 'custom', 'stopword', 'list', 'is', 'possible']
 // newString is now [ 'you', 'can', 'roll', 'your', 'own']
 ```
 
 ### Removing stopwords for i.e. two languages and a custom stopword list
 With spread syntax you can easily combine several stopword arrays into one. Useful for situations where two langauages are used interchangeably. Or when you have certain words that are used in every document that is not in your existing stopword arrays.
 ```javascript
-sw = require('stopword')
+const { removeStopwords, eng, swe } = require('stopword')
 const oldString = 'a really interesting string with some words trädgårdsägare är beredda att pröva vad som helst för att bli av med de hatade mördarsniglarna'.split(' ')
 const customStopwords = ['interesting', 'really']
-const newString = sw.removeStopwords(oldString, [...sw.en, ...sw.sv, ...customStopwords]
+const newString = sw.removeStopwords(oldString, [...eng, ...swe, ...customStopwords]
 // newString is now ['string', 'words', 'trädgårdsägare', 'beredda', 'pröva', 'helst', 'hatade', 'mördarsniglarna']
 ```
 
@@ -85,8 +110,8 @@ Returns an Array that represents the text with the specified stopwords removed.
 * `stopwords` An array of stopwords
 
 ```javascript
-sw = require('stopword')
-var text = sw.removeStopwords(text[, stopwords])
+const { removeStopwords } = require('stopword')
+var text = removeStopwords(text[, stopwords])
 // text is now an array of given words minus specified stopwords
 ```
 
@@ -154,13 +179,13 @@ Language codes follow [ISO 639-3 Language Code list](https://iso639-3.sil.org/co
 * `zul` - Zulu
 
 ```javascript
-sw = require('stopword')
-norwegianStopwords = sw.no
-// norwegianStopwords now contains an Array of norwgian stopwords
+const { nob } = require('stopword')
+norwegianBokmaalStopwords = nob
+// norwegianBokmaalStopwords now contains an Array of norwgian bokmål stopwords
 ```
 
 #### Languages with no space between words
-`ja` Japanese, `th` Thai and `zh` Chinese Simplified and some of the other languages supported have no space between words. For these languages you need to split the text into an array of words in another way than just `textString.split(' ')`. You can check out [TinySegmenter](http://chasen.org/%7Etaku/software/TinySegmenter/) for Japanese and [chinese-tokenizer](https://github.com/yishn/chinese-tokenizer) for Chinese.
+`jpn` Japanese, `tha` Thai and `zho` Chinese and some of the other languages supported have no space between words. For these languages you need to split the text into an array of words in another way than just `textString.split(' ')`. You can check out [TinySegmenter](http://chasen.org/%7Etaku/software/TinySegmenter/) for Japanese and [chinese-tokenizer](https://github.com/yishn/chinese-tokenizer) for Chinese.
 
 ## Your language missing?
 If you can't find a stopword file for your language, you can try creating one with [`stopword-trainer`](https://github.com/eklem/stopword-trainer). We're happy to help you in the process.
