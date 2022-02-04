@@ -9,7 +9,7 @@ Language codes are changed from ISO-639-1 (two characters) to ISO-639-3. This to
 
 [![NPM version][npm-version-image]][npm-url]
 [![NPM downloads][npm-downloads-image]][npm-url]
-[![Build Status][travis-image]][travis-url]
+[![Build Status][CI-image]][CI-url]
 [![JavaScript Style Guide][standardjs-image]][standardjs-url]
 [![MIT License][license-image]][license-url]
 
@@ -200,7 +200,7 @@ Most of this work is from other projects and people, and wouldn't be possible wi
 [npm-url]: https://npmjs.org/package/stopword
 [npm-version-image]: http://img.shields.io/npm/v/stopword.svg?style=flat
 [npm-downloads-image]: http://img.shields.io/npm/dm/stopword.svg?style=flat
-[travis-url]: http://travis-ci.org/fergiemcdowall/stopword
-[travis-image]: http://img.shields.io/travis/fergiemcdowall/stopword.svg?style=flat
+[CI-url]: https://github.com/fergiemcdowall/stopword/actions/workflows/tests.yml
+[CI-image]: https://github.com/fergiemcdowall/stopword/actions/workflows/tests.yml/badge.svg
 [standardjs-url]: https://standardjs.com
 [standardjs-image]: https://img.shields.io/badge/code_style-standard-brightgreen.svg?style=flat-square
