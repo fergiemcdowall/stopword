@@ -29,7 +29,7 @@ const { removeStopwords, eng, fra } = require('stopword')
 Old style require:
 ```javascript
 const sw = require('stopword')
-// sw.removeStopwords and sw.<language code> now available
+// sw.removeStopwords and sw.<language codes> now available
 ```
 
 ### ESM - Ecmascript Modules
@@ -50,7 +50,7 @@ import * as sw from './dist/stopword.esm.mjs'
 <script src="stopword.umd.js"></script>
 
 <script>
-// sw.removeStopwords and sw.[language code] now available
+// sw.removeStopwords and sw.<language codes> now available
 </script>
 ```
 
