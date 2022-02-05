@@ -28,7 +28,7 @@ SOFTWARE.
 
 
 ###############################################################################
-Afrikaans - src/stopwords_af.js
+Afrikaans - src/stopwords_afr.js
 ###############################################################################
 
 Copyright 2016 Liam Doherty
@@ -47,7 +47,7 @@ limitations under the License.
 
 
 ###############################################################################
-Arabic, Modern Standard - src/stopwords_ar.js
+Arabic, Macrolanguage - src/stopwords_ara.js
 ###############################################################################
 
 The MIT License (MIT)
@@ -74,21 +74,21 @@ SOFTWARE.
 
 
 ###############################################################################
-Armenian - src/stopwords_hy.js
+Armenian - src/stopwords_hye.js
 ###############################################################################
 
-// Copyright (c) 2017 Peter Graham, contributors. Released under the Apache-2.0 license.
-
-
-###############################################################################
-Basque - src/stopwords_eu.js
-###############################################################################
-
-// Copyright (c) 2017 Peter Graham, contributors. Released under the Apache-2.0 license.
+Copyright (c) 2017 Peter Graham, contributors. Released under the Apache-2.0 license.
 
 
 ###############################################################################
-Bengali - src/stopwords_bn.js
+Basque - src/stopwords_eus.js
+###############################################################################
+
+Copyright (c) 2017 Peter Graham, contributors. Released under the Apache-2.0 license.
+
+
+###############################################################################
+Bengali - src/stopwords_ben.js
 ###############################################################################
 
 The MIT License (MIT)
@@ -114,28 +114,28 @@ SOFTWARE.
 
 
 ###############################################################################
-Breton - src/stopwords_br.js
+Breton - src/stopwords_bre.js
 ###############################################################################
 
 Copyright (c) 2017 Peter Graham, contributors. Released under the Apache-2.0 license.
 
 
 ###############################################################################
-Bulgarian - src/stopwords_bg.js
+Bulgarian - src/stopwords_bul.js
 ###############################################################################
 
 Copyright (c) 2017 Peter Graham, contributors. Released under the Apache-2.0 license.
 
 
 ###############################################################################
-Catalan - src/stopwords_cs.js
+Catalan - src/stopwords_cat.js
 ###############################################################################
 
 Copyright (c) 2017 Peter Graham, contributors. Released under the Apache-2.0 license.
 
 
 ###############################################################################
-Chinese Simplified - src/stopwords_zh.js
+Chinese, Macrolanguage - src/stopwords_zho.js
 ###############################################################################
 
 Copyright (c) 2011, David Przybilla, Chris Umbel
@@ -160,21 +160,21 @@ THE SOFTWARE.
 
 
 ###############################################################################
-Croatian - src/stopwords_hr.js
+Croatian - src/stopwords_hrv.js
 ###############################################################################
 
 Copyright (c) 2017 Peter Graham, contributors. Released under the Apache-2.0 license.
 
 
 ###############################################################################
-Czech - src/stopwords_cs.js
+Czech - src/stopwords_ces.js
 ###############################################################################
 
 Copyright (c) 2017 Peter Graham, contributors. Released under the Apache-2.0 license.
 
 
 ###############################################################################
-Danish - src/stopwords_da.js
+Danish - src/stopwords_dan.js
 ###############################################################################
 
 Creative Commons – Attribution / ShareAlike 3.0 license
@@ -188,7 +188,7 @@ https://invokeit.wordpress.com/frequency-word-lists/#comment-9707
 
 
 ###############################################################################
-Dutch - src/stopwords_nl.js
+Dutch - src/stopwords_nld.js
 ###############################################################################
 
 Copyright (c) 2011, Chris Umbel, Martijn de Boer, Damien van Holten
@@ -216,7 +216,7 @@ source: http://www.damienvanholten.com/blog/dutch-stop-words/
 
 
 ###############################################################################
-English - src/stopwords_en.js
+English - src/stopwords_eng.js
 ###############################################################################
 
 Copyright (c) 2011, Chris Umbel
@@ -241,47 +241,21 @@ THE SOFTWARE.
 
 
 ###############################################################################
-Esperanto - src/stopwords_eo.js
+Esperanto - src/stopwords_epo.js
 ###############################################################################
 
 Copyright (c) 2017 Peter Graham, contributors. Released under the Apache-2.0 license.
 
 
 ###############################################################################
-Estonian - src/stopwords_et.js
+Estonian - src/stopwords_est.js
 ###############################################################################
 
 Copyright (c) 2017 Peter Graham, contributors. Released under the Apache-2.0 license.
 
 
 ###############################################################################
-Farsi - src/stopwords_fa.js
-###############################################################################
-
-Copyright (c) 2011, Chris Umbel
-Farsi Stop Words by Fardin Koochaki <me@fardinak.com>
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the 'Software'), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to fdo so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
-
-
-###############################################################################
-Finnish - src/stopwords_fi.js
+Finnish - src/stopwords_fin.js
 ###############################################################################
 
 The MIT License (MIT)
@@ -307,7 +281,7 @@ SOFTWARE.
 
 
 ###############################################################################
-French - src/stopwords_fr.js
+French - src/stopwords_fra.js
 ###############################################################################
 
  Copyright (c) 2014, Ismaël Héry
@@ -332,14 +306,14 @@ French - src/stopwords_fr.js
 
 
 ###############################################################################
-Galician - src/stopwords_gl.js
+Galician - src/stopwords_glg.js
 ###############################################################################
 
 Copyright (c) 2017 Peter Graham, contributors. Released under the Apache-2.0 license.
 
 
 ###############################################################################
-German - src/stopwords_de.js
+German - src/stopwords_deu.js
 ###############################################################################
 
 The MIT License (MIT)
@@ -366,14 +340,14 @@ SOFTWARE.
 
 
 ###############################################################################
-Greek - src/stopwords_el.js
+Greek - src/stopwords_ell.js
 ###############################################################################
 
 Copyright (c) 2017 Peter Graham, contributors. Released under the Apache-2.0 license.
 
 
 ###############################################################################
-Hausa - src/stopwords_ha.js
+Hausa - src/stopwords_hau.js
 ###############################################################################
 
 Copyright 2016 Liam Doherty
@@ -392,7 +366,7 @@ limitations under the License.
 
 
 ###############################################################################
-Hebrew - src/stopwords_he.js
+Hebrew - src/stopwords_heb.js
 ###############################################################################
 
 The MIT License (MIT)
@@ -400,7 +374,7 @@ Guy Saar - Stop words list
 
 
 ###############################################################################
-Hindi - src/stopwords_hi.js
+Hindi - src/stopwords_hin.js
 ###############################################################################
 
 The MIT License (MIT)
@@ -427,14 +401,14 @@ SOFTWARE.
 
 
 ###############################################################################
-Hungarian - src/stopwords_hu.js
+Hungarian - src/stopwords_hun.js
 ###############################################################################
 
 Copyright (c) 2017 Peter Graham, contributors. Released under the Apache-2.0 license.
 
 
 ###############################################################################
-Indonesian - src/stopwords_id.js
+Indonesian - src/stopwords_ind.js
 ###############################################################################
 
 Copyright (c) 2019, Luthfi Azhari
@@ -459,14 +433,14 @@ SOFTWARE.
 
 
 ###############################################################################
-Irish - src/stopwords_ga.js
+Irish - src/stopwords_gle.js
 ###############################################################################
 
 Copyright (c) 2017 Peter Graham, contributors. Released under the Apache-2.0 license.
 
 
 ###############################################################################
-Italian - src/stopwords_it.js
+Italian - src/stopwords_ita.js
 ###############################################################################
 
 Copyright (c) 2011, David Przybilla, Chris Umbel
@@ -491,7 +465,7 @@ THE SOFTWARE.
 
 
 ###############################################################################
-Japanese  - src/stopwords_ja.js
+Japanese  - src/stopwords_jpn.js
 ###############################################################################
 
 The MIT License (MIT)
@@ -517,28 +491,28 @@ THE SOFTWARE.
 
 
 ###############################################################################
-Korean - src/stopwords_ko.js
+Korean - src/stopwords_kor.js
 ###############################################################################
 
 Copyright (c) 2017 Peter Graham, contributors. Released under the Apache-2.0 license.
 
 
 ###############################################################################
-Latin - src/stopwords_la.js
+Latin - src/stopwords_lat.js
 ###############################################################################
 
 Copyright (c) 2017 Peter Graham, contributors. Released under the Apache-2.0 license.
 
 
 ###############################################################################
-Latvian - src/stopwords_lv.js
+Latvian - src/stopwords_lav.js
 ###############################################################################
 
 Copyright (c) 2017 Peter Graham, contributors. Released under the Apache-2.0 license.
 
 
 ###############################################################################
-Lugbara (without diacritics) - src/stopwords_lgg.js
+Lugbara - src/stopwords_lgg.js
 ###############################################################################
 
 Copyright 2016 Liam Doherty
@@ -557,7 +531,7 @@ limitations under the License.
 
 
 ###############################################################################
-Lugbara official (with diacritics) - src/stopwords_lggo.js
+Lugbara (with no diacritics) - src/stopwords_lggNd.js
 ###############################################################################
 
 Copyright 2016 Liam Doherty
@@ -576,14 +550,14 @@ limitations under the License.
 
 
 ###############################################################################
-Marathi - src/stopwords_mr.js
+Marathi - src/stopwords_mar.js
 ###############################################################################
 
 Copyright (c) 2017 Peter Graham, contributors. Released under the Apache-2.0 license.
 
 
 ###############################################################################
-Myanmar - src/stopwords_my.js
+Myanmar - src/stopwords_mya.js
 ###############################################################################
 
 The MIT License (MIT)
@@ -610,7 +584,7 @@ SOFTWARE.
 
 
 ###############################################################################
-Norwegian - src/stopwords_no.js
+Norwegian - src/stopwords_nob.js
 ###############################################################################
 
 Copyright (c) 2014, Kristoffer Brabrand
@@ -635,7 +609,7 @@ THE SOFTWARE.
 
 
 ###############################################################################
-Polish - src/stopwords_pl.js
+Polish - src/stopwords_pol.js
 ###############################################################################
 
 Copyright (c) 2013, Paweł Łaskarzewski
@@ -660,7 +634,7 @@ THE SOFTWARE.
 
 
 ###############################################################################
-Portuguese - src/stopwords_pt.js
+Portuguese - src/stopwords_por.js
 ###############################################################################
 
 Copyright (c) 2011, Luís Rodrigues
@@ -685,7 +659,7 @@ THE SOFTWARE.
 
 
 ###############################################################################
-Portuguese (Brazilian) - src/stopwords_ptbr.js
+Portuguese (Brazilian) - src/stopwords_porBr.js
 ###############################################################################
 
 Copyright (c) 2017, Micael Levi and Fabrício Rodrigues
@@ -710,7 +684,7 @@ THE SOFTWARE.
 
 
 ###############################################################################
-Punjabi Gurmukhi - src/stopwords_pa.js
+Punjabi Gurmukhi - src/stopwords_panGu.js
 ###############################################################################
 
 The MIT License (MIT)
@@ -736,14 +710,40 @@ SOFTWARE.
 
 
 ###############################################################################
-Romanian - src/stopwords_ro.js
+Persian / Farsi - src/stopwords_fas.js
+###############################################################################
+
+Copyright (c) 2011, Chris Umbel
+Farsi Stop Words by Fardin Koochaki <me@fardinak.com>
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the 'Software'), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to fdo so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+
+###############################################################################
+Romanian - src/stopwords_ron.js
 ###############################################################################
 
 Copyright (c) 2017 Peter Graham, contributors. Released under the Apache-2.0 license.
 
 
 ###############################################################################
-Russian - src/stopwords_ru.js
+Russian - src/stopwords_rus.js
 ###############################################################################
 
 Copyright (c) 2011, Polyakov Vladimir, Chris Umbel
@@ -768,21 +768,21 @@ THE SOFTWARE.
 
 
 ###############################################################################
-Slovak - src/stopwords_sk.js
+Slovak - src/stopwords_slk.js
 ###############################################################################
 
 Copyright (c) 2017 Peter Graham, contributors. Released under the Apache-2.0 license.
 
 
 ###############################################################################
-Slovenian - src/stopwords_sl.js
+Slovenian - src/stopwords_slv.js
 ###############################################################################
 
 Copyright (c) 2017 Peter Graham, contributors. Released under the Apache-2.0 license.
 
 
 ###############################################################################
-Somali - src/stopwords_so.js
+Somali - src/stopwords_som.js
 ###############################################################################
 
 Copyright 2016 Liam Doherty
@@ -801,7 +801,7 @@ limitations under the License.
 
 
 ###############################################################################
-Sotho - src/stopwords_st.js
+Sotho - src/stopwords_sot.js
 ###############################################################################
 
 Copyright 2016 Liam Doherty
@@ -820,7 +820,7 @@ limitations under the License.
 
 
 ###############################################################################
-Spanish - src/stopwords_es.js
+Spanish - src/stopwords_spa.js
 ###############################################################################
 
 Copyright (c) 2011, David Przybilla, Chris Umbel
@@ -845,7 +845,7 @@ THE SOFTWARE.
 
 
 ###############################################################################
-Swahili - src/stopwords_sw.js
+Swahili - src/stopwords_swa.js
 ###############################################################################
 
 Copyright 2016 Liam Doherty
@@ -864,7 +864,7 @@ limitations under the License.
 
 
 ###############################################################################
-Swedish - src/stopwords_sv.js
+Swedish - src/stopwords_swe.js
 ###############################################################################
 
 Creative Commons – Attribution / ShareAlike 3.0 license
@@ -878,14 +878,14 @@ https://invokeit.wordpress.com/frequency-word-lists/#comment-9707
 
 
 ###############################################################################
-Thai - src/stopwords_th.js
+Thai - src/stopwords_tha.js
 ###############################################################################
 
 Copyright (c) 2017 Peter Graham, contributors. Released under the Apache-2.0 license.
 
 
 ###############################################################################
-Tagalog (Filipino) - src/stopwords_tl.js
+Tagalog (Filipino) - src/stopwords_tgl.js
 ###############################################################################
 
 The MIT License (MIT)
@@ -912,14 +912,14 @@ SOFTWARE.
 
 
 ###############################################################################
-Turkish - src/stopwords_tr.js
+Turkish - src/stopwords_tur.js
 ###############################################################################
 
 Copyright (c) 2017 Peter Graham, contributors. Released under the Apache-2.0 license.
 
 
 ###############################################################################
-Urdu - src/stopwords_ur.js
+Urdu - src/stopwords_urd.js
 ###############################################################################
 
 The MIT License (MIT)
@@ -946,7 +946,7 @@ SOFTWARE.
 
 
 ###############################################################################
-Vietnamese - src/stopwords_vi.js
+Vietnamese - src/stopwords_vie.js
 ###############################################################################
 
 Copyright (c) 2011, David Przybilla, Chris Umbel
@@ -971,7 +971,7 @@ THE SOFTWARE.
 
 
 ###############################################################################
-Yoruba - src/stopwords_yo.js
+Yoruba - src/stopwords_yor.js
 ###############################################################################
 
 Copyright 2016 Liam Doherty
@@ -990,7 +990,7 @@ limitations under the License.
 
 
 ###############################################################################
-Zulu - src/stopwords_zu.js
+Zulu - src/stopwords_zul.js
 ###############################################################################
 
 Copyright 2016 Liam Doherty
