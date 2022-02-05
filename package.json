@@ -1,13 +1,13 @@
 {
   "name": "stopword",
-  "version": "2.0.0-rc.1",
+  "version": "2.0.0-rc.2",
   "description": "A module for node.js and the browser that takes in text and returns text that is stripped of stopwords. Has pre-defined stopword lists for 57 languages and also takes lists with custom stopwords as input.",
   "main": "./dist/stopword.cjs.js",
   "module": "./dist/stopword.esm.js",
   "browser": "./dist/stopword.umd.js",
   "scripts": {
     "build": "rollup --config",
-    "test": "standard './*.js' './test/*.js' && npm run build && npx ava ./test/test.cjs.js && npx ava ./test/test.esm.mjs"
+    "test": "standard './*.js' './test/*.js' && npm run build && npx ava ./test/test.cjs.js && npx ava ./test/test.esm.mjs && npx ava ./test/ui-test.js"
   },
   "repository": {
     "type": "git",
@@ -22,9 +22,7 @@
     "nlp"
   ],
   "devDependencies": {
-    "batr": "^2.0.2",
-    "rollup-plugin-terser": "7.0.2",
-    "rollup-plugin-license": "2.6.1"
+    "batr": "^2.0.4"
   },
   "author": "Fergus McDowall",
   "license": "MIT",
