@@ -31,7 +31,6 @@ test('1: Select english stopwords, type a sentence, check result. 2: Same for no
   await page.keyboard.type('what a wonderful day for the stopword module it is')
   // TEST: check result
   let stopped = await (page.textContent('#stopwordsRemoved'))
-  console.log(stopped)
   t.deepEqual(await stopped, 'wonderful day stopword module')
 
   // 2: select norwegian language, remove text and type sentence
