@@ -63,15 +63,15 @@ const vi = vie // vietnamese
 const yo = yor // youruba
 const zu = zul // zulu
 
-test('extract korean numbers and remove stopword numbers (korean) from korean text ', (t) => {
+test('extract numbers and remove stopword numbers from korean text ', (t) => {
   t.plan(1)
   const oldString = '쾰른 대성당(독일어: Kölner Dom, 정식 명칭: Hohe Domkirche St. Peter)은 독일 쾰른에 있는 로마 가톨릭교회의 성당이다. 고딕 양식으로 지어졌다. 쾰른 대교구의 주교좌 성당이라 쾰른 주교좌 성당이라고도 불린다. 현재 쾰른 대교구의 교구장은 라이너 마리아 뵐키 추기경이다. 이 성당은 독일에서 가장 잘 알려진 건축물로, 성 바실리 대성당에 이어, 1996년 유네스코 세계유산으로 등재되었다. 유네스코에서는 쾰른 대성당을 일컬어 “인류의 창조적 재능을 보여주는 드문 작품”이라고 묘사하였다.[1] 매일 2만여 명의 관광객이 이 성당을 찾는다.[2]'
-  let newString = extract(oldString, { regex: [numbers], toLowercase: true })
+  let newString = extract(oldString, { regex: [numbers] })
   newString = removeStopwords(newString, _123)
   t.deepEqual(newString, ['1996'])
 })
 
-test('extract korean numbers and words and remove stopword numbers (korean) and korean words from korean text ', (t) => {
+test('extract numbers and words and remove stopword numbers and korean words from korean text ', (t) => {
   t.plan(1)
   const oldString = '쾰른 대성당(독일어: Kölner Dom, 정식 명칭: Hohe Domkirche St. Peter)은 독일 쾰른에 있는 로마 가톨릭교회의 성당이다. 고딕 양식으로 지어졌다. 쾰른 대교구의 주교좌 성당이라 쾰른 주교좌 성당이라고도 불린다. 현재 쾰른 대교구의 교구장은 라이너 마리아 뵐키 추기경이다. 이 성당은 독일에서 가장 잘 알려진 건축물로, 성 바실리 대성당에 이어, 1996년 유네스코 세계유산으로 등재되었다. 유네스코에서는 쾰른 대성당을 일컬어 “인류의 창조적 재능을 보여주는 드문 작품”이라고 묘사하였다.[1] 매일 2만여 명의 관광객이 이 성당을 찾는다.[2]'
   let newString = extract(oldString, { regex: [words, numbers], toLowercase: true })

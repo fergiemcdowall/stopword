@@ -60,7 +60,7 @@ import * as sw from './dist/stopword.esm.mjs'
 ### Default (English)
 By default, `stopword` will strip an array of "meaningless" English words
 
-```javascript
+```javaScript
 const { removeStopwords } = require('stopword')
 const oldString = 'a really Interesting string with some words'.split(' ')
 const newString = removeStopwords(oldString)
@@ -70,12 +70,25 @@ const newString = removeStopwords(oldString)
 
 ### Other languages
 You can also specify a language other than English:
-```javascript
+```javaScript
 const { removeStopwords, swe } = require('stopword')
 const oldString = 'Trädgårdsägare är beredda att pröva vad som helst för att bli av med de hatade mördarsniglarna åäö'.split(' ')
 // swe contains swedish stopwords
 const newString = removeStopwords(oldString, swe)
 // newString is now [ 'Trädgårdsägare', 'beredda', 'pröva', 'helst', 'hatade', 'mördarsniglarna', 'åäö' ]
+```
+
+### Numbers
+Extract numbers (korean script/characters) with module `words-n-numbers` and removing 0-9 'stopwords'
+
+```javaScript
+const { removeStopwords, swe } = require('stopword')
+const { extract, words, numbers } = require('words-n-numbers')
+const oldString = '쾰른 대성당(독일어: Kölner Dom, 정식 명칭: Hohe Domkirche St. Peter)은 독일 쾰른에 있는 로마 가톨릭교회의 성당이다. 고딕 양식으로 지어졌다. 쾰른 대교구의 주교좌 성당이라 쾰른 주교좌 성당이라고도 불린다. 현재 쾰른 대교구의 교구장은 라이너 마리아 뵐키 추기경이다. 이 성당은 독일에서 가장 잘 알려진 건축물로, 성 바실리 대성당에 이어, 1996년 유네스코 세계유산으로 등재되었다. 유네스코에서는 쾰른 대성당을 일컬어 “인류의 창조적 재능을 보여주는 드문 작품”이라고 묘사하였다.[1] 매일 2만여 명의 관광객이 이 성당을 찾는다.[2]'
+let newString = extract(oldString, { regex: [numbers] })
+newString = removeStopwords(newString, _123)
+// newString is now [ '1996' ]
+})
 ```
 
 ### Custom list of stopwords
@@ -119,6 +132,7 @@ var text = removeStopwords(text[, stopwords])
 
 Language codes follow [ISO 639-3 Language Code list](https://iso639-3.sil.org/code_tables/639/data/all). Arrays of stopwords for the following 57 languages are supplied:
 
+* `_123` - 0-9 for different script (regular, Farsi, Korean and Myanmar)
 * `afr` - Afrikaans
 * `ara` - Arabic, Macrolanguage
 * `hye` - Armenian
