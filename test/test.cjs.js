@@ -1,5 +1,6 @@
 const test = require('ava')
-const { removeStopwords, afr, ara, hye, eus, ben, bre, bul, cat, zho, hrv, ces, dan, nld, eng, epo, est, fin, fra, glg, deu, ell, hau, heb, hin, hun, ind, gle, ita, jpn, kor, lat, lav, lgg, lggNd, mar, mya, nob, fas, pol, por, porBr, panGu, ron, rus, slk, slv, som, sot, spa, swa, swe, tha, tgl, tur, urd, vie, yor, zul } = require('../dist/stopword.cjs.js')
+const { extract, words, numbers } = require('words-n-numbers')
+const { removeStopwords, _123, afr, ara, hye, eus, ben, bre, bul, cat, zho, hrv, ces, dan, nld, eng, epo, est, fin, fra, glg, deu, ell, hau, heb, hin, hun, ind, gle, ita, jpn, kor, lat, lav, lgg, lggNd, mar, mya, nob, fas, pol, por, porBr, panGu, ron, rus, slk, slv, som, sot, spa, swa, swe, tha, tgl, tur, urd, vie, yor, zul } = require('../dist/stopword.cjs.js')
 
 // matching old language codes / variables
 const af = afr // afrikaans
@@ -62,7 +63,21 @@ const vi = vie // vietnamese
 const yo = yor // youruba
 const zu = zul // zulu
 
-// const { removeStopwords, af, ar, bn, bg, br, ca, cs, da, de, el, en, eo, es, et, eu, fa, fr, ga, gl, fi, ha, he, hi, hr, hu, hy, id, it, ja, ko, la, lgg, lggo, lv, mr, my, nl, no, pa, pl, pt, ptbr, ro, ru, sk, sl, so, st, sv, sw, th, tl, tr, ur, vi, yo, zh, zu } = require('../dist/stopword.cjs.js')
+test('extract korean numbers and remove stopword numbers (korean) from korean text ', (t) => {
+  t.plan(1)
+  const oldString = '쾰른 대성당(독일어: Kölner Dom, 정식 명칭: Hohe Domkirche St. Peter)은 독일 쾰른에 있는 로마 가톨릭교회의 성당이다. 고딕 양식으로 지어졌다. 쾰른 대교구의 주교좌 성당이라 쾰른 주교좌 성당이라고도 불린다. 현재 쾰른 대교구의 교구장은 라이너 마리아 뵐키 추기경이다. 이 성당은 독일에서 가장 잘 알려진 건축물로, 성 바실리 대성당에 이어, 1996년 유네스코 세계유산으로 등재되었다. 유네스코에서는 쾰른 대성당을 일컬어 “인류의 창조적 재능을 보여주는 드문 작품”이라고 묘사하였다.[1] 매일 2만여 명의 관광객이 이 성당을 찾는다.[2]'
+  let newString = extract(oldString, { regex: [numbers], toLowercase: true })
+  newString = removeStopwords(newString, _123)
+  t.deepEqual(newString, ['1996'])
+})
+
+test('extract korean numbers and words and remove stopword numbers (korean) and korean words from korean text ', (t) => {
+  t.plan(1)
+  const oldString = '쾰른 대성당(독일어: Kölner Dom, 정식 명칭: Hohe Domkirche St. Peter)은 독일 쾰른에 있는 로마 가톨릭교회의 성당이다. 고딕 양식으로 지어졌다. 쾰른 대교구의 주교좌 성당이라 쾰른 주교좌 성당이라고도 불린다. 현재 쾰른 대교구의 교구장은 라이너 마리아 뵐키 추기경이다. 이 성당은 독일에서 가장 잘 알려진 건축물로, 성 바실리 대성당에 이어, 1996년 유네스코 세계유산으로 등재되었다. 유네스코에서는 쾰른 대성당을 일컬어 “인류의 창조적 재능을 보여주는 드문 작품”이라고 묘사하였다.[1] 매일 2만여 명의 관광객이 이 성당을 찾는다.[2]'
+  let newString = extract(oldString, { regex: [words, numbers], toLowercase: true })
+  newString = removeStopwords(newString, [..._123, ...kor])
+  t.deepEqual(newString, ['쾰른', '대성당', '독일어', 'kölner', 'dom', '정식', '명칭', 'hohe', 'domkirche', 'st', 'peter', '은', '독일', '쾰른에', '있는', '로마', '가톨릭교회의', '성당이다', '고딕', '양식으로', '지어졌다', '쾰른', '대교구의', '주교좌', '성당이라', '쾰른', '주교좌', '성당이라고도', '불린다', '현재', '쾰른', '대교구의', '교구장은', '라이너', '마리아', '뵐키', '추기경이다', '성당은', '독일에서', '가장', '잘', '알려진', '건축물로', '성', '바실리', '대성당에', '이어', '1996', '유네스코', '세계유산으로', '등재되었다', '유네스코에서는', '쾰른', '대성당을', '일컬어', '인류의', '창조적', '재능을', '보여주는', '드문', '작품', '이라고', '묘사하였다', '매일', '만여', '명의', '관광객이', '성당을', '찾는다'])
+})
 
 test('remove stopwords, default to english and preserve case', (t) => {
   t.plan(1)
