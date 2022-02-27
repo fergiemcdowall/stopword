@@ -163,6 +163,7 @@ Language codes follow [ISO 639-3 Language Code list](https://iso639-3.sil.org/co
 * `ita` - Italian
 * `jpn` - Japanese
 * `kor` - Korean
+* `kur` - Kurdish, Macrolanguage
 * `lat` - Latin
 * `lav` - Latvian, Macrolanguage
 * `lit` - Lithuanian
