@@ -1,6 +1,6 @@
 import test from 'ava'
 import { extract, words, numbers } from 'words-n-numbers'
-import { removeStopwords, _123, afr, ara, hye, eus, ben, bre, bul, cat, zho, hrv, ces, dan, nld, eng, epo, est, fin, fra, glg, deu, ell, hau, heb, hin, hun, ind, gle, ita, jpn, kor, kur, lat, lav, lit, lgg, lggNd, mar, mya, nob, fas, pol, por, porBr, panGu, ron, rus, slk, slv, som, sot, spa, swa, swe, tha, tgl, tur, ukr, urd, vie, yor, zul } from '../dist/stopword.esm.mjs'
+import { removeStopwords, _123, afr, ara, hye, eus, ben, bre, bul, cat, zho, hrv, ces, dan, nld, eng, epo, est, fin, fra, glg, deu, ell, hau, heb, hin, hun, ind, gle, ita, jpn, kor, kur, lat, lav, lit, lgg, lggNd, msa, mar, mya, nob, fas, pol, por, porBr, panGu, ron, rus, slk, slv, som, sot, spa, swa, swe, tha, tgl, tur, ukr, urd, vie, yor, zul } from '../dist/stopword.esm.mjs'
 
 // matching old language codes / variables
 const af = afr // afrikaans
@@ -515,6 +515,13 @@ test('remove lithuanian stopwords', (t) => {
   const oldString = 'Gyvendamas JAV, tapo Respublikonų partijos nariu ir septintajame dešimtmetyje aktyviai įsitraukė į politinę veiklą. Iš pradžių Ilinojaus valstijos vietos valdžios rinkimuose dalyvavo vietinio Respublikonų partijos kandidato rinkimų kampanijoje. Vėliau, 1968 m. būdamas Respublikonų partijos kandidatu, dalyvavo Čikagos sanitarinės patikėtinių tarybos rinkimuose ir rinkimus pralaimėjo Demokratų partijos kandidatui.'
   const newString = removeStopwords(extract(oldString, { regex: [words], toLowercase: true }), lit)
   t.deepEqual(newString, ['gyvendamas', 'jav', 'tapo', 'respublikonų', 'partijos', 'nariu', 'septintajame', 'dešimtmetyje', 'aktyviai', 'įsitraukė', 'į', 'politinę', 'veiklą', 'iš', 'pradžių', 'ilinojaus', 'valstijos', 'vietos', 'valdžios', 'rinkimuose', 'dalyvavo', 'vietinio', 'respublikonų', 'partijos', 'kandidato', 'rinkimų', 'kampanijoje', 'vėliau', 'm', 'būdamas', 'respublikonų', 'partijos', 'kandidatu', 'dalyvavo', 'čikagos', 'sanitarinės', 'patikėtinių', 'tarybos', 'rinkimuose', 'rinkimus', 'pralaimėjo', 'demokratų', 'partijos', 'kandidatui'])
+})
+
+test('remove malay stopwords', (t) => {
+  t.plan(1)
+  const oldString = 'Ada juga orang ter-kenang-kan hal itu di hadap-an sahaya. Che Ismail sudah siap handak me-nikaḥ-kan anak-nia dengan Haji Daud.'
+  const newString = removeStopwords(extract(oldString, { regex: [words], toLowercase: true }), msa)
+  t.deepEqual(newString, ['ter', 'kenang', 'kan', 'hal', 'hadap', 'an', 'sahaya', 'che', 'ismail', 'siap', 'handak', 'me', 'nikaḥ', 'kan', 'nia', 'haji', 'daud'])
 })
 
 // -----------------------

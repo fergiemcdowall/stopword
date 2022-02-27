@@ -130,7 +130,7 @@ var text = removeStopwords(text[, stopwords])
 
 ### &lt;language code&gt;
 
-Language codes follow [ISO 639-3 Language Code list](https://iso639-3.sil.org/code_tables/639/data/all). Arrays of stopwords for the following 59 languages are supplied:
+Language codes follow [ISO 639-3 Language Code list](https://iso639-3.sil.org/code_tables/639/data/all). Arrays of stopwords for the following 61 languages are supplied:
 
 * `_123` - 0-9 for different script (regular, Farsi, Korean and Myanmar)
 * `afr` - Afrikaans
@@ -169,6 +169,7 @@ Language codes follow [ISO 639-3 Language Code list](https://iso639-3.sil.org/co
 * `lit` - Lithuanian
 * `lgg` - Lugbara
 * `lggNd` - Lugbara, No diacritics
+* `msa` - Malay, Macrolanguage
 * `mar` - Marathi
 * `mya` - Myanmar (Burmese)
 * `nob` - Norwegian bokmål
