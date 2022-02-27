@@ -1,6 +1,6 @@
 import test from 'ava'
 import { extract, words, numbers } from 'words-n-numbers'
-import { removeStopwords, _123, afr, ara, hye, eus, ben, bre, bul, cat, zho, hrv, ces, dan, nld, eng, epo, est, fin, fra, glg, deu, ell, hau, heb, hin, hun, ind, gle, ita, jpn, kor, lat, lav, lgg, lggNd, mar, mya, nob, fas, pol, por, porBr, panGu, ron, rus, slk, slv, som, sot, spa, swa, swe, tha, tgl, tur, ukr, urd, vie, yor, zul } from '../dist/stopword.esm.mjs'
+import { removeStopwords, _123, afr, ara, hye, eus, ben, bre, bul, cat, zho, hrv, ces, dan, nld, eng, epo, est, fin, fra, glg, deu, ell, hau, heb, hin, hun, ind, gle, ita, jpn, kor, lat, lav, lit, lgg, lggNd, mar, mya, nob, fas, pol, por, porBr, panGu, ron, rus, slk, slv, som, sot, spa, swa, swe, tha, tgl, tur, ukr, urd, vie, yor, zul } from '../dist/stopword.esm.mjs'
 
 // matching old language codes / variables
 const af = afr // afrikaans
@@ -508,6 +508,13 @@ test('remove ukrainian stopwords', (t) => {
   const oldString = '24 лютого 2022 року Росія відкрито напала на Україну. Військова кампанія почалася після тривалого військового нарощування, визнання Росією терористичних квазідержав «ДНР» та «ЛНР» як державних утворень 21 лютого. Практично одночасно ЗС РФ почали неприховане перекидання військ на окуповані території Донбасу.'
   const newString = removeStopwords(extract(oldString, { regex: [words], toLowercase: true }), ukr)
   t.deepEqual(newString, ['лютого', 'року', 'росія', 'відкрито', 'напала', 'на', 'україну', 'військова', 'кампанія', 'почалася', 'після', 'тривалого', 'військового', 'нарощування', 'визнання', 'росією', 'терористичних', 'квазідержав', 'днр', 'лнр', 'державних', 'утворень', 'лютого', 'практично', 'одночасно', 'зс', 'рф', 'почали', 'неприховане', 'перекидання', 'військ', 'на', 'окуповані', 'території', 'донбасу'])
+})
+
+test('remove lithuanian stopwords', (t) => {
+  t.plan(1)
+  const oldString = 'Gyvendamas JAV, tapo Respublikonų partijos nariu ir septintajame dešimtmetyje aktyviai įsitraukė į politinę veiklą. Iš pradžių Ilinojaus valstijos vietos valdžios rinkimuose dalyvavo vietinio Respublikonų partijos kandidato rinkimų kampanijoje. Vėliau, 1968 m. būdamas Respublikonų partijos kandidatu, dalyvavo Čikagos sanitarinės patikėtinių tarybos rinkimuose ir rinkimus pralaimėjo Demokratų partijos kandidatui.'
+  const newString = removeStopwords(extract(oldString, { regex: [words], toLowercase: true }), lit)
+  t.deepEqual(newString, ['gyvendamas', 'jav', 'tapo', 'respublikonų', 'partijos', 'nariu', 'septintajame', 'dešimtmetyje', 'aktyviai', 'įsitraukė', 'į', 'politinę', 'veiklą', 'iš', 'pradžių', 'ilinojaus', 'valstijos', 'vietos', 'valdžios', 'rinkimuose', 'dalyvavo', 'vietinio', 'respublikonų', 'partijos', 'kandidato', 'rinkimų', 'kampanijoje', 'vėliau', 'm', 'būdamas', 'respublikonų', 'partijos', 'kandidatu', 'dalyvavo', 'čikagos', 'sanitarinės', 'patikėtinių', 'tarybos', 'rinkimuose', 'rinkimus', 'pralaimėjo', 'demokratų', 'partijos', 'kandidatui'])
 })
 
 // -----------------------

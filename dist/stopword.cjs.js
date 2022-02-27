@@ -460,6 +460,30 @@ const lat = ['a', 'ab', 'ac', 'ad', 'at', 'atque', 'aut', 'autem', 'cum', 'de', 
 
 const lav = ['aiz', 'ap', 'apakš', 'apakšpus', 'ar', 'arī', 'augšpus', 'bet', 'bez', 'bija', 'biji', 'biju', 'bijām', 'bijāt', 'būs', 'būsi', 'būsiet', 'būsim', 'būt', 'būšu', 'caur', 'diemžēl', 'diezin', 'droši', 'dēļ', 'esam', 'esat', 'esi', 'esmu', 'gan', 'gar', 'iekam', 'iekams', 'iekām', 'iekāms', 'iekš', 'iekšpus', 'ik', 'ir', 'it', 'itin', 'iz', 'ja', 'jau', 'jeb', 'jebšu', 'jel', 'jo', 'jā', 'ka', 'kamēr', 'kaut', 'kolīdz', 'kopš', 'kā', 'kļuva', 'kļuvi', 'kļuvu', 'kļuvām', 'kļuvāt', 'kļūs', 'kļūsi', 'kļūsiet', 'kļūsim', 'kļūst', 'kļūstam', 'kļūstat', 'kļūsti', 'kļūstu', 'kļūt', 'kļūšu', 'labad', 'lai', 'lejpus', 'līdz', 'līdzko', 'ne', 'nebūt', 'nedz', 'nekā', 'nevis', 'nezin', 'no', 'nu', 'nē', 'otrpus', 'pa', 'par', 'pat', 'pie', 'pirms', 'pret', 'priekš', 'pār', 'pēc', 'starp', 'tad', 'tak', 'tapi', 'taps', 'tapsi', 'tapsiet', 'tapsim', 'tapt', 'tapāt', 'tapšu', 'taču', 'te', 'tiec', 'tiek', 'tiekam', 'tiekat', 'tieku', 'tik', 'tika', 'tikai', 'tiki', 'tikko', 'tiklab', 'tiklīdz', 'tiks', 'tiksiet', 'tiksim', 'tikt', 'tiku', 'tikvien', 'tikām', 'tikāt', 'tikšu', 'tomēr', 'topat', 'turpretim', 'turpretī', 'tā', 'tādēļ', 'tālab', 'tāpēc', 'un', 'uz', 'vai', 'var', 'varat', 'varēja', 'varēji', 'varēju', 'varējām', 'varējāt', 'varēs', 'varēsi', 'varēsiet', 'varēsim', 'varēt', 'varēšu', 'vien', 'virs', 'virspus', 'vis', 'viņpus', 'zem', 'ārpus', 'šaipus'];
 
+/* The MIT License (MIT)
+
+Copyright (c) 2016 Gene Diaz
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE. */
+
+const lit = ['abi', 'abidvi', 'abiejose', 'abiejuose', 'abiejø', 'abiem', 'abigaliai', 'abipus', 'abu', 'abudu', 'ai', 'ana', 'anaiptol', 'anaisiais', 'anajai', 'anajam', 'anajame', 'anapus', 'anas', 'anasai', 'anasis', 'anei', 'aniedvi', 'anieji', 'aniesiems', 'anoji', 'anojo', 'anojoje', 'anokia', 'anoks', 'anosiomis', 'anosioms', 'anosios', 'anosiose', 'anot', 'ant', 'antai', 'anuodu', 'anuoju', 'anuosiuose', 'anuosius', 'anàja', 'anàjà', 'anàjá', 'anàsias', 'anøjø', 'apie', 'aplink', 'ar', 'arba', 'argi', 'arti', 'aukðèiau', 'að', 'be', 'bei', 'beje', 'bemaþ', 'bent', 'bet', 'betgi', 'beveik', 'dar', 'dargi', 'daugmaþ', 'deja', 'dëka', 'dël', 'dëlei', 'dëlto', 'ech', 'et', 'gal', 'galbût', 'galgi', 'gan', 'gana', 'gi', 'greta', 'idant', 'iki', 'ir', 'irgi', 'it', 'itin', 'ið', 'iðilgai', 'iðvis', 'jaisiais', 'jajai', 'jajam', 'jajame', 'jei', 'jeigu', 'ji', 'jiedu', 'jiedvi', 'jieji', 'jiesiems', 'jinai', 'jis', 'jisai', 'jog', 'joji', 'jojo', 'jojoje', 'jokia', 'joks', 'josiomis', 'josioms', 'josios', 'josiose', 'judu', 'judvi', 'juk', 'jumis', 'jums', 'jumyse', 'juodu', 'juoju', 'juosiuose', 'juosius', 'jus', 'jàja', 'jàjà', 'jàsias', 'jájá', 'jøjø', 'jûs', 'jûsiðkis', 'jûsiðkë', 'jûsø', 'kad', 'kada', 'kadangi', 'kai', 'kaip', 'kaipgi', 'kas', 'katra', 'katras', 'katriedvi', 'katruodu', 'kaþin', 'kaþkas', 'kaþkatra', 'kaþkatras', 'kaþkokia', 'kaþkoks', 'kaþkuri', 'kaþkuris', 'kiaurai', 'kiek', 'kiekvienas', 'kieno', 'kita', 'kitas', 'kitokia', 'kitoks', 'kodël', 'kokia', 'koks', 'kol', 'kolei', 'kone', 'kuomet', 'kur', 'kurgi', 'kuri', 'kuriedvi', 'kuris', 'kuriuodu', 'lai', 'lig', 'ligi', 'link', 'lyg', 'man', 'manaisiais', 'manajai', 'manajam', 'manajame', 'manas', 'manasai', 'manasis', 'mane', 'manieji', 'maniesiems', 'manim', 'manimi', 'maniðkis', 'maniðkë', 'mano', 'manoji', 'manojo', 'manojoje', 'manosiomis', 'manosioms', 'manosios', 'manosiose', 'manuoju', 'manuosiuose', 'manuosius', 'manyje', 'manàja', 'manàjà', 'manàjá', 'manàsias', 'manæs', 'manøjø', 'mat', 'maþdaug', 'maþne', 'mes', 'mudu', 'mudvi', 'mumis', 'mums', 'mumyse', 'mus', 'mûsiðkis', 'mûsiðkë', 'mûsø', 'na', 'nagi', 'ne', 'nebe', 'nebent', 'negi', 'negu', 'nei', 'nejau', 'nejaugi', 'nekaip', 'nelyginant', 'nes', 'net', 'netgi', 'netoli', 'neva', 'nors', 'nuo', 'në', 'o', 'ogi', 'oi', 'paeiliui', 'pagal', 'pakeliui', 'palaipsniui', 'palei', 'pas', 'pasak', 'paskos', 'paskui', 'paskum', 'pat', 'pati', 'patiems', 'paties', 'pats', 'patys', 'patá', 'paèiais', 'paèiam', 'paèiame', 'paèiu', 'paèiuose', 'paèius', 'paèiø', 'per', 'pernelyg', 'pirm', 'pirma', 'pirmiau', 'po', 'prie', 'prieð', 'prieðais', 'pro', 'pusiau', 'rasi', 'rodos', 'sau', 'savaisiais', 'savajai', 'savajam', 'savajame', 'savas', 'savasai', 'savasis', 'save', 'savieji', 'saviesiems', 'savimi', 'saviðkis', 'saviðkë', 'savo', 'savoji', 'savojo', 'savojoje', 'savosiomis', 'savosioms', 'savosios', 'savosiose', 'savuoju', 'savuosiuose', 'savuosius', 'savyje', 'savàja', 'savàjà', 'savàjá', 'savàsias', 'savæs', 'savøjø', 'skersai', 'skradþiai', 'staèiai', 'su', 'sulig', 'ta', 'tad', 'tai', 'taigi', 'taip', 'taipogi', 'taisiais', 'tajai', 'tajam', 'tajame', 'tamsta', 'tarp', 'tarsi', 'tartum', 'tarytum', 'tas', 'tasai', 'tau', 'tavaisiais', 'tavajai', 'tavajam', 'tavajame', 'tavas', 'tavasai', 'tavasis', 'tave', 'tavieji', 'taviesiems', 'tavimi', 'taviðkis', 'taviðkë', 'tavo', 'tavoji', 'tavojo', 'tavojoje', 'tavosiomis', 'tavosioms', 'tavosios', 'tavosiose', 'tavuoju', 'tavuosiuose', 'tavuosius', 'tavyje', 'tavàja', 'tavàjà', 'tavàjá', 'tavàsias', 'tavæs', 'tavøjø', 'taèiau', 'te', 'tegu', 'tegul', 'tiedvi', 'tieji', 'ties', 'tiesiems', 'tiesiog', 'tik', 'tikriausiai', 'tiktai', 'toji', 'tojo', 'tojoje', 'tokia', 'toks', 'tol', 'tolei', 'toliau', 'tosiomis', 'tosioms', 'tosios', 'tosiose', 'tu', 'tuodu', 'tuoju', 'tuosiuose', 'tuosius', 'turbût', 'tàja', 'tàjà', 'tàjá', 'tàsias', 'tøjø', 'tûlas', 'uþ', 'uþtat', 'uþvis', 'va', 'vai', 'viduj', 'vidury', 'vien', 'vienas', 'vienokia', 'vienoks', 'vietoj', 'virð', 'virðuj', 'virðum', 'vis', 'vis dëlto', 'visa', 'visas', 'visgi', 'visokia', 'visoks', 'vos', 'vël', 'vëlgi', 'ypaè', 'á', 'ákypai', 'ástriþai', 'ðalia', 'ðe', 'ði', 'ðiaisiais', 'ðiajai', 'ðiajam', 'ðiajame', 'ðiapus', 'ðiedvi', 'ðieji', 'ðiesiems', 'ðioji', 'ðiojo', 'ðiojoje', 'ðiokia', 'ðioks', 'ðiosiomis', 'ðiosioms', 'ðiosios', 'ðiosiose', 'ðis', 'ðisai', 'ðit', 'ðita', 'ðitas', 'ðitiedvi', 'ðitokia', 'ðitoks', 'ðituodu', 'ðiuodu', 'ðiuoju', 'ðiuosiuose', 'ðiuosius', 'ðiàja', 'ðiàjà', 'ðiàsias', 'ðiøjø', 'ðtai', 'ðájá', 'þemiau'];
+
 /* Copyright 2016 Liam Doherty
 
 Licensed under the Apache License, Version 2.0 (the "License");
@@ -969,7 +993,6 @@ const removeStopwords = function (tokens, stopwords) {
     return stopwords.indexOf(value.toLowerCase()) === -1
   })
 };
-// export { removeStopwords, af, ar, bn, bg, br, ca, cs, da, de, el, en, eo, es, et, eu, fa, fr, ga, gl, fi, ha, he, hi, hr, hu, hy, id, it, ja, ko, la, lgg, lggo, lv, mr, my, nl, no, pa, pl, pt, ptbr, ro, ru, sk, sl, so, st, sv, sw, th, tl, tr, ur, vi, yo, zh, zu }
 
 exports._123 = _123;
 exports.afr = afr;
@@ -1005,6 +1028,7 @@ exports.lat = lat;
 exports.lav = lav;
 exports.lgg = lgg;
 exports.lggNd = lggNd;
+exports.lit = lit;
 exports.mar = mar;
 exports.mya = mya;
 exports.nld = nld;
