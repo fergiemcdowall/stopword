@@ -1,6 +1,6 @@
 import test from 'ava'
 import { extract, words, numbers } from 'words-n-numbers'
-import { removeStopwords, _123, afr, ara, hye, eus, ben, bre, bul, cat, zho, hrv, ces, dan, nld, eng, epo, est, fin, fra, glg, deu, ell, hau, heb, hin, hun, ind, gle, ita, jpn, kor, lat, lav, lgg, lggNd, mar, mya, nob, fas, pol, por, porBr, panGu, ron, rus, slk, slv, som, sot, spa, swa, swe, tha, tgl, tur, urd, vie, yor, zul } from '../dist/stopword.esm.mjs'
+import { removeStopwords, _123, afr, ara, hye, eus, ben, bre, bul, cat, zho, hrv, ces, dan, nld, eng, epo, est, fin, fra, glg, deu, ell, hau, heb, hin, hun, ind, gle, ita, jpn, kor, lat, lav, lgg, lggNd, mar, mya, nob, fas, pol, por, porBr, panGu, ron, rus, slk, slv, som, sot, spa, swa, swe, tha, tgl, tur, ukr, urd, vie, yor, zul } from '../dist/stopword.esm.mjs'
 
 // matching old language codes / variables
 const af = afr // afrikaans
@@ -501,6 +501,13 @@ test('remove tagalog (filipino) stopwords', (t) => {
   const oldString = ['mayroon', 'silang', 'karapatang', 'magkaroon', 'ng', 'ari-arian', 'makilahok', 'sa', 'kalakalan', 'at', 'maaaring', 'hiwalayan', 'o', 'dibosiyuhin', 'ang', 'asawang', 'lalaki', 'maaari', 'rin', 'silang', 'maging', 'pinuno', 'ng', 'nayon', 'kung', 'walang', 'tagapagmanang', 'lalaki', 'sa', 'katungkulan']
   const newString = removeStopwords(oldString, tl)
   t.deepEqual(newString, ['silang', 'karapatang', 'magkaroon', 'ari-arian', 'makilahok', 'kalakalan', 'hiwalayan', 'dibosiyuhin', 'asawang', 'lalaki', 'rin', 'silang', 'pinuno', 'nayon', 'tagapagmanang', 'lalaki', 'katungkulan'])
+})
+
+test('remove ukrainian stopwords', (t) => {
+  t.plan(1)
+  const oldString = '24 лютого 2022 року Росія відкрито напала на Україну. Військова кампанія почалася після тривалого військового нарощування, визнання Росією терористичних квазідержав «ДНР» та «ЛНР» як державних утворень 21 лютого. Практично одночасно ЗС РФ почали неприховане перекидання військ на окуповані території Донбасу.'
+  const newString = removeStopwords(extract(oldString, { regex: [words], toLowercase: true }), ukr)
+  t.deepEqual(newString, ['лютого', 'року', 'росія', 'відкрито', 'напала', 'на', 'україну', 'військова', 'кампанія', 'почалася', 'після', 'тривалого', 'військового', 'нарощування', 'визнання', 'росією', 'терористичних', 'квазідержав', 'днр', 'лнр', 'державних', 'утворень', 'лютого', 'практично', 'одночасно', 'зс', 'рф', 'почали', 'неприховане', 'перекидання', 'військ', 'на', 'окуповані', 'території', 'донбасу'])
 })
 
 // -----------------------
