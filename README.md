@@ -1,6 +1,6 @@
 # stopword
 `stopword` is a module for node and the browser that allows you to strip
-stopwords from an input text. [In natural language processing, "Stopwords" are
+stopwords from an input text. Covers 62 languages. [In natural language processing, "Stopwords" are
 words that are so frequent that they can safely be removed from a text without
 altering its meaning.](https://en.wikipedia.org/wiki/Stop_words)
 
@@ -130,7 +130,7 @@ var text = removeStopwords(text[, stopwords])
 
 ### &lt;language code&gt;
 
-Language codes follow [ISO 639-3 Language Code list](https://iso639-3.sil.org/code_tables/639/data/all). Arrays of stopwords for the following 61 languages are supplied:
+Language codes follow [ISO 639-3 Language Code list](https://iso639-3.sil.org/code_tables/639/data/all). Arrays of stopwords for the following 62 languages are supplied:
 
 * `_123` - 0-9 for different script (regular, Farsi, Korean and Myanmar)
 * `afr` - Afrikaans
@@ -154,6 +154,7 @@ Language codes follow [ISO 639-3 Language Code list](https://iso639-3.sil.org/co
 * `glg` - Galician
 * `deu` - German
 * `ell` - Greek, Modern
+* `guj` - Gujarati
 * `hau` - Hausa
 * `heb` - Hebrew
 * `hin` - Hindi

@@ -20,6 +20,7 @@ import { fra } from './stopwords_fra.js'
 import { glg } from './stopwords_glg.js'
 import { deu } from './stopwords_deu.js'
 import { ell } from './stopwords_ell.js'
+import { guj } from './stopwords_guj.js'
 import { hau } from './stopwords_hau.js'
 import { heb } from './stopwords_heb.js'
 import { hin } from './stopwords_hin.js'
@@ -74,4 +75,4 @@ const removeStopwords = function (tokens, stopwords) {
   })
 }
 
-export { removeStopwords, _123, afr, ara, hye, eus, ben, bre, bul, cat, zho, hrv, ces, dan, nld, eng, epo, est, fin, fra, glg, deu, ell, hau, heb, hin, hun, ind, gle, ita, jpn, kor, kur, lat, lav, lit, lgg, lggNd, msa, mar, mya, nob, fas, pol, por, porBr, panGu, ron, rus, slk, slv, som, sot, spa, swa, swe, tha, tgl, tur, urd, ukr, vie, yor, zul }
+export { removeStopwords, _123, afr, ara, hye, eus, ben, bre, bul, cat, zho, hrv, ces, dan, nld, eng, epo, est, fin, fra, glg, deu, ell, guj, hau, heb, hin, hun, ind, gle, ita, jpn, kor, kur, lat, lav, lit, lgg, lggNd, msa, mar, mya, nob, fas, pol, por, porBr, panGu, ron, rus, slk, slv, som, sot, spa, swa, swe, tha, tgl, tur, urd, ukr, vie, yor, zul }
