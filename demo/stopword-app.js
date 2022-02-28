@@ -2,7 +2,7 @@ const languageSelect = document.getElementById('languages')
 const sentenceInput = document.getElementById('text')
 const resultText = document.getElementById('stopwordsRemoved')
 
-function updateSentence() {
+function updateSentence () {
   const language = languageSelect.value
   const oldString = sentenceInput.value.split(' ')
   const newString = sw.removeStopwords(oldString, sw[language]).join(' ')

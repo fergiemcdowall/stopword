@@ -1,12 +1,13 @@
 {
   "name": "stopword",
-  "version": "1.0.11",
-  "description": "A module for node.js and the browser that takes in text and returns text that is stripped of stopwords. Has pre-defined stopword lists for 57 languages and also takes lists with custom stopwords as input.",
-  "main": "lib/stopword.js",
+  "version": "2.0.0-rc.6",
+  "description": "A module for node.js and the browser that takes in text and returns text that is stripped of stopwords. Has pre-defined stopword lists for 62 languages and also takes lists with custom stopwords as input.",
+  "main": "./dist/stopword.cjs.js",
+  "module": "./dist/stopword.esm.js",
+  "browser": "./dist/stopword.umd.js",
   "scripts": {
-    "compile-for-browser": "webpack",
-    "empty-sandbox": "rm -rf test/sandbox && mkdir test/sandbox",
-    "test": "standard './*.js' './test/*.js' && npm run empty-sandbox && npm run compile-for-browser && tape ./test/test.js && cat test/sandbox/bundle.js | tape-run && rm -rf test/sandbox"
+    "build": "rollup --config",
+    "test": "standard './*.js' './test/*.js' && npm run build && npx ava ./test/test.cjs.js && npx ava ./test/test.esm.mjs && npx ava ./test/ui-test.js"
   },
   "repository": {
     "type": "git",
@@ -15,23 +16,14 @@
   "keywords": [
     "stopword",
     "stopwords",
-    "document",
-    "processing",
+    "document-processing",
     "search",
-    "norch",
     "search-index",
     "nlp"
   ],
   "devDependencies": {
-    "buffer": "6.0.3",
-    "path-browserify": "1.0.1",
-    "process": "0.11.10",
-    "standard": "^16.0.4",
-    "stream-browserify": "3.0.0",
-    "tape": "^5.3.1",
-    "tape-run": "^9.0.0",
-    "webpack": "^5.50.0",
-    "webpack-cli": "^4.8.0"
+    "batr": "^2.0.4",
+    "words-n-numbers": "^7.1.0"
   },
   "author": "Fergus McDowall",
   "license": "MIT",
