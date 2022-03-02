@@ -7,6 +7,8 @@ altering its meaning.](https://en.wikipedia.org/wiki/Stop_words)
 ## Breaking change!
 Language codes are changed from ISO-639-1 (two characters) to ISO-639-3. This to have room for more small languages that wasn't specified in ISO-639-1.
 
+If you haven't specified any stopword lists and just gone with the default (which is English), it should continue working without the need for any change.
+
 [![NPM version][npm-version-image]][npm-url]
 [![NPM downloads][npm-downloads-image]][npm-url]
 [![Build Status][CI-image]][CI-url]
@@ -82,7 +84,7 @@ const newString = removeStopwords(oldString, swe)
 Extract numbers (korean script/characters) with module `words-n-numbers` and removing 0-9 'stopwords'
 
 ```javaScript
-const { removeStopwords, swe } = require('stopword')
+const { removeStopwords, _123 } = require('stopword')
 const { extract, words, numbers } = require('words-n-numbers')
 const oldString = '쾰른 대성당(독일어: Kölner Dom, 정식 명칭: Hohe Domkirche St. Peter)은 독일 쾰른에 있는 로마 가톨릭교회의 성당이다. 고딕 양식으로 지어졌다. 쾰른 대교구의 주교좌 성당이라 쾰른 주교좌 성당이라고도 불린다. 현재 쾰른 대교구의 교구장은 라이너 마리아 뵐키 추기경이다. 이 성당은 독일에서 가장 잘 알려진 건축물로, 성 바실리 대성당에 이어, 1996년 유네스코 세계유산으로 등재되었다. 유네스코에서는 쾰른 대성당을 일컬어 “인류의 창조적 재능을 보여주는 드문 작품”이라고 묘사하였다.[1] 매일 2만여 명의 관광객이 이 성당을 찾는다.[2]'
 let newString = extract(oldString, { regex: [numbers] })
@@ -110,7 +112,6 @@ const customStopwords = ['interesting', 'really']
 const newString = sw.removeStopwords(oldString, [...eng, ...swe, ...customStopwords]
 // newString is now ['string', 'words', 'trädgårdsägare', 'beredda', 'pröva', 'helst', 'hatade', 'mördarsniglarna']
 ```
-
 
 
 ## API
@@ -196,12 +197,6 @@ Language codes follow [ISO 639-3 Language Code list](https://iso639-3.sil.org/co
 * `vie` - Vietnamese
 * `yor` - Yoruba
 * `zul` - Zulu
-
-```javascript
-const { nob } = require('stopword')
-norwegianBokmaalStopwords = nob
-// norwegianBokmaalStopwords now contains an Array of norwgian bokmål stopwords
-```
 
 #### Languages with no space between words
 `jpn` Japanese, `tha` Thai and `zho` Chinese and some of the other languages supported have no space between words. For these languages you need to split the text into an array of words in another way than just `textString.split(' ')`. You can check out [TinySegmenter](http://chasen.org/%7Etaku/software/TinySegmenter/) for Japanese and [chinese-tokenizer](https://github.com/yishn/chinese-tokenizer) for Chinese.
