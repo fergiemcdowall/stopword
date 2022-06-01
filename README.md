@@ -1,9 +1,9 @@
 # stopword
 
 `stopword` is a module for node and the browser that allows you to strip
-stopwords from an input text. Covers 62 languages. [In natural language processing, "Stopwords" are
-words that are so frequent that they can safely be removed from a text without
-altering its meaning.](https://en.wikipedia.org/wiki/Stop_words)
+stopwords from an input text. Covers 62 languages. [In natural language processing, "Stopwords" are words that are so frequent that they can safely be removed from a text without altering its meaning.](https://en.wikipedia.org/wiki/Stop_words)
+
+All `.min`-files are approximately 130 Kb each.
 
 [![NPM version][npm-version-image]][npm-url]
 [![NPM downloads][npm-downloads-image]][npm-url]
@@ -12,7 +12,7 @@ altering its meaning.](https://en.wikipedia.org/wiki/Stop_words)
 [![JavaScript Style Guide][standardjs-image]][standardjs-url]
 [![MIT License][license-image]][license-url]
 
-[![wonderful day stopword module](https://github.com/fergiemcdowall/stopword/raw/master/demo/stopword-demo.gif)](https://fergiemcdowall.github.io/stopword/demo)
+[![wonderful day stopword module](https://github.com/fergiemcdowall/stopword/raw/master/demo/stopword-demo.gif)](https://fergiemcdowall.github.io/stopword/demo/)
 
 Live [stopword browser demo](https://fergiemcdowall.github.io/stopword/demo/)
 
@@ -25,6 +25,7 @@ If you haven't specified any stopword lists and just gone with the default (whic
 ## Getting the script in your environment
 
 ### CJS - CommonJS
+
 Deconstruction require:
 ```javascript
 const { removeStopwords, eng, fra } = require('stopword')
@@ -51,6 +52,7 @@ import * as sw from './dist/stopword.esm.mjs'
 ```
 
 ### UMD - Script tag method
+
 ```html
 <script src="https://cdn.jsdelivr.net/npm/stopword/dist/stopword.umd.min.js"></script>
 
@@ -59,10 +61,10 @@ import * as sw from './dist/stopword.esm.mjs'
 </script>
 ```
 
-
 ## Usage
 
 ### Default (English)
+
 By default, `stopword` will strip an array of "meaningless" English words
 
 ```javaScript
@@ -74,6 +76,7 @@ const newString = removeStopwords(oldString)
 ```
 
 ### Other languages
+
 You can also specify a language other than English:
 ```javaScript
 const { removeStopwords, swe } = require('stopword')
@@ -84,6 +87,7 @@ const newString = removeStopwords(oldString, swe)
 ```
 
 ### Numbers
+
 Extract numbers (korean script/characters) with module `words-n-numbers` and removing 0-9 'stopwords'
 
 ```javaScript
@@ -97,6 +101,7 @@ newString = removeStopwords(newString, _123)
 ```
 
 ### Custom list of stopwords
+
 And last, but not least, it is possible to use your own, custom list of stopwords:
 ```javascript
 const { removeStopwords } = require('stopword')
@@ -107,6 +112,7 @@ const newString = removeStopwords(oldString, [ 'even', 'a', 'custom', 'stopword'
 ```
 
 ### Removing stopwords for i.e. two languages and a custom stopword list
+
 With spread syntax you can easily combine several stopword arrays into one. Useful for situations where two langauages are used interchangeably. Or when you have certain words that are used in every document that is not in your existing stopword arrays.
 ```javascript
 const { removeStopwords, eng, swe } = require('stopword')
@@ -202,12 +208,15 @@ Language codes follow [ISO 639-3 Language Code list](https://iso639-3.sil.org/co
 * `zul` - Zulu
 
 #### Languages with no space between words
+
 `jpn` Japanese, `tha` Thai and `zho` Chinese and some of the other languages supported have no space between words. For these languages you need to split the text into an array of words in another way than just `textString.split(' ')`. You can check out [TinySegmenter](https://chasen.org/%7Etaku/software/TinySegmenter/) for Japanese and [chinese-tokenizer](https://github.com/yishn/chinese-tokenizer) for Chinese.
 
 ## Your language missing?
+
 If you can't find a stopword file for your language, you can try creating one with [`stopword-trainer`](https://github.com/eklem/stopword-trainer). We're happy to help you in the process.
 
 ## Contributions and licenses
+
 Most of this work is from other projects and people, and wouldn't be possible without them. Thanks to among others the [stopwords-iso](https://github.com/stopwords-iso) project and the [more-stoplist](https://github.com/dohliam/more-stoplists) project. And thanks for all your code input: @arthurdenner, @micalevisk, @fabric-io-rodrigues, @behzadmoradi, @guysaar223, @ConnorKrammer, @GreXLin85, @nanopx, @virtual and @JustroX!
 
 [Licenses](./dist/LICENSES.txt) for this library and all third party code.
