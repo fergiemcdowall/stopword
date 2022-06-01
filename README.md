@@ -12,9 +12,9 @@ altering its meaning.](https://en.wikipedia.org/wiki/Stop_words)
 [![JavaScript Style Guide][standardjs-image]][standardjs-url]
 [![MIT License][license-image]][license-url]
 
-[![wonderful day stopword module](https://github.com/fergiemcdowall/stopword/raw/master/demo/stopword-demo.gif)](https://fergiemcdowall.github.io/stopword/demo/)
+[![wonderful day stopword module](https://github.com/fergiemcdowall/stopword/raw/master/demo/stopword-demo.gif)](https://fergiemcdowall.github.io/stopword/demo)
 
-Live [stopword browser demo](https://fergiemcdowall.github.io/stopword/demo/).
+Live [stopword browser demo](https://fergiemcdowall.github.io/stopword/demo/)
 
 ## Breaking change!
 
@@ -202,7 +202,7 @@ Language codes follow [ISO 639-3 Language Code list](https://iso639-3.sil.org/co
 * `zul` - Zulu
 
 #### Languages with no space between words
-`jpn` Japanese, `tha` Thai and `zho` Chinese and some of the other languages supported have no space between words. For these languages you need to split the text into an array of words in another way than just `textString.split(' ')`. You can check out [TinySegmenter](http://chasen.org/%7Etaku/software/TinySegmenter/) for Japanese and [chinese-tokenizer](https://github.com/yishn/chinese-tokenizer) for Chinese.
+`jpn` Japanese, `tha` Thai and `zho` Chinese and some of the other languages supported have no space between words. For these languages you need to split the text into an array of words in another way than just `textString.split(' ')`. You can check out [TinySegmenter](https://chasen.org/%7Etaku/software/TinySegmenter/) for Japanese and [chinese-tokenizer](https://github.com/yishn/chinese-tokenizer) for Chinese.
 
 ## Your language missing?
 If you can't find a stopword file for your language, you can try creating one with [`stopword-trainer`](https://github.com/eklem/stopword-trainer). We're happy to help you in the process.
@@ -212,11 +212,11 @@ Most of this work is from other projects and people, and wouldn't be possible wi
 
 [Licenses](./dist/LICENSES.txt) for this library and all third party code.
 
-[license-image]: http://img.shields.io/badge/license-MIT-blue.svg?style=flat
+[license-image]: https://img.shields.io/badge/license-MIT-blue.svg?style=flat
 [license-url]: LICENSE
 [npm-url]: https://npmjs.org/package/stopword
-[npm-version-image]: http://img.shields.io/npm/v/stopword.svg?style=flat
-[npm-downloads-image]: http://img.shields.io/npm/dm/stopword.svg?style=flat
+[npm-version-image]: https://img.shields.io/npm/v/stopword.svg?style=flat
+[npm-downloads-image]: https://img.shields.io/npm/dm/stopword.svg?style=flat
 [CI-url]: https://github.com/fergiemcdowall/stopword/actions/workflows/tests.yml
 [CI-image]: https://github.com/fergiemcdowall/stopword/actions/workflows/tests.yml/badge.svg
 [standardjs-url]: https://standardjs.com
