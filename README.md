@@ -12,7 +12,7 @@ altering its meaning.](https://en.wikipedia.org/wiki/Stop_words)
 [![JavaScript Style Guide][standardjs-image]][standardjs-url]
 [![MIT License][license-image]][license-url]
 
-[![wonderful day stopword module](./demo/stopword-demo.gif)](https://fergiemcdowall.github.io/stopword/demo/)
+[![wonderful day stopword module](https://github.com/fergiemcdowall/stopword/raw/master/demo/stopword-demo.gif)](https://fergiemcdowall.github.io/stopword/demo/)
 
 Live [stopword browser demo](https://fergiemcdowall.github.io/stopword/demo/).
 
