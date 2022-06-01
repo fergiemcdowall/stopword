@@ -14,6 +14,8 @@ All `.min`-files are approximately 130 Kb each.
 
 [![wonderful day stopword module](https://github.com/fergiemcdowall/stopword/raw/master/demo/stopword-demo.gif)](https://fergiemcdowall.github.io/stopword/demo/)
 
+[![wonderful day stopword module](https://github.com/fergiemcdowall/stopword/raw/master/demo/stopword-demo.gif)](https://fergiemcdowall.github.io/stopword/demo/)
+
 Live [stopword browser demo](https://fergiemcdowall.github.io/stopword/demo/)
 
 ## Breaking change!
