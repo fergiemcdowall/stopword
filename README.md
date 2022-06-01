@@ -3,7 +3,7 @@
 `stopword` is a module for node and the browser that allows you to strip
 stopwords from an input text. Covers 62 languages. [In natural language processing, "Stopwords" are words that are so frequent that they can safely be removed from a text without altering its meaning.](https://en.wikipedia.org/wiki/Stop_words)
 
-All `.min`-files are approximately 130 Kb each.
+All `.min` minified files are approximately 130 Kb each.
 
 [![NPM version][npm-version-image]][npm-url]
 [![NPM downloads][npm-downloads-image]][npm-url]
