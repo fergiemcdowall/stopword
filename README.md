@@ -11,6 +11,7 @@ If you haven't specified any stopword lists and just gone with the default (whic
 
 [![NPM version][npm-version-image]][npm-url]
 [![NPM downloads][npm-downloads-image]][npm-url]
+[![jsDelivr downloads](https://data.jsdelivr.com/v1/package/npm/stopword/badge?style=rounded)](https://www.jsdelivr.com/package/npm/stopword)
 [![Build Status][CI-image]][CI-url]
 [![JavaScript Style Guide][standardjs-image]][standardjs-url]
 [![MIT License][license-image]][license-url]
@@ -49,7 +50,7 @@ import * as sw from './dist/stopword.esm.mjs'
 
 ### UMD - Script tag method
 ```html
-<script src="stopword.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/stopword/dist/stopword.umd.min.js"></script>
 
 <script>
 // sw.removeStopwords and sw.<language codes> now available
