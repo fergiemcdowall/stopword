@@ -1,13 +1,9 @@
 # stopword
+
 `stopword` is a module for node and the browser that allows you to strip
 stopwords from an input text. Covers 62 languages. [In natural language processing, "Stopwords" are
 words that are so frequent that they can safely be removed from a text without
 altering its meaning.](https://en.wikipedia.org/wiki/Stop_words)
-
-## Breaking change!
-Language codes are changed from ISO-639-1 (two characters) to ISO-639-3. This to have room for more small languages that wasn't specified in ISO-639-1.
-
-If you haven't specified any stopword lists and just gone with the default (which is English), it should continue working without the need for any change.
 
 [![NPM version][npm-version-image]][npm-url]
 [![NPM downloads][npm-downloads-image]][npm-url]
@@ -19,6 +15,12 @@ If you haven't specified any stopword lists and just gone with the default (whic
 ![wonderful day stopword module](./demo/stopword-demo.gif)
 
 Live [stopword browser demo](http://fergiemcdowall.github.io/stopword/demo/).
+
+## Breaking change!
+
+Language codes are changed from ISO-639-1 (two characters) to ISO-639-3. This to have room for more small languages that wasn't specified in ISO-639-1.
+
+If you haven't specified any stopword lists and just gone with the default (which is English), it should continue working without the need for any change.
 
 ## Getting the script in your environment
 
