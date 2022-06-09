@@ -61,19 +61,21 @@ import * as sw from './dist/stopword.esm.mjs'
 </script>
 ```
 
-### TypeScript with CJS
+### TypeScript
+
+#### TypeScript with CJS
 ```ts
 import * as sw from 'stopword'
 // 'sw.removeStopwords' + 'sw.<language codes>' available
 ```
 
-### TypeScript with ESM
+#### TypeScript with ESM
 ```ts
 import { removeStopwords, eng, fra } from 'stopword'
 // 'removeStopwords', 'eng' and 'fra' available
 ```
 
-### Install TypeScript types
+#### Install TypeScript types
 `npm i @types/stopword --save-dev`
 
 ## Usage
