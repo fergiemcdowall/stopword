@@ -234,7 +234,7 @@ If you can't find a stopword file for your language, you can try creating one wi
 
 ## Contributions and licenses
 
-Most of this work is from other projects and people, and wouldn't be possible without them. Thanks to among others the [stopwords-iso](https://github.com/stopwords-iso) project and the [more-stoplist](https://github.com/dohliam/more-stoplists) project. And thanks for all your code input: @arthurdenner, @micalevisk, @fabric-io-rodrigues, @behzadmoradi, @guysaar223, @ConnorKrammer, @GreXLin85, @nanopx, @virtual and @JustroX!
+Most of this work is from other projects and people, and wouldn't be possible without them. Thanks to among others the [stopwords-iso](https://github.com/stopwords-iso) project and the [more-stoplist](https://github.com/dohliam/more-stoplists) project. And thanks for all your code input: @arthurdenner, @micalevisk, @fabric-io-rodrigues, @behzadmoradi, @guysaar223, @ConnorKrammer, @GreXLin85, @nanopx, @virtual, @JustroX and @DavideViolante !
 
 [Licenses](./dist/LICENSES.txt) for this library and all third party code.
 
