@@ -246,4 +246,4 @@ Most of this work is from other projects and people, and wouldn't be possible wi
 [CI-url]: https://github.com/fergiemcdowall/stopword/actions/workflows/tests.yml
 [CI-image]: https://github.com/fergiemcdowall/stopword/actions/workflows/tests.yml/badge.svg
 [standardjs-url]: https://standardjs.com
-[standardjs-image]: https://img.shields.io/badge/code_style-standard-brightgreen.svg?style=flat-square
+[standardjs-image]: https://img.shields.io/badge/code_style-standard-brightgreen.svg?style=rounded
