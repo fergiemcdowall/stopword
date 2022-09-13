@@ -1,6 +1,6 @@
 const test = require('ava')
 const { extract, words, numbers } = require('words-n-numbers')
-const { removeStopwords, _123, afr, ara, hye, eus, ben, bre, bul, cat, zho, hrv, ces, dan, nld, eng, epo, est, fin, fra, glg, deu, ell, guj, hau, heb, hin, hun, ind, gle, ita, jpn, kor, kur, lat, lav, lit, lgg, lggNd, msa, mar, mya, nob, fas, pol, por, porBr, panGu, ron, rus, slk, slv, som, sot, spa, swa, swe, tha, tgl, tur, ukr, urd, vie, yor, zul } = require('../dist/stopword.cjs.js')
+const { removeStopwords, _123, afr, ara, hye, eus, ben, bre, bul, cat, zho, hrv, ces, dan, nld, eng, epo, est, fin, fra, glg, deu, ell, guj, hau, heb, hin, hun, ind, gle, ita, jpn, kor, kur, lat, lav, lit, lgg, lggNd, msa, mar, mya, nob, fas, pol, por, porBr, panGu, ron, rus, sme, slk, slv, som, sot, spa, swa, swe, tha, tgl, tur, ukr, urd, vie, yor, zul } = require('../dist/stopword.cjs.js')
 
 // matching old language codes / variables
 const af = afr // afrikaans
@@ -529,6 +529,13 @@ test('remove gujarati stopwords', (t) => {
   const oldString = 'વાવ એટલે લાંબા પગથિયાંવાળા ભાગથી જોડાયેલા કૂવા. તે સૌથી વધારે પશ્ચિમ ભારતમાં જોવા મળે છે. ખાસ કરીને ગુજરાતમાં કુલ ૧૨૦થી વધુ વાવ જોવા મળે છે. વાવનું અસ્તિત્વ સિંધુ સભ્યતાના ધોળાવીરા અને મોહેં-જો-દડો જેવા શહેરોના જળાશયોની રચનામાં પણ જોઈ શકાય છે. ગુજરાતમાં વાવ નિર્માણની પ્રવૃત્તિઓ ઇ.સ. પૂર્વે ૬૦૦ની આસપાસથી જોઈ શકાય છે. ૧૯મી સદીમાં પાણીના પંપ અને પાઇપલાઇન દ્વારા પાણી મળવાની શરૂઆત થતાં આ પ્રકારના પગથિયાંવાળા કૂવાઓએ તેમનું મહત્વ ગુમાવી દીધું.'
   const newString = removeStopwords(extract(oldString, { regex: [words], toLowercase: true }), guj)
   t.deepEqual(newString, ['વાવ', 'એટલે', 'લાંબા', 'પગથિયાંવાળા', 'ભાગથી', 'જોડાયેલા', 'કૂવા', 'સૌથી', 'વધારે', 'પશ', 'ચિમ', 'ભારતમાં', 'જોવા', 'મળે', 'ખાસ', 'કરીને', 'ગુજરાતમાં', 'કુલ', 'વાવ', 'જોવા', 'મળે', 'વાવનું', 'અસ', 'તિત', 'વ', 'સિંધુ', 'સભ', 'યતાના', 'ધોળાવીરા', 'મોહેં', 'દડો', 'જેવા', 'શહેરોના', 'જળાશયોની', 'રચનામાં', 'જોઈ', 'શકાય', 'ગુજરાતમાં', 'વાવ', 'નિર', 'માણની', 'પ', 'રવૃત', 'તિઓ', 'ઇ', 'સ', 'પૂર', 'વે', 'આસપાસથી', 'જોઈ', 'શકાય', 'સદીમાં', 'પાણીના', 'પંપ', 'પાઇપલાઇન', 'દ', 'વારા', 'પાણી', 'મળવાની', 'શરૂઆત', 'પ', 'રકારના', 'પગથિયાંવાળા', 'કૂવાઓએ', 'મહત', 'વ', 'ગુમાવી', 'દીધું'])
+})
+
+test('remove north sami stopwords', (t) => {
+  t.plan(1)
+  const oldString = '– Dál leat historjjálaš beaivvit. Mii dollet ieža bastte go mii dál álgoálbmogin buktit árvalusaid rievdademiide iežamet eallinlágis ja ealáhusas, muitala sámediggepresideanta Silje Karine Muotka.'
+  const newString = removeStopwords(extract(oldString, { regex: [words], toLowercase: true }), sme)
+  t.deepEqual(newString, ['historjjálaš', 'beaivvit', 'dollet', 'ieža', 'bastte', 'álgoálbmogin', 'buktit', 'árvalusaid', 'rievdademiide', 'iežamet', 'eallinlágis', 'ealáhusas', 'muitala', 'sámediggepresideanta', 'silje', 'karine', 'muotka'])
 })
 
 // -----------------------

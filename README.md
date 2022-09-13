@@ -208,6 +208,7 @@ Language codes follow [ISO 639-3 Language Code list](https://iso639-3.sil.org/co
 * `panGu` - Punjabi (Panjabi), Gurmukhi script
 * `ron` - Romanian (Moldavian, Moldovan)
 * `rus` - Russian
+* `sme` - North Sami
 * `slk` - Slovak
 * `slv` - Slovenian
 * `som` - Somali

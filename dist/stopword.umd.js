@@ -807,6 +807,34 @@
 
     const rus = ['и', 'в', 'во', 'не', 'что', 'он', 'на', 'я', 'с', 'со', 'как', 'а', 'то', 'все', 'она', 'так', 'его', 'но', 'да', 'ты', 'к', 'у', 'же', 'вы', 'за', 'бы', 'по', 'только', 'ее', 'мне', 'было', 'вот', 'от', 'меня', 'еще', 'нет', 'о', 'из', 'ему', 'теперь', 'когда', 'даже', 'ну', 'ли', 'если', 'уже', 'или', 'ни', 'быть', 'был', 'него', 'до', 'вас', 'нибудь', 'уж', 'вам', 'сказал', 'ведь', 'там', 'потом', 'себя', 'ничего', 'ей', 'может', 'они', 'тут', 'где', 'есть', 'надо', 'ней', 'для', 'мы', 'тебя', 'их', 'чем', 'была', 'сам', 'чтоб', 'без', 'будто', 'чего', 'раз', 'тоже', 'себе', 'под', 'будет', 'ж', 'тогда', 'кто', 'этот', 'того', 'потому', 'этого', 'какой', 'совсем', 'ним', 'этом', 'почти', 'мой', 'тем', 'чтобы', 'нее', 'были', 'куда', 'всех', 'никогда', 'сегодня', 'можно', 'при', 'об', 'другой', 'хоть', 'после', 'над', 'больше', 'тот', 'через', 'эти', 'нас', 'про', 'всего', 'них', 'какая', 'много', 'разве', 'эту', 'моя', 'свою', 'этой', 'перед', 'иногда', 'лучше', 'чуть', 'том', 'нельзя', 'такой', 'им', 'более', 'всегда', 'конечно', 'всю', 'между', 'это', 'лишь'];
 
+    /*
+    The MIT License (MIT)
+    Copyright (c) 2020 - 2022 Espen Klem
+
+    Permission is hereby granted, free of charge, to any person obtaining a copy
+    of this software and associated documentation files (the "Software"), to deal
+    in the Software without restriction, including without limitation the rights
+    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+    copies of the Software, and to permit persons to whom the Software is
+    furnished to do so, subject to the following conditions:
+
+    The above copyright notice and this permission notice shall be included in all
+    copies or substantial portions of the Software.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+    SOFTWARE.
+    */
+
+    /* This list is frequency sorted. That means it can be sliced from the bottom
+    and be less agressive in excluding stopwords */
+
+    const sme = ['ja', 'lea', 'leat', 'go', 'ahte', 'dán', 'dál', 'nu', 'ii', 'dan', 'dat', 'jagi', 'maid', 'dát', 'mii', 'eai', 'dadjá', 'son', 'lei', 'de', 'olbmo', 'geat', 'muhto', 'sii', 'lohká'];
+
     // Copyright (c) 2017 Peter Graham, contributors. Released under the Apache-2.0 license.
 
     const slk = ['a', 'aby', 'aj', 'ako', 'aký', 'ale', 'alebo', 'ani', 'avšak', 'ba', 'bez', 'buï', 'cez', 'do', 'ho', 'hoci', 'i', 'ich', 'im', 'ja', 'jeho', 'jej', 'jemu', 'ju', 'k', 'kam', 'kde', 'kedže', 'keï', 'kto', 'ktorý', 'ku', 'lebo', 'ma', 'mi', 'mne', 'mnou', 'mu', 'my', 'mòa', 'môj', 'na', 'nad', 'nami', 'neho', 'nej', 'nemu', 'nich', 'nielen', 'nim', 'no', 'nám', 'nás', 'náš', 'ním', 'o', 'od', 'on', 'ona', 'oni', 'ono', 'ony', 'po', 'pod', 'pre', 'pred', 'pri', 's', 'sa', 'seba', 'sem', 'so', 'svoj', 'taký', 'tam', 'teba', 'tebe', 'tebou', 'tej', 'ten', 'ti', 'tie', 'to', 'toho', 'tomu', 'tou', 'tvoj', 'ty', 'tá', 'tým', 'v', 'vami', 'veï', 'vo', 'vy', 'vám', 'vás', 'váš', 'však', 'z', 'za', 'zo', 'a', 'èi', 'èo', 'èí', 'òom', 'òou', 'òu', 'že'];
@@ -1120,6 +1148,7 @@
     exports.rus = rus;
     exports.slk = slk;
     exports.slv = slv;
+    exports.sme = sme;
     exports.som = som;
     exports.sot = sot;
     exports.spa = spa;
