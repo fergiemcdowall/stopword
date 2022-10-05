@@ -215,8 +215,8 @@ Language codes follow [ISO 639-3 Language Code list](https://iso639-3.sil.org/co
 * `spa` - Spanish
 * `swa` - Swahili, Macrolanguage
 * `swe` - Swedish
-* `tha` - Thai
 * `tgl` - Tagalog (Filipino)
+* `tha` - Thai
 * `tur` - Turkish
 * `ukr` - Ukrainian
 * `urd` - Urdu
@@ -226,7 +226,7 @@ Language codes follow [ISO 639-3 Language Code list](https://iso639-3.sil.org/co
 
 #### Languages with no space between words
 
-`jpn` Japanese, `tha` Thai and `zho` Chinese and some of the other languages supported have no space between words. For these languages you need to split the text into an array of words in another way than just `textString.split(' ')`. You can check out [TinySegmenter](https://chasen.org/%7Etaku/software/TinySegmenter/) for Japanese and [chinese-tokenizer](https://github.com/yishn/chinese-tokenizer) for Chinese.
+`jpn` Japanese, `tha` Thai and `zho` Chinese and some of the other languages supported have no space between words. For these languages you need to split the text into an array of words in another way than just `textString.split(' ')`. You can check out [SudachiPy](https://github.com/WorksApplications/sudachi.rs/tree/develop/python), [TinySegmenter](https://chasen.org/%7Etaku/software/TinySegmenter/) for Japanese and [chinese-tokenizer](https://github.com/yishn/chinese-tokenizer), [jieba](https://github.com/fxsjy/jieba), [pkuseg](https://github.com/lancopku/pkuseg-python) for Chinese.
 
 ## Your language missing?
 
