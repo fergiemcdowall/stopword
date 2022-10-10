@@ -3,4 +3,4 @@ Short version for minified scripts:
 The MIT License (MIT)
 Copyright (c) 2015 - 2022 Fergus McDowall
 
-Full license text + Third party licenses found in ./LICENSES.txt
+Full license text + Third party licenses found in ./3rd-party.txt
