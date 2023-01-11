@@ -24,5 +24,31 @@ SOFTWARE.
 /* This list is frequency sorted. That means it can be sliced from the bottom
 and be less agressive in excluding stopwords */
 
-const sme = ['ja', 'lea', 'leat', 'go', 'ahte', 'dán', 'dál', 'nu', 'ii', 'dan', 'dat', 'jagi', 'maid', 'dát', 'mii', 'eai', 'dadjá', 'son', 'lei', 'de', 'olbmo', 'geat', 'muhto', 'sii', 'lohká']
+const sme = [
+  'ja',
+  'lea',
+  'leat',
+  'go',
+  'ahte',
+  'dán',
+  'dál',
+  'nu',
+  'ii',
+  'dan',
+  'dat',
+  'jagi',
+  'maid',
+  'dát',
+  'mii',
+  'eai',
+  'dadjá',
+  'son',
+  'lei',
+  'de',
+  'olbmo',
+  'geat',
+  'muhto',
+  'sii',
+  'lohká'
+]
 export { sme }
