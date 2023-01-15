@@ -16,5 +16,40 @@ limitations under the License.
 /* This list is frequency sorted. That means it can be sliced from the bottom
 and be less agressive in excluding stopwords */
 
-const zul = ['ukuthi', 'kodwa', 'futhi', 'kakhulu', 'wakhe', 'kusho', 'uma', 'wathi', 'umama', 'kanye', 'phansi', 'ngesikhathi', 'lapho', 'u', 'zakhe', 'khona', 'ukuba', 'nje', 'phezulu', 'yakhe', 'kungani', 'wase', 'la', 'mina', 'wami', 'ukuze', 'unonkungu', 'wabona', 'wahamba', 'lakhe', 'yami', 'kanjani', 'kwakukhona', 'ngelinye']
+const zul = [
+  'ukuthi',
+  'kodwa',
+  'futhi',
+  'kakhulu',
+  'wakhe',
+  'kusho',
+  'uma',
+  'wathi',
+  'umama',
+  'kanye',
+  'phansi',
+  'ngesikhathi',
+  'lapho',
+  'u',
+  'zakhe',
+  'khona',
+  'ukuba',
+  'nje',
+  'phezulu',
+  'yakhe',
+  'kungani',
+  'wase',
+  'la',
+  'mina',
+  'wami',
+  'ukuze',
+  'unonkungu',
+  'wabona',
+  'wahamba',
+  'lakhe',
+  'yami',
+  'kanjani',
+  'kwakukhona',
+  'ngelinye'
+]
 export { zul }

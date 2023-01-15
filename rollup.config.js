@@ -35,7 +35,7 @@ export default [
         banner: {
           commentStyle: 'regular', // The default
           content: {
-            file: path.join(__dirname, './src/license-references.txt')
+            file: path.join(__dirname, './src/reference.txt')
           }
         }
       })
