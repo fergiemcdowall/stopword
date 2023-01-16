@@ -18,7 +18,7 @@ Live [stopword browser demo](https://fergiemcdowall.github.io/stopword/demo/)
 
 ## Breaking change!
 
-Language codes are changed from ISO-639-1 (two characters) to ISO-639-3. This to have room for more small languages that wasn't specified in ISO-639-1.
+Language codes are changed from `ISO-639-1` (two characters) to `ISO-639-3`. This to have room for more small languages that wasn't specified in `ISO-639-1`.
 
 If you haven't specified any stopword lists and just gone with the default (which is English), it should continue working without the need for any change.
 
