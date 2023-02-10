@@ -1,9 +1,9 @@
 {
   "name": "stopword",
-  "version": "2.0.6",
+  "version": "2.0.7",
   "description": "A module for node.js and the browser that takes in text and returns text that is stripped of stopwords. Has pre-defined stopword lists for 62 languages and also takes lists with custom stopwords as input.",
   "main": "./dist/stopword.cjs.js",
-  "module": "./dist/stopword.esm.js",
+  "module": "./dist/stopword.esm.mjs",
   "browser": "./dist/stopword.umd.js",
   "scripts": {
     "build": "rollup --config",
