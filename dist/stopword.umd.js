@@ -14277,13 +14277,19 @@
 
   const defaultStopwords = eng;
 
-  const removeStopwords = function (tokens, stopwords) {
+  const removeStopwords = function (tokens, stopwords, options = { caseSensitive: false }) {
     stopwords = stopwords || defaultStopwords;
     if (typeof tokens !== 'object' || typeof stopwords !== 'object') {
       throw new Error('expected Arrays try: removeStopwords(Array[, Array])')
     }
     return tokens.filter(function (value) {
-      return stopwords.indexOf(value.toLowerCase()) === -1
+
+      if (options.caseSensitive) {
+        return stopwords.indexOf(value.toLowerCase()) === -1
+      } else {
+        return stopwords.indexOf(value) === -1
+      }
+
     })
   };
 
