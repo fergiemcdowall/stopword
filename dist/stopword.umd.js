@@ -14287,6 +14287,35 @@
     })
   };
 
+  // A function to split a sentence at a stopword and return phrases.
+  const removeStopwordsAndSplit = function (sentence, stopwords) {
+    stopwords = stopwords || defaultStopwords
+    if (typeof sentence !== 'string' || typeof stopwords !== 'object') {
+      throw new Error('expected Arrays try: removeStopwords(Array[, Array])')
+    }
+    
+    var regex = new RegExp("\\b(?:" + stopwords.join('|') + ")+\\b", "i");
+
+    var me = sentence.split(regex);
+
+    for( var i = 0; i <me.length; i++){ 
+      
+        console.log(i.toString());
+
+        if(me[i].toString().replace(" ", "")==""){
+        
+        
+          me.splice(i, 1); 
+          i--;
+        }
+      
+    }
+
+  var  updated = me.map(item => item.trim())
+  
+  return updated;
+  } 
+
   exports._123 = _123;
   exports.afr = afr;
   exports.ara = ara;
@@ -14334,6 +14363,7 @@
   exports.por = por;
   exports.porBr = porBr;
   exports.removeStopwords = removeStopwords;
+  exports.removeStopwordsAndSplit = removeStopwordsAndSplit;
   exports.ron = ron;
   exports.rus = rus;
   exports.slk = slk;

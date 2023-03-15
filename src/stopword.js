@@ -75,4 +75,33 @@ const removeStopwords = function (tokens, stopwords) {
   })
 }
 
-export { removeStopwords, _123, afr, ara, hye, eus, ben, bre, bul, cat, zho, hrv, ces, dan, nld, eng, epo, est, fin, fra, glg, deu, ell, guj, hau, heb, hin, hun, ind, gle, ita, jpn, kor, kur, lat, lav, lit, lgg, lggNd, msa, mar, mya, nob, fas, pol, por, porBr, panGu, ron, rus, slk, slv, som, sot, spa, swa, swe, tha, tgl, tur, urd, ukr, vie, yor, zul }
+// A function to split a sentence at a stopword and return phrases.
+const removeStopwordsAndSplit = function (sentence, stopwords) {
+  stopwords = stopwords || defaultStopwords
+  if (typeof sentence !== 'string' || typeof stopwords !== 'object') {
+    throw new Error('expected Arrays try: removeStopwords(Array[, Array])')
+  }
+  
+  var regex = new RegExp("\\b(?:" + stopwords.join('|') + ")+\\b", "i");
+
+  var me = sentence.split(regex);
+
+  for( var i = 0; i <me.length; i++){ 
+    
+      console.log(i.toString());
+
+      if(me[i].toString().replace(" ", "")==""){
+      
+      
+        me.splice(i, 1); 
+        i--;
+      }
+    
+  }
+
+var  updated = me.map(item => item.trim())
+
+return updated;
+} 
+
+export { removeStopwords,removeStopwordsAndSplit, _123, afr, ara, hye, eus, ben, bre, bul, cat, zho, hrv, ces, dan, nld, eng, epo, est, fin, fra, glg, deu, ell, guj, hau, heb, hin, hun, ind, gle, ita, jpn, kor, kur, lat, lav, lit, lgg, lggNd, msa, mar, mya, nob, fas, pol, por, porBr, panGu, ron, rus, slk, slv, som, sot, spa, swa, swe, tha, tgl, tur, urd, ukr, vie, yor, zul }

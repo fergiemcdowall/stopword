@@ -4,10 +4,10 @@ const resultText = document.getElementById('stopwordsRemoved')
 
 function updateSentence () {
   const language = languageSelect.value
-  const oldString = sentenceInput.value.split(' ')
-  const newString = sw.removeStopwords(oldString, sw[language]).join(' ')
+  // const oldString = sentenceInput.value.split(' ')
+  const newString = sw.removeStopwordsAndSplit(sentenceInput.value, sw[language])
   console.group('Stopwords applied')
-  console.log('oldString:', oldString.join(' '))
+  // console.log('oldString:', oldString.join(' '))
   console.log('newString:', newString)
   console.groupEnd()
 
