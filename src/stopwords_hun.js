@@ -35,7 +35,7 @@ const hun = [
   'alóluk',
   'alólunk',
   'amely',
-  'amelybol',
+  'amelyből',
   'amelyek',
   'amelyekben',
   'amelyeket',
