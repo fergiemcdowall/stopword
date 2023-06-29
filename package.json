@@ -22,7 +22,7 @@
     "nlp"
   ],
   "devDependencies": {
-    "batr": "^2.1.8",
+    "batr": "^2.1.9",
     "words-n-numbers": "^8.0.0"
   },
   "author": "Fergus McDowall",
