@@ -28,7 +28,7 @@
   ],
   "devDependencies": {
     "batr": "^2.1.10",
-    "words-n-numbers": "^9.1.1"
+    "words-n-numbers": "^9.1.2"
   },
   "author": "Fergus McDowall",
   "license": "MIT",
