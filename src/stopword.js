@@ -63,16 +63,78 @@ import { vie } from './stopwords_vie.js'
 import { yor } from './stopwords_yor.js'
 import { zul } from './stopwords_zul.js'
 
-const defaultStopwords = eng
-
-const removeStopwords = function (tokens, stopwords) {
-  stopwords = stopwords || defaultStopwords
-  if (typeof tokens !== 'object' || typeof stopwords !== 'object') {
+// default to english stopword list
+const removeStopwords = (tokens, stopwords = eng) => {
+  if (!Array.isArray(tokens) || !Array.isArray(stopwords)) {
     throw new Error('expected Arrays try: removeStopwords(Array[, Array])')
   }
-  return tokens.filter(function (value) {
-    return stopwords.indexOf(value.toLowerCase()) === -1
-  })
+  return tokens.filter(x => !stopwords.includes(x.toLowerCase()))
 }
 
-export { removeStopwords, _123, afr, ara, hye, eus, ben, bre, bul, cat, zho, hrv, ces, dan, nld, eng, epo, est, fin, fra, glg, deu, ell, guj, hau, heb, hin, hun, ind, gle, ita, jpn, kor, kur, lat, lav, lit, lgg, lggNd, msa, mar, mya, nob, fas, pol, por, porBr, panGu, ron, rus, slk, slv, som, sot, spa, swa, swe, tha, tgl, tur, urd, ukr, vie, yor, zul }
+export {
+  removeStopwords,
+  _123,
+  afr,
+  ara,
+  ben,
+  bre,
+  bul,
+  cat,
+  ces,
+  dan,
+  deu,
+  ell,
+  eng,
+  epo,
+  est,
+  eus,
+  fas,
+  fin,
+  fra,
+  gle,
+  glg,
+  guj,
+  hau,
+  heb,
+  hin,
+  hrv,
+  hun,
+  hye,
+  ind,
+  ita,
+  jpn,
+  kor,
+  kur,
+  lat,
+  lav,
+  lgg,
+  lggNd,
+  lit,
+  mar,
+  msa,
+  mya,
+  nld,
+  nob,
+  panGu,
+  pol,
+  por,
+  porBr,
+  ron,
+  rus,
+  slk,
+  slv,
+  som,
+  sot,
+  spa,
+  swa,
+  swe,
+  tgl,
+  tha,
+  tur,
+  ukr,
+  urd,
+  vie,
+  yor,
+  zho,
+  zul
+}
