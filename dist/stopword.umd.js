@@ -5150,7 +5150,7 @@
     'alóluk',
     'alólunk',
     'amely',
-    'amelybol',
+    'amelyből',
     'amelyek',
     'amelyekben',
     'amelyeket',
@@ -14275,16 +14275,12 @@
     'ngelinye'
   ];
 
-  const defaultStopwords = eng;
-
-  const removeStopwords = function (tokens, stopwords) {
-    stopwords = stopwords || defaultStopwords;
-    if (typeof tokens !== 'object' || typeof stopwords !== 'object') {
+  // default to english stopword list
+  const removeStopwords = (tokens, stopwords = eng) => {
+    if (!Array.isArray(tokens) || !Array.isArray(stopwords)) {
       throw new Error('expected Arrays try: removeStopwords(Array[, Array])')
     }
-    return tokens.filter(function (value) {
-      return stopwords.indexOf(value.toLowerCase()) === -1
-    })
+    return tokens.filter(x => !stopwords.includes(x.toLowerCase()))
   };
 
   exports._123 = _123;
