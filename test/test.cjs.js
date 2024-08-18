@@ -259,7 +259,6 @@ test('remove english, swedish and custom stopwords', t => {
     'trädgårdsägare',
     'beredda',
     'pröva',
-    'helst',
     'hatade',
     'mördarsniglarna'
   ])
@@ -316,7 +315,6 @@ test('should remove swedish stopwords and preserve case', t => {
     'Trädgårdsägare',
     'beredda',
     'pröva',
-    'helst',
     'hatade',
     'mördarsniglarna',
     'åäö'

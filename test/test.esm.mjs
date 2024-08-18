@@ -105,7 +105,7 @@ test('remove english, swedish and custom stopwords', (t) => {
   const oldString = 'a really interesting string with some words trädgårdsägare är beredda att pröva vad som helst för att bli av med de hatade mördarsniglarna'.split(' ')
   const customStopwords = ['interesting', 'really']
   const newString = removeStopwords(oldString, [...en, ...sv, ...customStopwords])
-  t.deepEqual(newString, ['string', 'words', 'trädgårdsägare', 'beredda', 'pröva', 'helst', 'hatade', 'mördarsniglarna'])
+  t.deepEqual(newString, ['string', 'words', 'trädgårdsägare', 'beredda', 'pröva', 'hatade', 'mördarsniglarna'])
 })
 
 test('not remove any stopwords', (t) => {
@@ -140,7 +140,7 @@ test('should remove swedish stopwords and preserve case', (t) => {
   t.plan(1)
   const oldString = 'Trädgårdsägare är beredda att pröva vad som helst för att bli av med de hatade mördarsniglarna åäö'.split(' ')
   const newString = removeStopwords(oldString, sv)
-  t.deepEqual(newString, ['Trädgårdsägare', 'beredda', 'pröva', 'helst', 'hatade', 'mördarsniglarna', 'åäö'])
+  t.deepEqual(newString, ['Trädgårdsägare', 'beredda', 'pröva', 'hatade', 'mördarsniglarna', 'åäö'])
 })
 
 test('remove danish stopwords', (t) => {
