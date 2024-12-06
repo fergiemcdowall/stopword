@@ -236,7 +236,7 @@ If you can't find a stopword file for your language, you can try creating one wi
 
 Most of this work is from other projects and people, and wouldn't be possible without them. Thanks to among others the [stopwords-iso](https://github.com/stopwords-iso) project and the [more-stoplist](https://github.com/dohliam/more-stoplists) project. And thanks for all your code input: [@arthurdenner](https://github.com/arthurdenner), [@micalevisk](https://github.com/micalevisk), [@fabric-io-rodrigues](https://github.com/fabric-io-rodrigues), [@behzadmoradi](https://github.com/behzadmoradi), [@guysaar223](https://github.com/guysaar223), [@ConnorKrammer](https://github.com/ConnorKrammer), [@GreXLin85](https://github.com/GreXLin85), [@nanopx](https://github.com/nanopx), [@virtual](https://github.com/virtual), [@JustroX](https://github.com/JustroX), [@DavideViolante](https://github.com/DavideViolante), [@rodfeal](https://github.com/rodfeal), [@BLKSerene](https://github.com/BLKSerene), [@dsdenes](https://github.com/dsdenes), [msageryd](https://github.com/msageryd) and [imposeren](https://github.com/imposeren)!
 
-[Licenses](./dist/LICENSES.txt) for this library and all third party code.
+[Licenses](./dist/3rd-party.txt) for this library and all third party code.
 
 [license-image]: https://img.shields.io/badge/license-MIT-blue.svg?style=flat
 [license-url]: LICENSE
