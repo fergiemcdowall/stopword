@@ -360,7 +360,19 @@ test('remove breton stopwords', (t) => {
   t.plan(1)
   const oldString = 'gallout a ra pep hini ac’hanomp klask sevel ar pennadoù a vank dimp mankout a ra dimp ivez pennadoù hir n\'hon eus nemet 24 evit ar mare'.split(' ')
   const newString = removeStopwords(oldString, br)
-  t.deepEqual(newString, ['gallout', 'ra', 'pep', 'hini', 'ac’hanomp', 'klask', 'sevel', 'ar', 'pennadoù', 'vank', 'dimp', 'mankout', 'ra', 'dimp', 'ivez', 'pennadoù', 'hir', 'n\'hon', 'eus', 'nemet', '24', 'evit', 'ar', 'mare'])
+  t.deepEqual(newString, [
+    'ac’hanomp',
+    'klask',
+    'sevel',
+    'pennadoù',
+    'vank',
+    'mankout',
+    'pennadoù',
+    'hir',
+    'n\'hon',
+    '24',
+    'mare'
+  ])
 })
 
 test('remove bulgarian stopwords', (t) => {

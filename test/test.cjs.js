@@ -1580,29 +1580,16 @@ test('remove breton stopwords', t => {
     )
   const newString = removeStopwords(oldString, br)
   t.deepEqual(newString, [
-    'gallout',
-    'ra',
-    'pep',
-    'hini',
     'ac’hanomp',
     'klask',
     'sevel',
-    'ar',
     'pennadoù',
     'vank',
-    'dimp',
     'mankout',
-    'ra',
-    'dimp',
-    'ivez',
     'pennadoù',
     'hir',
-    "n'hon",
-    'eus',
-    'nemet',
+    'n\'hon',
     '24',
-    'evit',
-    'ar',
     'mare'
   ])
 })
