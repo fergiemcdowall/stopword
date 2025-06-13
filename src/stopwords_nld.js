@@ -69,7 +69,7 @@ const nld = [
   'in',
   'is',
   'ja',
-  'je ',
+  'je',
   'kan',
   'kon',
   'kunnen',
